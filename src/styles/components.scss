@@ -1,0 +1,36 @@
+@layer components {
+  .section {
+    @apply py-10 relative overflow-x-hidden;
+  }
+
+  .section-title {
+    @apply text-xl font-semibold text-center mb-4 lg:text-2xl lg:mb-8;
+  }
+
+  .custom-scrollbar {
+    // scrollbar-color: #777 #333;
+
+    /* Chrome, Safari */
+    /* All 3 rules are important */
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      @apply bg-grey;
+    }
+
+    &::-webkit-scrollbar-track {
+      @apply bg-grey-light;
+    }
+  }
+
+  .slider-bullet {
+    @apply w-2 h-2 bg-foreground rounded-full;
+
+    &.active {
+      @apply bg-accent;
+    }
+  }
+}

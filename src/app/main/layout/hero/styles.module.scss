@@ -1,0 +1,38 @@
+@use "@/styles/animations" as *;
+
+.title {
+  @apply text-xl-xl font-semibold text-center absolute inset-x-0 opacity-0 lg:text-2xl-xl xl:text-4xl;
+
+  animation: slide-down 4s linear infinite;
+
+  &.second {
+    animation-delay: 2s;
+  }
+}
+
+.image {
+  @apply absolute inset-0 overflow-hidden rounded-2xl opacity-0;
+  animation: image 4s linear infinite;
+
+  &.second {
+    animation-delay: 2s;
+  }
+}
+
+@keyframes image {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
