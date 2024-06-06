@@ -1,5 +1,5 @@
 import { Animations } from "@/lib/types"
-import { CursiveLine, Play } from "./svg"
+import { CursiveLine } from "./svg"
 import { motion } from "framer-motion"
 
 export const Video = () => {

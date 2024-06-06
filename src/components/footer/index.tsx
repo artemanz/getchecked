@@ -1,5 +1,4 @@
 import { SOCIALS } from "@/lib/constants/socials"
-import { Picture } from "../ui"
 import {
   Facebook,
   Instagram,
