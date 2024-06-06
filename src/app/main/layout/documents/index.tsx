@@ -3,6 +3,12 @@ import { useState } from "react"
 import { Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
+import sample1 from "@/assets/images/samples/sample-1.webp"
+import sample2 from "@/assets/images/samples/sample-2.webp"
+import sample3 from "@/assets/images/samples/sample-3.webp"
+
+import file from "@/assets/svg/icons/file.svg"
+
 export const Documents = () => {
   const [popup, setPopup] = useState<
     "sample-1" | "sample-2" | "sample-3" | null
@@ -12,9 +18,9 @@ export const Documents = () => {
     img: string
     sample: "sample-1" | "sample-2" | "sample-3"
   }[] = [
-    { img: "assets/images/samples/sample-1.png", sample: "sample-1" },
-    { img: "assets/images/samples/sample-2.png", sample: "sample-2" },
-    { img: "assets/images/samples/sample-3.png", sample: "sample-3" },
+    { img: sample1, sample: "sample-1" },
+    { img: sample2, sample: "sample-2" },
+    { img: sample3, sample: "sample-3" },
   ]
 
   return (
@@ -38,7 +44,7 @@ export const Documents = () => {
               key={slide.sample}
               className="relative grid w-full h-auto p-8 bg-white md:p-16"
             >
-              <Picture className="" DEFAULT={slide.img} alt="Document" />
+              <Picture DEFAULT={slide.img} alt="Document" />
 
               <button
                 onClick={() => setPopup(slide.sample)}
@@ -46,7 +52,7 @@ export const Documents = () => {
               >
                 <Picture
                   className="w-8 aspect-square"
-                  DEFAULT="assets/svg/icons/file.svg"
+                  DEFAULT={file}
                   alt="File icon"
                 />
               </button>

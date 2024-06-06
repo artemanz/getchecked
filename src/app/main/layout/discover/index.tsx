@@ -1,4 +1,9 @@
 import { Button, Picture } from "@/components/ui"
+import baby from "@/assets/svg/icons/baby.svg"
+import sex from "@/assets/svg/icons/sex.svg"
+import sprout from "@/assets/svg/icons/sprout.svg"
+import pieChart from "@/assets/svg/icons/pie-chart.svg"
+import shield from "@/assets/svg/icons/shield-close.svg"
 
 export const Discover = () => {
   const cards = [
@@ -11,7 +16,7 @@ export const Discover = () => {
           screening
         </>
       ),
-      icon: "assets/svg/icons/baby.svg",
+      icon: baby,
     },
     {
       id: 2,
@@ -22,7 +27,7 @@ export const Discover = () => {
           does not need the male partner's sample
         </>
       ),
-      icon: "assets/svg/icons/sex.svg",
+      icon: sex,
     },
     {
       id: 3,
@@ -33,7 +38,7 @@ export const Discover = () => {
           risk of being affected
         </>
       ),
-      icon: "assets/svg/icons/sprout.svg",
+      icon: sprout,
     },
     {
       id: 4,
@@ -44,7 +49,7 @@ export const Discover = () => {
           pregnancies
         </>
       ),
-      icon: "assets/svg/icons/pie-chart.svg",
+      icon: pieChart,
     },
     {
       id: 5,
@@ -55,7 +60,7 @@ export const Discover = () => {
           trust in a negative result
         </>
       ),
-      icon: "assets/svg/icons/shield-close.svg",
+      icon: shield,
     },
   ]
 

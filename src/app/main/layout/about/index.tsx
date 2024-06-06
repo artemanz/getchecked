@@ -1,4 +1,8 @@
 import { Button, Picture } from "@/components/ui"
+import aboutImage_sm from "@/assets/images/about/about-image@sm.webp"
+import aboutImage_md from "@/assets/images/about/about-image@md.webp"
+import aboutImage_lg from "@/assets/images/about/about-image@lg.webp"
+import file from "@/assets/svg/icons/file.svg"
 
 export const About = () => {
   return (
@@ -9,11 +13,10 @@ export const About = () => {
         <div className="px-2 pt-3 pb-8 bg-grey-light rounded-[2.5rem] md:px-6 lg:pt-8 lg:px-8">
           <div className="relative mb-5">
             <Picture
-              DEFAULT="assets/images/about/about-image@sm.png"
-              tablet="assets/images/about/about-image@md.png"
-              desktop="assets/images/about/about-image@lg.png"
-              webp
-              alt=""
+              DEFAULT={aboutImage_sm}
+              tablet={aboutImage_md}
+              desktop={aboutImage_lg}
+              alt="baby with mother"
             />
             <a
               href="#documents"
@@ -21,7 +24,7 @@ export const About = () => {
             >
               <Picture
                 className="w-8 aspect-square md:w-8 lg:w-12"
-                DEFAULT="assets/svg/icons/file.svg"
+                DEFAULT={file}
                 alt="File icon"
               />
             </a>
@@ -40,7 +43,11 @@ export const About = () => {
               sample needed.
             </p>
 
-            <Button className="flex-shrink-0 mx-auto" as="link" href="#contacts">
+            <Button
+              className="flex-shrink-0 mx-auto"
+              as="link"
+              href="#contacts"
+            >
               Book Now
             </Button>
           </div>

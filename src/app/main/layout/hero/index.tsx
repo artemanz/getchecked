@@ -1,4 +1,6 @@
 import s from "./styles.module.scss"
+import heroImagePrenatal from "@/assets/images/hero/hero-prenatal.webp"
+import heroImageOnco from "@/assets/images/hero/hero-onco.webp"
 
 import { Button, Picture } from "@/components/ui"
 import { cn } from "@/lib/helpers/cn"
@@ -10,14 +12,12 @@ export const Hero = () => {
         <div className="aspect-[3/2] w-full mb-4 max-h-[25rem] relative">
           <Picture
             className={cn(s["image"], s["first"])}
-            DEFAULT="assets/images/hero/hero-prenatal.jpg"
-            webp
-            alt="Happy mother with children"
+            DEFAULT={heroImagePrenatal}
+            alt="Happy mother with child"
           />
           <Picture
             className={cn(s["image"], s["second"])}
-            DEFAULT="assets/images/hero/hero-onco.jpg"
-            webp
+            DEFAULT={heroImageOnco}
             alt="Happy woman"
           />
         </div>

@@ -7,11 +7,16 @@ import { SOCIALS } from "@/lib/constants/socials"
 import { NAVIGATION } from "@/lib/constants/routes"
 import { handlePageScroll } from "@/lib/helpers/handlePageScroll"
 
+import ar from "@/assets/images/flags/ar.webp"
+import en from "@/assets/images/flags/en.webp"
+import ru from "@/assets/images/flags/ru.webp"
+import { Logo } from "../svg"
+
 export const Header = () => {
   const langs = [
-    { title: "Ar", img: "assets/images/flags/ar.png" },
-    { title: "En", img: "assets/images/flags/en.png" },
-    { title: "Ru", img: "assets/images/flags/ru.png" },
+    { title: "Ar", img: ar },
+    { title: "En", img: en },
+    { title: "Ru", img: ru },
   ]
   const socials = [
     { id: "facebook", href: SOCIALS.facebook, icon: FaFacebook },
@@ -35,7 +40,7 @@ export const Header = () => {
                 className="flex items-center gap-1 font-semibold uppercase"
                 key={lang.title}
               >
-                <Picture className="w-6" DEFAULT={lang.img} webp alt="Ar" />
+                <Picture className="w-6" DEFAULT={lang.img} alt={lang.title} />
                 {lang.title}
               </li>
             ))}
@@ -73,11 +78,7 @@ export const Header = () => {
       <div className="relative px-4 py-3">
         <div className="flex items-center justify-between">
           <a href="https://getcheckedclinic.com/">
-            <Picture
-              className="w-32 xl:w-48"
-              DEFAULT="assets/svg/logo.svg"
-              alt="Getchecked logo"
-            />
+            <Logo className="w-32 md:w-48" />
           </a>
 
           <nav className="hidden ml-12 mr-auto lg:flex">

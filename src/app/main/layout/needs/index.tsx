@@ -1,19 +1,26 @@
 import { Button, Picture } from "@/components/ui"
 import { cn } from "@/lib/helpers/cn"
 
+import dna from "@/assets/images/needs/dna.webp"
+import pregnantWoman from "@/assets/images/needs/pregnant-woman.png"
+
+import loading from "@/assets/svg/icons/loading.svg"
+import dnaSvg from "@/assets/svg/icons/dna.svg"
+import danger from "@/assets/svg/icons/danger.svg"
+
 export const Needs = () => {
   const cards = [
     {
       title: "Expecting parents",
-      icon: "assets/svg/icons/loading.svg",
+      icon: loading,
     },
     {
       title: "Families with a history of genetic disorders",
-      icon: "assets/svg/icons/dna.svg",
+      icon: dnaSvg,
     },
     {
       title: "Pregnant woman at risk for alloimmunization",
-      icon: "assets/svg/icons/danger.svg",
+      icon: danger,
     },
   ]
 
@@ -28,12 +35,7 @@ export const Needs = () => {
 
         <ul className="grid grid-cols-2 gap-2 mb-20">
           <li className={styles.card}>
-            <Picture
-              className="absolute inset-0"
-              DEFAULT="assets/images/needs/dna.jpg"
-              webp
-              alt="Dna"
-            />
+            <Picture className="absolute inset-0" DEFAULT={dna} alt="Dna" />
 
             <p className="relative inline-block font-medium lg:text-lg">
               Designed for a
@@ -81,8 +83,7 @@ export const Needs = () => {
 
           <Picture
             className="aspect-square w-[18.75rem] absolute right-[-7.875rem] bottom-[-2.5rem] md:w-[21.25rem] md:right-[-2.5rem] md:bottom-[-4rem] lg:right-[6.25rem]"
-            DEFAULT="assets/images/needs/pregnant-woman.png"
-            webp
+            DEFAULT={pregnantWoman}
             alt="pregnant woman"
           />
         </div>
