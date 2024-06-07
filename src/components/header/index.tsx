@@ -7,9 +7,10 @@ import { SOCIALS } from "@/lib/constants/socials"
 import { NAVIGATION } from "@/lib/constants/routes"
 import { handlePageScroll } from "@/lib/helpers/handlePageScroll"
 
-import ar from "@/assets/images/flags/ar.webp"
-import en from "@/assets/images/flags/en.webp"
-import ru from "@/assets/images/flags/ru.webp"
+import ar from "@/assets/svg/flags/ar.svg"
+import en from "@/assets/svg/flags/en.svg"
+import ru from "@/assets/svg/flags/ru.svg"
+
 import { Logo } from "../svg"
 
 export const Header = () => {

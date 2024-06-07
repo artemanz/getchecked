@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Location, Report, Sample } from "./svg"
+import { Location, Report, Sample, Time } from "./svg"
 import { cn } from "@/lib/helpers"
 import { Button } from "@/components/ui"
 
@@ -7,8 +7,6 @@ export const Works = () => {
   const tabs = [
     {
       id: 1,
-      text: "Submit Sample",
-      icon: Sample,
       content: {
         title: "Submit Sample",
         text: "Book In-Clinic or At Home\nEffortlessly submit your sample: A simple, quick blood draw as early as 10 weeks is all it takes.",
@@ -16,8 +14,6 @@ export const Works = () => {
     },
     {
       id: 2,
-      text: "USA Located Laboratory",
-      icon: Location,
       content: {
         title: "USA Located Laboratory",
         text: "Your sample is sent to one of our exclusive partner laboratories in the USA, ensuring top-notch accuracy and reliability.",
@@ -25,8 +21,6 @@ export const Works = () => {
     },
     {
       id: 3,
-      text: "Report ",
-      icon: Report,
       content: {
         title: "Report",
         text: "Within 5-10 days, you will receive a detailed genetic report and have the opportunity to schedule a free consultation to determine next steps.",
@@ -35,41 +29,96 @@ export const Works = () => {
   ]
   const [currentTab, setCurrentTab] = useState<number>(tabs[0].id)
 
+  const classNames = {
+    tabIcon:
+      "grid rounded-full bg-accent aspect-square place-content-center opacity-50 cursor-pointer transition-opacity relative md:w-[2.625rem]",
+    "tabIcon-active":
+      "opacity-100 before:absolute before:inset-0  before:bg-accent before:z-[-1] before:rounded-full before:opacity-75 before:animate-ping before:[animation-duration:1.5s]",
+    tabLabel: "opacity-50 cursor-pointer",
+    tabLabelHeader: "flex items-center gap-2",
+  }
+
   return (
     <section className="section">
       <div className="container">
         <h2 className="section-title">How It Works</h2>
-
-        <ul className="flex justify-between h-12 p-0.5 border rounded-full border-accent/50 mb-2">
-          {tabs.map((tab) => (
+        <div className="flex gap-4 mb-8 md:flex-col">
+          <ul className="flex flex-shrink-0 flex-col justify-between w-12 h-[15rem] p-0.5 border rounded-full border-accent/50 md:flex-row md:h-12 md:w-full">
             <li
-              onClick={() => setCurrentTab(tab.id)}
+              onClick={() => setCurrentTab(1)}
               className={cn(
-                "grid rounded-full bg-accent aspect-square place-content-center opacity-50 cursor-pointer transition-opacity relative",
-                tab.id === currentTab &&
-                  "opacity-100 before:absolute before:inset-0  before:bg-accent before:z-[-1] before:rounded-full before:opacity-75 before:animate-ping before:[animation-duration:1.5s]"
+                classNames.tabIcon,
+                currentTab === 1 && classNames["tabIcon-active"]
               )}
-              key={tab.text}
             >
-              <tab.icon />
+              <Sample />
             </li>
-          ))}
-        </ul>
-
-        <ul className="flex justify-between mb-6 lg:mb-8">
-          {tabs.map((tab) => (
             <li
-              onClick={() => setCurrentTab(tab.id)}
+              onClick={() => setCurrentTab(2)}
               className={cn(
-                "opacity-50 cursor-pointer first:max-w-16 [&:nth-child(2)]:max-w-36 [&:nth-child(2)]:text-center lg:first:max-w-none lg:[&:nth-child(2)]:max-w-none lg:[&:nth-child(2)]:mr-12 lg:text-lg",
-                tab.id === currentTab && "opacity-100 font-semibold"
+                classNames.tabIcon,
+                currentTab === 2 && classNames["tabIcon-active"]
               )}
-              key={tab.text}
             >
-              {tab.text}
+              <Location />
             </li>
-          ))}
-        </ul>
+            <li
+              onClick={() => setCurrentTab(3)}
+              className={cn(
+                classNames.tabIcon,
+                currentTab === 3 && classNames["tabIcon-active"]
+              )}
+            >
+              <Report />
+            </li>
+          </ul>
+
+          <ul className="flex flex-col justify-between md:flex-row lg:mb-8">
+            <li
+              onClick={() => setCurrentTab(1)}
+              className={cn(
+                classNames.tabLabel,
+                currentTab === 1 && "opacity-100"
+              )}
+            >
+              <div className={cn(classNames.tabLabelHeader, "")}>
+                <Time />
+                Same Day
+              </div>
+              <p className="font-semibold lg:text-lg">Submit Sample</p>
+            </li>
+            <li
+              onClick={() => setCurrentTab(2)}
+              className={cn(
+                classNames.tabLabel,
+                currentTab === 2 && "opacity-100"
+              )}
+            >
+              <div
+                className={cn(classNames.tabLabelHeader, "md:justify-center md:mr-8")}
+              >
+                <Time />
+                2-3 Days
+              </div>
+              <p className="font-semibold lg:text-lg md:text-center">
+                USA Located Laboratory
+              </p>
+            </li>
+            <li
+              onClick={() => setCurrentTab(3)}
+              className={cn(
+                classNames.tabLabel,
+                currentTab === 3 && "opacity-100"
+              )}
+            >
+              <div className={cn(classNames.tabLabelHeader, "md:justify-end")}>
+                <Time />
+                5-8 Days
+              </div>
+              <p className="font-semibold lg:text-lg md:text-right">Report</p>
+            </li>
+          </ul>
+        </div>
 
         <div className="overflow-hidden">
           <ul

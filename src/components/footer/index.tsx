@@ -34,7 +34,7 @@ export const Footer = () => {
       id: "location",
       href: undefined,
       icon: Location,
-      text: "The Mall, Umm Suqqiem - Opposite Madinat Jumeirah Hotel",
+      text: "The Mall, Umm Suqeim - Opposite Jumeirah Beach Hotel",
     },
   ]
 

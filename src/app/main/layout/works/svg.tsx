@@ -107,3 +107,35 @@ export const Report = () => (
     />
   </svg>
 )
+
+export const Time = () => (
+  <svg
+    width="17"
+    height="17"
+    viewBox="0 0 17 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.04883 7.05556C1.27776 5.27571 2.16576 3.64002 3.54442 2.45871C4.92308 1.27741 6.69651 0.632646 8.52837 0.64671C9.73822 0.647969 10.9297 0.936613 12.0006 1.48788C13.0715 2.03915 13.9899 2.83659 14.677 3.81179C15.364 4.78699 15.7992 5.91085 15.9453 7.08695C16.0913 8.26305 15.9438 9.45629 15.5155 10.5643C15.0871 11.6723 14.3907 12.6621 13.4859 13.4486C12.5811 14.2352 11.495 14.795 10.3207 15.0802C9.14642 15.3654 7.91901 15.3673 6.74378 15.0859C5.56855 14.8045 4.48057 14.2481 3.57317 13.4644L1.04883 11.2671"
+      stroke="black"
+      strokeWidth="1.19901"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M8.48438 8.73935V5.07715"
+      stroke="black"
+      strokeWidth="1.19901"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.67471 10.9224H1V15.5001"
+      stroke="black"
+      strokeWidth="1.19901"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+)
