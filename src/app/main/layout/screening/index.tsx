@@ -15,12 +15,13 @@ export const Screeining = () => {
 
           <div className="relative">
             <p className="mb-2 text-lg font-bold md:text-xl lg:text-2xl lg:mb-4">
-              Discover The Difference<br />
+              Discover The Difference
+              <br />
               With UNITY Complete
             </p>
 
             <p className="mb-4 md:mb-12 lg:text-lg">
-              Unity Complete NIPT <br className="lg:hidden" />+ Carrier Screen
+              Unity Complete NIPT <br className="lg:hidden" />+ Carrier Screen{" "}
               <b>3650 AED</b>
             </p>
 

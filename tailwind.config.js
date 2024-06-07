@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
+        xs: "375px",
         xl: "1440px",
       },
       container: {
@@ -27,7 +28,8 @@ export default {
         "accent-dark": "#6D5700",
         grey: "#888888",
         "grey-light": "#F1F0EF",
-        "grey-dark": "#373736",
+        "grey-dark": "#565656",
+        "grey-darker": "#373736",
       },
       fontFamily: {
         default: "'Inter Variable', sans-serif",

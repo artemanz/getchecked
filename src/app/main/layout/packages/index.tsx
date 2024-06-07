@@ -108,8 +108,8 @@ export const Packages = () => {
           </ul>
         </>
       ),
-      oldprice: "2200",
-      currentPrice: "1099",
+      oldprice: "11000",
+      currentPrice: "5500",
     },
   ]
 

@@ -20,7 +20,7 @@ export const About = () => {
             />
             <a
               href="#documents"
-              className="absolute bottom-0 right-0 grid w-12 rounded-full aspect-square bg-accent place-content-center md:right-2 lg:w-20 lg:right-5 lg:-bottom-1"
+              className="absolute bottom-0 right-0 grid w-12 rounded-full aspect-square bg-accent place-content-center xs:w-14 md:right-2 lg:w-20 lg:right-5 lg:-bottom-1"
             >
               <Picture
                 className="w-8 aspect-square md:w-8 lg:w-12"

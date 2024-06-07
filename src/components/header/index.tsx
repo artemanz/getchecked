@@ -19,9 +19,24 @@ export const Header = () => {
     { title: "Ru", img: ru },
   ]
   const socials = [
-    { id: "facebook", href: SOCIALS.facebook, icon: FaFacebook },
-    { id: "instagram", href: SOCIALS.instagram, icon: FaInstagram },
-    { id: "linkedin", href: SOCIALS.linkedin, icon: FaLinkedin },
+    {
+      id: "facebook",
+      href: SOCIALS.facebook,
+      icon: FaFacebook,
+      label: "Go to Getchecked Clinik Facebook Page",
+    },
+    {
+      id: "instagram",
+      href: SOCIALS.instagram,
+      icon: FaInstagram,
+      label: "Go to Getchecked Clinik Instagram Page",
+    },
+    {
+      id: "linkedin",
+      href: SOCIALS.linkedin,
+      icon: FaLinkedin,
+      label: "Go to Getchecked Clinik LinkedIn Page",
+    },
   ]
 
   const [mobileMenu, setMobileMenu] = useState(false)
@@ -48,7 +63,7 @@ export const Header = () => {
 
           <div className="hidden lg:flex justify-end items-center gap-4 bg-[linear-gradient(230deg,#FFE629_70%,#F4F4F3_70%)] w-[45rem] h-full pr-4">
             <a
-              className="flex items-center gap-2 text-grey-dark hover:text-accent-dark"
+              className="flex items-center gap-2 text-grey-darker hover:text-accent-dark"
               type="tel"
               href="tel:+971527007915"
             >
@@ -56,14 +71,15 @@ export const Header = () => {
               +971 52 700 7915
             </a>
 
-            <hr className="w-px h-5 bg-grey-dark" />
+            <hr className="w-px h-5 bg-grey-darker" />
 
             <ul className="flex items-center gap-2">
               {socials.map((s) => (
                 <li key={s.id}>
                   <a
+                    aria-label={s.label}
                     target="_blank"
-                    className="grid w-6 h-6 rounded-full bg-grey-dark place-content-center"
+                    className="grid w-6 h-6 rounded-full bg-grey-darker place-content-center"
                     href={s.href}
                   >
                     <s.icon color="white" size={14} />
@@ -77,7 +93,10 @@ export const Header = () => {
 
       <div className="relative px-4 py-3">
         <div className="flex items-center justify-between">
-          <a href="https://getcheckedclinic.com/">
+          <a
+            href="https://getcheckedclinic.com/"
+            aria-label="Go to Getchecked Clinik Home Page"
+          >
             <Logo className="w-32 md:w-48" />
           </a>
 

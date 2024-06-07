@@ -1,5 +1,5 @@
 import { Main } from "@/app/main"
-import { Footer, Header } from "@/components"
+import { ContactMenu, Footer, Header } from "@/components"
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <Header />
       <Main />
       <Footer />
+      <ContactMenu />
     </div>
   )
 }

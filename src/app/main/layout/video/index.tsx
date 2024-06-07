@@ -72,7 +72,7 @@ export const Video = () => {
             className="w-full h-full"
             src="https://player.vimeo.com/video/385153257?h=060a084a73&color=36958e&title=0&byline=0&portrait=0"
             allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
+            title="video Unity Screen"
           ></iframe>
         </div>
       </div>

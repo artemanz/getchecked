@@ -39,9 +39,9 @@ export const Footer = () => {
   ]
 
   return (
-    <footer className="text-white bg-grey section">
+    <footer className="text-white bg-grey-dark section">
       <div className="container grid gap-4 md:grid-cols-2 md:gap-x-8 lg:grid-cols-[2fr_1fr]">
-        <a href="https://getcheckedclinic.com/">
+        <a href="https://getcheckedclinic.com/" aria-label="Go to Getchecked Clinik Home Page">
           <Logo className="lg:w-32 lg:h-10" />
         </a>
 
@@ -53,22 +53,26 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-6 py-4 md:col-start-2 md:row-start-2 md:row-end-4 md:py-0 lg:row-start-1">
           <ul className="flex flex-col gap-4">
-            {contacts.map((item) => (
-              <li key={item.id}>
-                <a
-                  href={item.href}
-                  className="flex items-start gap-2 leading-[1.1]"
-                >
-                  <item.icon className="flex-shrink-0 w-4 h-4 mt-0.5" />
-                  {item.text}
-                </a>
-              </li>
-            ))}
+            {contacts.map((item) => {
+              const Tag = item.href ? "a" : "span"
+              return (
+                <li key={item.id}>
+                  <Tag
+                    href={item.href}
+                    className="flex items-start gap-2 leading-[1.1]"
+                  >
+                    <item.icon className="flex-shrink-0 w-4 h-4 mt-0.5" />
+                    {item.text}
+                  </Tag>
+                </li>
+              )
+            })}
           </ul>
 
           <ul className="flex justify-center gap-3 md:justify-start">
             <li>
               <a
+                aria-label="Go to Getchecked Clinik Facebook Page"
                 target="_blank"
                 className="bg-[#3B5998] p-2 rounded-full grid place-content-center"
                 href={SOCIALS.facebook}
@@ -78,6 +82,7 @@ export const Footer = () => {
             </li>
             <li>
               <a
+                aria-label="Go to Getchecked Clinik LinkedIn Page"
                 target="_blank"
                 className="bg-[#0077B5] p-2 rounded-full grid place-content-center"
                 href={SOCIALS.linkedin}
@@ -87,6 +92,7 @@ export const Footer = () => {
             </li>
             <li>
               <a
+                aria-label="Go to Getchecked Clinik Instagram Page"
                 target="_blank"
                 className="bg-[#262626] p-2 rounded-full grid place-content-center"
                 href={SOCIALS.instagram}
