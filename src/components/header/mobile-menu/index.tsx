@@ -1,4 +1,4 @@
-import { NAVIGATION } from "@/lib/constants/routes"
+import { useNavigation } from "@/lib/hooks/useNavigation"
 import { Variants, motion } from "framer-motion"
 
 type Props = {
@@ -6,6 +6,7 @@ type Props = {
 }
 
 export const MobileMenu = ({ hide }: Props) => {
+  const navigation = useNavigation()
   const variants: Variants = {
     opened: {
       scaleY: 1,
@@ -36,7 +37,7 @@ export const MobileMenu = ({ hide }: Props) => {
         className="relative w-full px-4 origin-top bg-white"
       >
         <ul className="">
-          {NAVIGATION.map((nav) => (
+          {navigation.map((nav) => (
             <li key={nav.title}>
               <a
                 className="block p-2 transition-colors active:bg-grey-light"

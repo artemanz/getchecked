@@ -1,8 +1,11 @@
 import { Animations } from "@/lib/types"
 import { CursiveLine } from "./svg"
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 export const Video = () => {
+  const { t } = useTranslation("main")
+
   const animations: Animations = {
     cursiveLine() {
       return {
@@ -48,7 +51,7 @@ export const Video = () => {
         <div>
           <h2 className="section-title">
             <span className="relative">
-              One Test{" "}
+              {t("video.title.1")}{" "}
               <motion.div
                 {...animations.cursiveLine()}
                 className="absolute inset-x-0 max-w-full -bottom-1 "
@@ -56,9 +59,9 @@ export const Video = () => {
                 <CursiveLine />
               </motion.div>
             </span>{" "}
-            Multiple Insights <br />{" "}
+            {t("video.title.2")} <br />{" "}
             <span className="relative">
-              To Your Baby's Health
+              {t("video.title.3")}
               <motion.div
                 {...animations.backgroundRect()}
                 className="absolute -inset-x-1 inset-y-0 bg-accent z-[-1]"

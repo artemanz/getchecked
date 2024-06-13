@@ -1,0 +1,456 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "career": "Career",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "components": {
+    "button": "Book Now",
+    "footer": {
+      "info": "Our clinics are specially chosen to offer you a discreet and confidential service. Confidence comes from knowing your tests are accurate. We only work with accredited Laboratories.",
+      "advertisement": "Advertisement License No: 6DDI7WHT-050923",
+      "copyright": "getcheckedclinic.com © 2024",
+      "adress": "The Mall, Umm Suqeim - Opposite Jumeirah Beach Hotel"
+    }
+  },
+  "main": {
+    "hero": {
+      "title-onco": "Oncology Testing",
+      "title-prenatal": "Prenatal Screening",
+      "subtitle": "At the Forefront of Disease Detection"
+    },
+    "about": {
+      "title": "About",
+      "card": {
+        "title": "Prenatal Screening",
+        "text": {
+          "1": "UNITY Screen™ includes a carrier screen as well as a single-gene(for recessive conditions) and aneuploidy",
+          "2": "and only requires a maternal blood draw at 10+ weeks to assess fetal risk. No paternal sample needed.",
+          "bold": "Non-Invasive Prenatal Test (NIPT)"
+        }
+      }
+    },
+    "needs": {
+      "title": "Who Needs This",
+      "cards": {
+        "1": {
+          "title": {
+            "1": "Designed for a",
+            "span": "general obstetric",
+            "2": "population"
+          }
+        },
+        "2": {
+          "title": "Expecting parents"
+        },
+        "3": {
+          "title": "Families with a history of genetic disorders"
+        },
+        "4": {
+          "title": "Pregnant woman at risk for alloimmunization"
+        }
+      },
+      "banner": {
+        "title": {
+          "1": "Know More.",
+          "2": "Know Early."
+        },
+        "subtitle": "One blood sample from mom. Direct genetic insights about your baby"
+      }
+    },
+    "video": {
+      "title": {
+        "1": "One Test",
+        "2": "Multiple Insights",
+        "3": "To Your Baby's Health"
+      }
+    },
+    "works": {
+      "title": "How It Works",
+      "cards": {
+        "1": {
+          "tab": {
+            "time": "Same Day",
+            "title": "Submit Sample"
+          },
+          "content": {
+            "title": "Submit Sample",
+            "text": "Book In-Clinic or At Home\nEffortlessly submit your sample: A simple, quick blood draw as early as 10 weeks is all it takes."
+          }
+        },
+        "2": {
+          "tab": {
+            "time": "2-3 Days",
+            "title": "USA Located Laboratory"
+          },
+          "content": {
+            "title": "USA Located Laboratory",
+            "text": "Your sample is sent to one of our exclusive partner laboratories in the USA, ensuring top-notch accuracy and reliability."
+          }
+        },
+        "3": {
+          "tab": {
+            "time": "5-8 Days",
+            "title": "Report"
+          },
+          "content": {
+            "title": "Report",
+            "text": "Within 5-10 days, you will receive a detailed genetic report and have the opportunity to schedule a free consultation to determine next steps."
+          }
+        }
+      }
+    },
+    "discover": {
+      "title": "Discover The Difference",
+      "cards": {
+        "1": {
+          "text": {
+            "bold": "Detects ~3x more affected pregnancies",
+            "next": "than traditional carrier screening"
+          }
+        },
+        "2": {
+          "text": {
+            "bold": "Of male partners do not get tested",
+            "next": "UNITY Fetal Risk Screen does not need the male partner's sample"
+          }
+        },
+        "3": {
+          "text": {
+            "bold": "Reassure patients early",
+            "next": "99% of pregnancies have a low risk of being affected"
+          }
+        },
+        "4": {
+          "text": {
+            "bold": "Assay sensitivity",
+            "next": "accurately detect affected pregnancies"
+          }
+        },
+        "5": {
+          "text": {
+            "bold": "Negative predictive value (NPV)",
+            "next": "trust in a negative result"
+          }
+        }
+      }
+    },
+    "packages": {
+      "title": {
+        "1": "UNITY Screen",
+        "2": "Packages"
+      },
+      "blood": "Blood from the Mother",
+      "report": "5-10 Days Report",
+      "includes": "Includes",
+      "find-out": "Find Out More",
+      "sample": "View Sample Report",
+      "currency": "AED",
+      "cards": {
+        "1": {
+          "title": {
+            "1": "NIPT UNITY",
+            "2": "Aneuploidy Screen"
+          },
+          "content": {
+            "1": "T13, T18, T21, and Sex Chromosomes",
+            "list": {
+              "1": "+ Optional Fetal Sex",
+              "2": "+ Optional Fetal RhD NIPT",
+              "3": "+ Optional 22q"
+            }
+          }
+        },
+        "2": {
+          "title": {
+            "1": "UNITY Carrier",
+            "2": "Screen"
+          },
+          "content": {
+            "1": "w/ sgNIPT Reflex",
+            "2": "Сhecks the baby's DNA for specific conditions if mother is a carrier"
+          }
+        },
+        "3": {
+          "title": {
+            "1": "UNITY Aneuploidy",
+            "2": "with Fetal Antigen NIPT"
+          },
+          "content": {
+            "1": "T13, T18, T21, and Sex Chromosomes",
+            "list": {
+              "1": "+ Optional Fetal Sex",
+              "2": "+ Optional Fetal RhD NIPT",
+              "3": "+ Optional Fetal Rbc Antigen NIPT",
+              "4": "+ Optional 22q"
+            }
+          }
+        },
+        "4": {
+          "title": {
+            "1": "UNITY Complete",
+            "2": "NIPT +Carrier"
+          },
+          "content": {
+            "1": "Carrier Screen w/ sgNIPT Reflex",
+            "2": "Aneuploidy Screen w/ T13, T18, T21, and Sex Chromosomes",
+            "list": {
+              "1": "+ Optional Fetal Sex",
+              "2": "+ Optional Fetal RhD NIPT",
+              "3": "+ Optional 22q"
+            }
+          }
+        },
+        "5": {
+          "title": {
+            "1": "UNITY Complete",
+            "2": "with Fetal Antigen NIPT"
+          },
+          "content": {
+            "1": "Carrier Screen w/ sgNIPT Reflex",
+            "2": "Aneuploidy Screen w/ T13, T18, T21, and Sex Chromosomes",
+            "list": {
+              "1": "+ Optional Fetal Sex",
+              "2": "+ Optional Fetal RhD NIPT",
+              "3": "+ Optional Fetal Rbc Antigen NIPT",
+              "4": "+ Optional 22q"
+            }
+          }
+        },
+        "6": {
+          "title": "BabyPeek",
+          "subtitle": "Available for free as an add-on to all UNITY packages",
+          "content": "Includes: Traits: Eye color, Red hair, Curly hair, Light or dark hair, Hair thickness, Freckles, Cilantro, Bitter taste, Asparagus odor, Sweet taste, Sweet vs. salty, Teeth"
+        }
+      },
+      "popups": {
+        "1": {
+          "title": "NIPT UNITY Aneuploidy Screen",
+          "content": {
+            "1": "Main Checks",
+            "2": "T13, T18, T21:",
+            "3": "T13 (Trisomy 13): Checks for Patau syndrome, caused by an extra chromosome 13.",
+            "4": "T18 (Trisomy 18): Checks for Edwards syndrome, caused by an extra chromosome 18.",
+            "5": "T21 (Trisomy 21): Checks for Down syndrome, caused by an extra chromosome 21.",
+            "6": "Sex Chromosomes:",
+            "7": "Checks for abnormalities in the X and Y chromosomes, which determine the baby's sex and can reveal conditions like Turner syndrome (missing an X chromosome in girls) or Klinefelter syndrome (an extra X chromosome in boys).",
+            "8": "Optional Checks",
+            "9": "Fetal Sex:",
+            "10": "Can determine if the baby is a boy or a girl.",
+            "11": "Fetal RhD:",
+            "12": "Checks if the baby has the RhD protein on their red blood cells, important if the mother is RhD-negative.",
+            "13": "22q:",
+            "14": "Checks for 22q11.2 deletion syndrome, caused by a small missing piece of chromosome 22, which can lead to various health issues.",
+            "15": "Sample Type",
+            "16": "The sample for this test is a blood sample from the mother. It involves drawing a small amount of blood, usually from the arm, to be analyzed in a lab.",
+            "17": "Summary",
+            "18": "NIPT UNITY Aneuploidy Screen: Checks for major chromosomal abnormalities (T13, T18, T21) and sex chromosome conditions.",
+            "19": "Optional Checks: Fetal sex, Fetal RhD status, and 22q11.2 deletion syndrome.",
+            "20": "Sample Type: Blood sample from the mother."
+          }
+        },
+        "2": {
+          "title": "UNITY Carrier Screen",
+          "content": {
+            "1": "This test checks if the mother is a carrier for certain genetic disorders. Being a carrier means you have a change (mutation) in one of your genes that could potentially be passed on to your baby, even if you don't have the disorder yourself. Common conditions checked by carrier screens include cystic fibrosis, spinal muscular atrophy, and various other inherited diseases.",
+            "2": "sgNIPT Reflex",
+            "3": "If the carrier screen shows that the mother is a carrier for certain genetic conditions, the test can reflex to a specialized non-invasive prenatal testing (sgNIPT) to further check if the baby has inherited these conditions. This second step uses the same blood sample but focuses on the baby's DNA.",
+            "4": "Sample Type",
+            "5": "The sample for this test is a blood sample from the mother. It involves drawing a small amount of blood, usually from the arm, to be analyzed in a lab.",
+            "6": "Summary",
+            "7": "UNITY Carrier Screen: Checks if the mother is a carrier of genetic disorders.",
+            "8": "sgNIPT Reflex: Further checks the baby's DNA for specific conditions if the mother is found to be a carrier.",
+            "9": "Sample Type: Blood sample from the mother."
+          }
+        },
+        "3": {
+          "title": "UNITY Aneuploidy Screen w/ Fetal Antigen NIPT",
+          "content": {
+            "1": "The UNITY Aneuploidy Screen with Fetal Antigen NIPT is a prenatal test that examines the baby's DNA found in the mother's blood for various genetic conditions and other important health markers. Here's a simpler explanation:",
+            "2": "Main Checks",
+            "3": "T13, T18, T21:",
+            "4": " T13 (Trisomy 13): Checks for Patau syndrome, caused by an extra chromosome 13.",
+            "5": "T18 (Trisomy 18): Checks for Edwards syndrome, caused by an extra chromosome 18.",
+            "6": "T21 (Trisomy 21): Checks for Down syndrome, caused by an extra chromosome 21.",
+            "7": "22q:",
+            "8": "Checks for 22q11.2 deletion syndrome, caused by a small missing piece of chromosome 22, which can lead to various health issues.",
+            "9": "Sex Chromosomes:",
+            "10": "Checks for abnormalities in the X and Y chromosomes, which determine the baby's sex and can reveal conditions like Turner syndrome (missing an X chromosome in girls) or Klinefelter syndrome (an extra X chromosome in boys).",
+            "11": "Optional Checks",
+            "12": "Fetal Sex:",
+            "13": "Can determine if the baby is a boy or a girl.",
+            "14": "Fetal RhD:",
+            "15": "Checks if the baby has the RhD protein on their red blood cells, important if the mother is RhD-negative.",
+            "16": "Fetal Rbc Antigen NIPT:",
+            "17": "Checks for specific antigens on the baby's red blood cells that could be important for the baby's blood compatibility and health.",
+            "18": "Sample Type",
+            "19": "The sample for this test is a blood sample from the mother. It involves drawing a small amount of blood, usually from the arm, to be analyzed in a lab.",
+            "20": "Summary",
+            "21": "UNITY Aneuploidy Screen w/ Fetal Antigen NIPT is a prenatal test that examines the baby's DNA found in the mother's blood for various genetic conditions and other important health markers.",
+            "22": "NIPT UNITY Aneuploidy Screen: Checks for major chromosomal abnormalities (T13, T18, T21) and sex chromosome conditions.",
+            "23": "Optional Checks: Fetal sex, Fetal RhD status, Fetal Rbc Antigen NIPT.",
+            "24": "Sample Type: Blood sample from the mother."
+          }
+        },
+        "4": {
+          "title": "UNITY Complete NIPT+Carrier",
+          "content": {
+            "1": "This comprehensive prenatal test combines two main types of screenings: the Carrier Screen and the Aneuploidy Screen. Here's a simpler explanation:",
+            "2": "Main Checks",
+            "3": "Carrier Screen:",
+            "4": "This part of the test checks if the mother is a carrier for certain genetic disorders. Being a carrier means you have a change (mutation) in one of your genes that could potentially be passed on to your baby, even if you don't have the disorder yourself. Common conditions checked by carrier screens include cystic fibrosis, spinal muscular atrophy, and various other inherited diseases.",
+            "5": "sgNIPT Reflex:",
+            "6": "If the carrier screen shows that the mother is a carrier for certain genetic conditions, the test can reflex to a specialized non-invasive prenatal testing (sgNIPT) to further check if the baby has inherited these conditions. This second step uses the same blood sample but focuses on the baby's DNA.",
+            "7": "Aneuploidy Screen:",
+            "8": "This part of the test checks for major chromosomal abnormalities:",
+            "9": "T13, T18, T21:",
+            "10": "T13 (Trisomy 13): Checks for Patau syndrome, caused by an extra chromosome 13.",
+            "11": " T18 (Trisomy 18): Checks for Edwards syndrome, caused by an extra chromosome 18.",
+            "12": "T21 (Trisomy 21): Checks for Down syndrome, caused by an extra chromosome 21.",
+            "13": "Sex Chromosomes:",
+            "14": "Checks for abnormalities in the X and Y chromosomes, which determine the baby's sex and can reveal conditions like Turner syndrome (missing an X chromosome in girls) or Klinefelter syndrome (an extra X chromosome in boys).",
+            "15": "Optional Checks",
+            "16": "Fetal Sex:",
+            "17": "Can determine if the baby is a boy or a girl.",
+            "18": "Fetal RhD:",
+            "19": "Checks if the baby has the RhD protein on their red blood cells, important if the mother is RhD-negative.",
+            "20": "22q:",
+            "21": "Checks for 22q11.2 deletion syndrome, caused by a small missing piece of chromosome 22, which can lead to various health issues.",
+            "22": "Sample Type",
+            "23": "   The sample for this test is a blood sample from the mother. It involves drawing a small amount of blood, usually from the arm, to be analyzed in a lab.",
+            "24": "Summary",
+            "25": "Carrier Screen: Checks if the mother is a carrier of genetic disorders.",
+            "26": "sgNIPT Reflex: Further checks the baby's DNA for specific conditions if the mother is found to be a carrier.",
+            "27": "Aneuploidy Screen: Checks for major chromosomal abnormalities (T13, T18, T21) and sex chromosome conditions.",
+            "28": "Optional Checks: Fetal sex, Fetal RhD status, and 22q11.2 deletion syndrome.",
+            "29": "Sample Type: Blood sample from the mother."
+          }
+        },
+        "5": {
+          "title": "UNITY Complete w/ Fetal Antigen NIPT",
+          "content": {
+            "1": "This comprehensive prenatal test combines two main types of screenings: the Carrier Screen and the Aneuploidy Screen. Here's a simpler explanation:",
+            "2": "Main Checks",
+            "3": "Carrier Screen:",
+            "4": "This part of the test checks if the mother is a carrier for certain genetic disorders. Being a carrier means you have a change (mutation) in one of your genes that could potentially be passed on to your baby, even if you don't have the disorder yourself. Common conditions checked by carrier screens include cystic fibrosis, spinal muscular atrophy, and various other inherited diseases.",
+            "5": "sgNIPT Reflex:",
+            "6": "If the carrier screen shows that the mother is a carrier for certain genetic conditions, the test can reflex to a specialized non-invasive prenatal testing (sgNIPT) to further check if the baby has inherited these conditions. This second step uses the same blood sample but focuses on the baby's DNA.",
+            "7": "Aneuploidy Screen:",
+            "8": "This part of the test checks for major chromosomal abnormalities:",
+            "9": "T13, T18, T21:",
+            "10": "T13 (Trisomy 13): Checks for Patau syndrome, caused by an extra chromosome 13.",
+            "11": "T18 (Trisomy 18): Checks for Edwards syndrome, caused by an extra chromosome 18.",
+            "12": "T21 (Trisomy 21): Checks for Down syndrome, caused by an extra chromosome 21.",
+            "13": "Sex Chromosomes:",
+            "14": "Checks for abnormalities in the X and Y chromosomes, which determine the baby's sex and can reveal conditions like Turner syndrome (missing an X chromosome in girls) or Klinefelter syndrome (an extra X chromosome in boys).",
+            "15": "Optional Checks",
+            "16": "Fetal Sex:",
+            "17": "Can determine if the baby is a boy or a girl.",
+            "18": "Fetal RhD:",
+            "19": "Checks if the baby has the RhD protein on their red blood cells, important if the mother is RhD-negative.",
+            "20": "Fetal Rbc Antigen NIPT:",
+            "21": "Checks for specific antigens on the baby's red blood cells that could be important for the baby's blood compatibility and health.",
+            "22": "22q:",
+            "23": "Checks for 22q11.2 deletion syndrome, caused by a small missing piece of chromosome 22, which can lead to various health issues.",
+            "24": "Sample Type",
+            "25": "The sample for this test is a blood sample from the mother. It involves drawing a small amount of blood, usually from the arm, to be analyzed in a lab.",
+            "26": "Summary",
+            "27": "Carrier Screen: Checks if the mother is a carrier of genetic disorders.",
+            "28": "sgNIPT Reflex: Further checks the baby's DNA for specific conditions if the mother is found to be a carrier.",
+            "29": "Aneuploidy Screen: Checks for major chromosomal abnormalities (T13, T18, T21) and sex chromosome conditions.",
+            "30": "Optional Checks: Fetal sex, Fetal RhD status, and 22q11.2 deletion syndrome.",
+            "31": "Sample Type: Blood sample from the mother."
+          }
+        },
+        "6": {
+          "title": "BabyPeek",
+          "content": {
+            "1": "BabyPeek is available exclusively as an add-on to UNITY Complete. Will your baby have brown eyes, blond curls, or a sweet tooth just like you? Find out as early as 10 weeks with BabyPeek, the first and only genetic test of its kind.",
+            "2": "BabyPeek uses advanced technology to analyze well-known genetic factors that determine what traits a baby will most likely have. Much like a weather report, results are calculated as probabilities.",
+            "3": "Unlock 12 unique traits beyond gender",
+            "4": "Traits: Eye color, Red hair, Curly hair, Light or dark hair, Hair thickness, Freckles, Cilantro, Bitter taste, Asparagus odor, Sweet taste, Sweet vs. salty, Teeth",
+            "5": "Sample Type",
+            "6": " The sample for this test is a blood sample from the mother. It involves drawing a small amount of blood, usually from the arm, to be analyzed in a lab.",
+            "7": "Summary",
+            "8": "BabyPeek is available exclusively as an add-on to UNITY Complete.",
+            "9": "BabyPeek is not a medical test.",
+            "10": "Sample Type: Blood sample from the mother."
+          }
+        }
+      },
+      "second-title": "Gender Detection",
+      "gender-detection": {
+        "title": {
+          "1": "Peakaboo DNA Test",
+          "2": "Early Gender Detection"
+        },
+        "content": {
+          "1": "Fetal Sex",
+          "2": "Peekaboo offers an early gender test, providing results up to 14 weeks earlier than traditional ultrasounds.",
+          "3": "Determines your baby's gender with over 99% accuracy."
+        }
+      }
+    },
+    "screening": {
+      "banner": {
+        "title": {
+          "1": "Unlock Your Baby's 12 Unique",
+          "2": "Traits Before Birth"
+        },
+        "subtitle": {
+          "text": "Will your baby have brown eyes, blond curls just like you? Find out with",
+          "bold": "BabyPeek"
+        }
+      }
+    },
+    "documents": {
+      "title": "Sample Reports"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": {
+        "1": {
+          "q": "How does UNITY Complete work?",
+          "answer": {
+            "1": "UNITY Complete takes advantage of a pregnancy's DNA (circulating cell-free DNA, ccfDNA) floating in the maternal bloodstream to assess for genetic changes. Some of these genetic changes are extremely small - like changes to single genes that can cause recessive conditions. Some of these genetic changes involve the presence of an entire extra chromosome (aneuploidies).",
+            "2": "Our specialized QCT technology enables us to be able to count the genetic information we see from both mom and baby in a blood sample, and determine if there are differences that could indicate a baby has a higher chance of being affected with one of these conditions."
+          }
+        },
+        "2": {
+          "q": "What genetic conditions does UNITY Complete screen for?",
+          "answer": {
+            "1": "UNITY Complete offers multiple genetic insights from a single maternal blood sample. The results you receive will depend on which tests your healthcare provider orders.",
+            "2": "UNITY Aneuploidy NIPT screens pregnancies for chromosome conditions caused by extra or missing chromosomes including trisomy 21, trisomy 18, trisomy 13, monosomy X, XXX, XXY, and XYY. UNITY Aneuploidy NIPT can also tell you the baby's gender. For twin pregnancies, you will also learn if your twins are identical or fraternal.",
+            "3": "Depending on your clinical picture, your doctor may also order UNITY Fetal RhD NIPT for moms who have a RhD- blood type, UNITY Fetal Antigen NIPT for moms who are alloimmunized to certain antigens, and 22q11.2 microdeletion analysis.",
+            "4": "UNITY Fetal Risk Screen determines if a pregnant person is a carrier for cystic fibrosis, spinal muscular atrophy, sickle cell disease, alpha-thalassemia, or beta-thalassemia. If you're found to be a carrier for one of these conditions, the fetal DNA will be screened to determine if there is a high-chance or a low-chance for a pregnancy to be affected with a condition. In some cases, like twin pregnancies or those achieved with an egg donor, we are not able to perform a fetal risk assessment.",
+            "5": "Your provider may also order carrier screening for fragile X syndrome. If the mom is determined to be a carrier for this, our assay can perform cell-free DNA analysis to determine if the fetus is a male- this would put the fetus at higher risk to develop Fragile X Syndrome."
+          }
+        },
+        "3": {
+          "q": "What are the possible results I can get with UNITY Complete?",
+          "answer": {
+            "1": "Possible results with UNITY Aneuploidy NIPT typically fall into low-risk fetus or high-risk fetus results.",
+            "2": "A Low Risk Fetus result means that the chance your pregnancy is affected with the screened conditions is significantly reduced, but not eliminated.",
+            "3": "A High-Risk Fetus result means there is an increased chance for your pregnancy to be affected with a specific condition. Confirmatory testing via chorionic villus sampling, amniocentesis, or postnatal evaluation is recommended.",
+            "4": "Note: this result does not guarantee a healthy child and does not eliminate the possibility of other chromosome abnormalities, birth defects, or other genetic conditions.",
+            "5": "UNITY Fetal Risk Screen provides maternal carrier screening results (reported as a positive carrier or negative carrier). If a pregnant person is found to be a carrier, fetal testing will automatically be performed via cell-free DNA analysis. Possible results from the fetal testing can fall into decreased/low-risk categories or increased/high-risk categories."
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "If you have a query - we'll do our best to assist you.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "button": "Send"
+      }
+    }
+  }
+}

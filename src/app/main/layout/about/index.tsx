@@ -3,12 +3,15 @@ import aboutImage_sm from "@/assets/images/about/about-image@sm.webp"
 import aboutImage_md from "@/assets/images/about/about-image@md.webp"
 import aboutImage_lg from "@/assets/images/about/about-image@lg.webp"
 import file from "@/assets/svg/icons/file.svg"
+import { useTranslation } from "react-i18next"
 
 export const About = () => {
+  const { t } = useTranslation(["main", "components"])
+
   return (
     <section className="section">
       <div className="container">
-        <h2 className="section-title">About</h2>
+        <h2 className="section-title">{t("main:about.title")}</h2>
 
         <div className="px-2 pt-3 pb-8 bg-grey-light rounded-[2.5rem] md:px-6 lg:pt-8 lg:px-8">
           <div className="relative mb-5">
@@ -31,16 +34,14 @@ export const About = () => {
           </div>
 
           <p className="mb-3 text-xl font-semibold text-center lg:hidden">
-            Prenatal Screening
+            {t("main:about.card.title")}
           </p>
 
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:gap-8">
             <p className="px-2 lg:px-0 lg:text-lg">
-              UNITY Screen™ includes a carrier screen as well as a single-gene
-              (for recessive conditions) and aneuploidy{" "}
-              <b>Non-Invasive Prenatal Test (NIPT)</b> and only requires a
-              maternal blood draw at 10+ weeks to assess fetal risk. No paternal
-              sample needed.
+              {t("main:about.card.text.1")}{" "}
+              <b>{t("main:about.card.text.bold")}</b>{" "}
+              {t("main:about.card.text.2")}
             </p>
 
             <Button
@@ -48,7 +49,7 @@ export const About = () => {
               as="link"
               href="#contacts"
             >
-              Book Now
+              {t("components:button")}
             </Button>
           </div>
         </div>

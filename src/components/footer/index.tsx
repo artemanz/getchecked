@@ -9,8 +9,11 @@ import {
   WhatsApp,
 } from "./svg"
 import { Logo } from "../svg"
+import { useTranslation } from "react-i18next"
 
 export const Footer = () => {
+  const { t } = useTranslation("components", { keyPrefix: "footer" })
+
   const contacts = [
     {
       id: "whatsapp",
@@ -34,22 +37,21 @@ export const Footer = () => {
       id: "location",
       href: undefined,
       icon: Location,
-      text: "The Mall, Umm Suqeim - Opposite Jumeirah Beach Hotel",
+      text: t("adress"),
     },
   ]
 
   return (
     <footer className="text-white bg-grey-dark section">
       <div className="container grid gap-4 md:grid-cols-2 md:gap-x-8 lg:grid-cols-[2fr_1fr]">
-        <a href="https://getcheckedclinic.com/" aria-label="Go to Getchecked Clinik Home Page">
+        <a
+          href="https://getcheckedclinic.com/"
+          aria-label="Go to Getchecked Clinik Home Page"
+        >
           <Logo className="lg:w-32 lg:h-10" />
         </a>
 
-        <p className="md:col-start-1 lg:max-w-[22.5rem]">
-          Our clinics are specially chosen to offer you a discreet and
-          confidential service. Confidence comes from knowing your tests are
-          accurate. We only work with accredited Laboratories.
-        </p>
+        <p className="md:col-start-1 lg:max-w-[22.5rem]">{t("info")}</p>
 
         <div className="flex flex-col gap-6 py-4 md:col-start-2 md:row-start-2 md:row-end-4 md:py-0 lg:row-start-1">
           <ul className="flex flex-col gap-4">
@@ -103,13 +105,9 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <p className="hidden md:block">
-          Advertisement License No: 6DDI7WHT-050923
-        </p>
+        <p className="hidden md:block">{t("advertisement")}</p>
 
-        <p className="text-center md:col-span-2 lg:mt-4">
-          getcheckedclinic.com © 2024
-        </p>
+        <p className="text-center md:col-span-2 lg:mt-4">{t("copyright")}</p>
       </div>
     </footer>
   )

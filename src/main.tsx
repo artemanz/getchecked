@@ -5,6 +5,7 @@ import 'swiper/css';
 import "@/styles/index.scss"
 
 import App from './app/App.tsx'
+import "./i18n"
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

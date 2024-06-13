@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next"
+
 export const PopupContent = ({ id, hide }: { id: number; hide(): void }) => {
+  const { t } = useTranslation("main")
+
   const PopupWrap = ({
     children,
     title,
@@ -24,84 +28,54 @@ export const PopupContent = ({ id, hide }: { id: number; hide(): void }) => {
   switch (id) {
     case 1:
       return (
-        <PopupWrap title="NIPT UNITY Aneuploidy Screen">
+        <PopupWrap title={t("packages.popups.1.title")}>
           <div className="overflow-y-auto flex flex-col gap-2 custom-scrollbar">
             <p>
-              <b>Main Checks</b>
+              <b>{t("packages.popups.1.content.1")}</b>
             </p>
             <p>
-              <b>T13, T18, T21:</b>
+              <b>{t("packages.popups.1.content.2")}</b>
             </p>
-            <p>
-              T13 (Trisomy 13): Checks for Patau syndrome, caused by an extra
-              chromosome 13.
-            </p>
-            <p>
-              T18 (Trisomy 18): Checks for Edwards syndrome, caused by an extra
-              chromosome 18.
-            </p>
-            <p>
-              T21 (Trisomy 21): Checks for Down syndrome, caused by an extra
-              chromosome 21.
-            </p>
+            <p>{t("packages.popups.1.content.3")}</p>
+            <p>{t("packages.popups.1.content.4")}</p>
+            <p>{t("packages.popups.1.content.5")}</p>
 
             <p className="mt-8">
-              <b>Sex Chromosomes:</b>
+              <b>{t("packages.popups.1.content.6")}</b>
             </p>
 
-            <p>
-              Checks for abnormalities in the X and Y chromosomes, which
-              determine the baby's sex and can reveal conditions like Turner
-              syndrome (missing an X chromosome in girls) or Klinefelter
-              syndrome (an extra X chromosome in boys).
-            </p>
+            <p>{t("packages.popups.1.content.7")}</p>
 
             <p className="mt-8">
-              <b>Optional Checks</b>
+              <b>{t("packages.popups.1.content.8")}</b>
             </p>
             <p className="mt-2">
-              <b>Fetal Sex:</b>
+              <b>{t("packages.popups.1.content.9")}</b>
             </p>
-            <p>Can determine if the baby is a boy or a girl.</p>
+            <p>{t("packages.popups.1.content.10")}</p>
             <p className="mt-2">
-              <b>Fetal RhD:</b>
+              <b>{t("packages.popups.1.content.11")}</b>
             </p>
 
-            <p>
-              Checks if the baby has the RhD protein on their red blood cells,
-              important if the mother is RhD-negative.
-            </p>
+            <p>{t("packages.popups.1.content.12")}</p>
 
             <p className="mt-2">
-              <b>22q:</b>
+              <b>{t("packages.popups.1.content.13")}</b>
             </p>
 
-            <p>
-              Checks for 22q11.2 deletion syndrome, caused by a small missing
-              piece of chromosome 22, which can lead to various health issues.
-            </p>
+            <p>{t("packages.popups.1.content.14")}</p>
 
             <p className="mt-8">
-              <b>Sample Type</b>
+              <b>{t("packages.popups.1.content.15")}</b>
             </p>
-            <p>
-              The sample for this test is a blood sample from the mother. It
-              involves drawing a small amount of blood, usually from the arm, to
-              be analyzed in a lab.
-            </p>
+            <p>{t("packages.popups.1.content.16")}</p>
 
             <p className="mt-8">
-              <b>Summary</b>
+              <b>{t("packages.popups.1.content.17")}</b>
             </p>
-            <p>
-              NIPT UNITY Aneuploidy Screen: Checks for major chromosomal
-              abnormalities (T13, T18, T21) and sex chromosome conditions.
-            </p>
-            <p>
-              Optional Checks: Fetal sex, Fetal RhD status, and 22q11.2 deletion
-              syndrome.
-            </p>
-            <p>Sample Type: Blood sample from the mother.</p>
+            <p>{t("packages.popups.1.content.18")}</p>
+            <p>{t("packages.popups.1.content.19")}</p>
+            <p>{t("packages.popups.1.content.20")}</p>
           </div>
         </PopupWrap>
       )
@@ -109,48 +83,25 @@ export const PopupContent = ({ id, hide }: { id: number; hide(): void }) => {
       return (
         <PopupWrap title="UNITY Carrier Screen">
           <div className="overflow-y-auto flex flex-col gap-2 custom-scrollbar">
-            <p>
-              This test checks if the mother is a carrier for certain genetic
-              disorders. Being a carrier means you have a change (mutation) in
-              one of your genes that could potentially be passed on to your
-              baby, even if you don't have the disorder yourself. Common
-              conditions checked by carrier screens include cystic fibrosis,
-              spinal muscular atrophy, and various other inherited diseases.
-            </p>
+            <p>{t("packages.popups.2.content.1")}</p>
 
             <p className="mt-8">
-              <b>sgNIPT Reflex</b>
+              <b>{t("packages.popups.2.content.2")}</b>
             </p>
 
-            <p>
-              If the carrier screen shows that the mother is a carrier for
-              certain genetic conditions, the test can reflex to a specialized
-              non-invasive prenatal testing (sgNIPT) to further check if the
-              baby has inherited these conditions. This second step uses the
-              same blood sample but focuses on the baby's DNA.
-            </p>
+            <p>{t("packages.popups.2.content.3")}</p>
 
             <p className="mt-8">
-              <b>Sample Type</b>
+              <b>{t("packages.popups.2.content.4")}</b>
             </p>
-            <p>
-              The sample for this test is a blood sample from the mother. It
-              involves drawing a small amount of blood, usually from the arm, to
-              be analyzed in a lab.
-            </p>
+            <p>{t("packages.popups.2.content.5")}</p>
 
             <p className="mt-8">
-              <b>Summary</b>
+              <b>{t("packages.popups.2.content.6")}</b>
             </p>
-            <p>
-              UNITY Carrier Screen: Checks if the mother is a carrier of genetic
-              disorders.
-            </p>
-            <p>
-              sgNIPT Reflex: Further checks the baby's DNA for specific
-              conditions if the mother is found to be a carrier.
-            </p>
-            <p>Sample Type: Blood sample from the mother.</p>
+            <p>{t("packages.popups.2.content.7")}</p>
+            <p>{t("packages.popups.2.content.8")}</p>
+            <p>{t("packages.popups.2.content.9")}</p>
           </div>
         </PopupWrap>
       )
@@ -158,370 +109,240 @@ export const PopupContent = ({ id, hide }: { id: number; hide(): void }) => {
       return (
         <PopupWrap title="UNITY Aneuploidy Screen w/ Fetal Antigen NIPT">
           <div className="overflow-y-auto flex flex-col gap-2 custom-scrollbar">
-            <p>
-              The UNITY Aneuploidy Screen with Fetal Antigen NIPT is a prenatal
-              test that examines the baby's DNA found in the mother's blood for
-              various genetic conditions and other important health markers.
-              Here's a simpler explanation:
-            </p>
+            <p>{t("packages.popups.3.content.1")}</p>
             <p className="mt-8">
-              <b>Main Checks</b>
+              <b>{t("packages.popups.3.content.2")}</b>
             </p>
             <p>
-              <b>T13, T18, T21:</b>
+              <b>{t("packages.popups.3.content.3")}</b>
             </p>
-            <p>
-              T13 (Trisomy 13): Checks for Patau syndrome, caused by an extra
-              chromosome 13.
-            </p>
-            <p>
-              T18 (Trisomy 18): Checks for Edwards syndrome, caused by an extra
-              chromosome 18.
-            </p>
-            <p>
-              T21 (Trisomy 21): Checks for Down syndrome, caused by an extra
-              chromosome 21.
-            </p>
+            <p>{t("packages.popups.3.content.4")}</p>
+            <p>{t("packages.popups.3.content.5")}</p>
+            <p>{t("packages.popups.3.content.6")}</p>
 
             <p className="mt-2">
-              <b>22q:</b>
+              <b>{t("packages.popups.3.content.7")}</b>
             </p>
 
-            <p>
-              Checks for 22q11.2 deletion syndrome, caused by a small missing
-              piece of chromosome 22, which can lead to various health issues.
-            </p>
+            <p>{t("packages.popups.3.content.8")}</p>
 
             <p className="mt-2">
-              <b>Sex Chromosomes:</b>
+              <b>{t("packages.popups.3.content.9")}</b>
             </p>
 
-            <p>
-              Checks for abnormalities in the X and Y chromosomes, which
-              determine the baby's sex and can reveal conditions like Turner
-              syndrome (missing an X chromosome in girls) or Klinefelter
-              syndrome (an extra X chromosome in boys).
-            </p>
+            <p>{t("packages.popups.3.content.10")}</p>
 
             <p className="mt-8">
-              <b>Optional Checks</b>
+              <b>{t("packages.popups.3.content.11")}</b>
             </p>
             <p className="mt-2">
-              <b>Fetal Sex:</b>
+              <b>{t("packages.popups.3.content.12")}</b>
             </p>
-            <p>Can determine if the baby is a boy or a girl.</p>
+            <p>{t("packages.popups.3.content.13")}</p>
             <p className="mt-2">
-              <b>Fetal RhD:</b>
+              <b>{t("packages.popups.3.content.14")}</b>
             </p>
-            <p>
-              Checks if the baby has the RhD protein on their red blood cells,
-              important if the mother is RhD-negative.
-            </p>
+            <p>{t("packages.popups.3.content.15")}</p>
 
             <p className="mt-2">
-              <b>Fetal Rbc Antigen NIPT:</b>
+              <b>{t("packages.popups.3.content.16")}</b>
             </p>
 
-            <p>
-              Checks for specific antigens on the baby's red blood cells that
-              could be important for the baby's blood compatibility and health.
-            </p>
+            <p>{t("packages.popups.3.content.17")}</p>
 
             <p className="mt-8">
-              <b>Sample Type</b>
+              <b>{t("packages.popups.3.content.18")}</b>
             </p>
-            <p>
-              The sample for this test is a blood sample from the mother. It
-              involves drawing a small amount of blood, usually from the arm, to
-              be analyzed in a lab.
-            </p>
+            <p>{t("packages.popups.3.content.19")}</p>
 
             <p className="mt-8">
-              <b>Summary</b>
+              <b>{t("packages.popups.3.content.20")}</b>
             </p>
-            <p>
-              UNITY Aneuploidy Screen w/ Fetal Antigen NIPT is a prenatal test
-              that examines the baby's DNA found in the mother's blood for
-              various genetic conditions and other important health markers.
-            </p>
-            <p>
-              NIPT UNITY Aneuploidy Screen: Checks for major chromosomal
-              abnormalities (T13, T18, T21) and sex chromosome conditions.
-            </p>
-            <p>
-              Optional Checks: Fetal sex, Fetal RhD status, Fetal Rbc Antigen
-              NIPT.
-            </p>
-            <p>Sample Type: Blood sample from the mother.</p>
+            <p>{t("packages.popups.3.content.21")}</p>
+            <p>{t("packages.popups.3.content.22")}</p>
+            <p>{t("packages.popups.3.content.23")}</p>
+            <p>{t("packages.popups.3.content.24")}</p>
           </div>
         </PopupWrap>
       )
     case 4:
       return (
-        <PopupWrap title="UNITY Complete NIPT+Carrier">
+        <PopupWrap title={t("packages.popups.4.title")}>
           <div className="overflow-y-auto flex flex-col gap-2 custom-scrollbar">
-            <p>
-              This comprehensive prenatal test combines two main types of
-              screenings: the Carrier Screen and the Aneuploidy Screen. Here's a
-              simpler explanation:
-            </p>
+            <p>{t("packages.popups.4.content.1")}</p>
             <p className="mt-8">
-              <b>Main Checks</b>
+              <b>{t("packages.popups.4.content.2")}</b>
             </p>
             <p>
-              <b>Carrier Screen:</b>
+              <b>{t("packages.popups.4.content.3")}</b>
             </p>
-            <p>
-              This part of the test checks if the mother is a carrier for
-              certain genetic disorders. Being a carrier means you have a change
-              (mutation) in one of your genes that could potentially be passed
-              on to your baby, even if you don't have the disorder yourself.
-              Common conditions checked by carrier screens include cystic
-              fibrosis, spinal muscular atrophy, and various other inherited
-              diseases.
-            </p>
+            <p>{t("packages.popups.4.content.4")}</p>
 
             <p className="mt-2">
-              <b>sgNIPT Reflex:</b>
+              <b>{t("packages.popups.4.content.5")}</b>
             </p>
 
-            <p>
-              If the carrier screen shows that the mother is a carrier for
-              certain genetic conditions, the test can reflex to a specialized
-              non-invasive prenatal testing (sgNIPT) to further check if the
-              baby has inherited these conditions. This second step uses the
-              same blood sample but focuses on the baby's DNA.
-            </p>
+            <p>{t("packages.popups.4.content.6")}</p>
 
             <p className="mt-2">
-              <b>Aneuploidy Screen:</b>
+              <b>{t("packages.popups.4.content.7")}</b>
             </p>
 
-            <p>
-              This part of the test checks for major chromosomal abnormalities:
-            </p>
+            <p>{t("packages.popups.4.content.8")}</p>
 
             <p className="mt-2">
-              <b>T13, T18, T21:</b>
+              <b>{t("packages.popups.4.content.9")}</b>
             </p>
 
-            <p>
-              T13 (Trisomy 13): Checks for Patau syndrome, caused by an extra
-              chromosome 13.
-            </p>
-            <p>
-              T18 (Trisomy 18): Checks for Edwards syndrome, caused by an extra
-              chromosome 18.
-            </p>
-            <p>
-              T21 (Trisomy 21): Checks for Down syndrome, caused by an extra
-              chromosome 21.
-            </p>
+            <p>{t("packages.popups.4.content.10")}</p>
+            <p>{t("packages.popups.4.content.11")}</p>
+            <p>{t("packages.popups.4.content.12")}</p>
 
             <p className="mt-2">
-              <b>Sex Chromosomes:</b>
+              <b>{t("packages.popups.4.content.13")}</b>
             </p>
 
-            <p>
-              Checks for abnormalities in the X and Y chromosomes, which
-              determine the baby's sex and can reveal conditions like Turner
-              syndrome (missing an X chromosome in girls) or Klinefelter
-              syndrome (an extra X chromosome in boys).
-            </p>
+            <p>{t("packages.popups.4.content.14")}</p>
 
             <p className="mt-8">
-              <b>Optional Checks</b>
+              <b>{t("packages.popups.4.content.15")}</b>
             </p>
             <p className="mt-2">
-              <b>Fetal Sex:</b>
+              <b>{t("packages.popups.4.content.16")}</b>
             </p>
-            <p>Can determine if the baby is a boy or a girl.</p>
+            <p>{t("packages.popups.4.content.17")}</p>
             <p className="mt-2">
-              <b>Fetal RhD:</b>
+              <b>{t("packages.popups.4.content.18")}</b>
             </p>
-            <p>
-              Checks if the baby has the RhD protein on their red blood cells,
-              important if the mother is RhD-negative.
-            </p>
+            <p>{t("packages.popups.4.content.19")}</p>
 
             <p className="mt-2">
-              <b>22q:</b>
+              <b>{t("packages.popups.4.content.20")}</b>
             </p>
 
-            <p>
-              Checks for 22q11.2 deletion syndrome, caused by a small missing
-              piece of chromosome 22, which can lead to various health issues.
-            </p>
+            <p>{t("packages.popups.4.content.21")}</p>
 
             <p className="mt-8">
-              <b>Sample Type</b>
+              <b>{t("packages.popups.4.content.22")}</b>
             </p>
-            <p>
-              The sample for this test is a blood sample from the mother. It
-              involves drawing a small amount of blood, usually from the arm, to
-              be analyzed in a lab.
-            </p>
+            <p>{t("packages.popups.4.content.23")}</p>
 
             <p className="mt-8">
-              <b>Summary</b>
+              <b>{t("packages.popups.4.content.24")}</b>
             </p>
-            <p>
-              Carrier Screen: Checks if the mother is a carrier of genetic
-              disorders.
-            </p>
-            <p>
-              sgNIPT Reflex: Further checks the baby's DNA for specific
-              conditions if the mother is found to be a carrier.
-            </p>
-            <p>
-              Aneuploidy Screen: Checks for major chromosomal abnormalities
-              (T13, T18, T21) and sex chromosome conditions.
-            </p>
-            <p>
-              Optional Checks: Fetal sex, Fetal RhD status, and 22q11.2 deletion
-              syndrome.
-            </p>
+            <p>{t("packages.popups.4.content.25")}</p>
+            <p>{t("packages.popups.4.content.26")}</p>
+            <p>{t("packages.popups.4.content.27")}</p>
+            <p>{t("packages.popups.4.content.28")}</p>
 
-            <p>Sample Type: Blood sample from the mother.</p>
+            <p>{t("packages.popups.4.content.29")}</p>
           </div>
         </PopupWrap>
       )
     case 5:
       return (
-        <PopupWrap title="UNITY Complete w/ Fetal Antigen NIPT">
+        <PopupWrap title={t("packages.popups.5.title")}>
           <div className="overflow-y-auto flex flex-col gap-2 custom-scrollbar">
-            <p>
-              This comprehensive prenatal test combines the Carrier Screen,
-              Aneuploidy Screen, and checks for additional fetal antigens.
-              Here's a simpler explanation:
-            </p>
+            <p>{t("packages.popups.5.content.1")}</p>
             <p className="mt-8">
-              <b>Main Checks</b>
+              <b>{t("packages.popups.5.content.2")}</b>
             </p>
             <p>
-              <b>Carrier Screen:</b>
+              <b>{t("packages.popups.5.content.3")}</b>
             </p>
-            <p>
-              This part of the test checks if the mother is a carrier for
-              certain genetic disorders. Being a carrier means you have a change
-              (mutation) in one of your genes that could potentially be passed
-              on to your baby, even if you don't have the disorder yourself.
-              Common conditions checked by carrier screens include cystic
-              fibrosis, spinal muscular atrophy, and various other inherited
-              diseases.
-            </p>
+            <p>{t("packages.popups.5.content.4")}</p>
 
             <p className="mt-2">
-              <b>sgNIPT Reflex:</b>
+              <b>{t("packages.popups.5.content.5")}</b>
             </p>
 
-            <p>
-              If the carrier screen shows that the mother is a carrier for
-              certain genetic conditions, the test can reflex to a specialized
-              non-invasive prenatal testing (sgNIPT) to further check if the
-              baby has inherited these conditions. This second step uses the
-              same blood sample but focuses on the baby's DNA.
-            </p>
+            <p>{t("packages.popups.5.content.6")}</p>
 
             <p className="mt-2">
-              <b>Aneuploidy Screen:</b>
+              <b>{t("packages.popups.5.content.7")}</b>
             </p>
 
-            <p>
-              This part of the test checks for major chromosomal abnormalities:
-            </p>
+            <p>{t("packages.popups.5.content.8")}</p>
 
             <p className="mt-2">
-              <b>T13, T18, T21:</b>
+              <b>{t("packages.popups.5.content.9")}</b>
             </p>
 
-            <p>
-              T13 (Trisomy 13): Checks for Patau syndrome, caused by an extra
-              chromosome 13.
-            </p>
-            <p>
-              T18 (Trisomy 18): Checks for Edwards syndrome, caused by an extra
-              chromosome 18.
-            </p>
-            <p>
-              T21 (Trisomy 21): Checks for Down syndrome, caused by an extra
-              chromosome 21.
-            </p>
+            <p>{t("packages.popups.5.content.10")}</p>
+            <p>{t("packages.popups.5.content.11")}</p>
+            <p>{t("packages.popups.5.content.12")}</p>
 
             <p className="mt-2">
-              <b>Sex Chromosomes:</b>
+              <b>{t("packages.popups.5.content.13")}</b>
             </p>
 
-            <p>
-              Checks for abnormalities in the X and Y chromosomes, which
-              determine the baby's sex and can reveal conditions like Turner
-              syndrome (missing an X chromosome in girls) or Klinefelter
-              syndrome (an extra X chromosome in boys).
-            </p>
+            <p>{t("packages.popups.5.content.14")}</p>
 
             <p className="mt-8">
-              <b>Optional Checks</b>
+              <b>{t("packages.popups.5.content.15")}</b>
             </p>
             <p className="mt-2">
-              <b>Fetal Sex:</b>
+              <b>{t("packages.popups.5.content.16")}</b>
             </p>
-            <p>Can determine if the baby is a boy or a girl.</p>
+            <p>{t("packages.popups.5.content.17")}</p>
 
             <p className="mt-2">
-              <b>Fetal RhD:</b>
+              <b>{t("packages.popups.5.content.18")}</b>
             </p>
-            <p>
-              Checks if the baby has the RhD protein on their red blood cells,
-              important if the mother is RhD-negative.
-            </p>
+            <p>{t("packages.popups.5.content.19")}</p>
 
             <p className="mt-2">
-              <b>Fetal Rbc Antigen NIPT:</b>
+              <b>{t("packages.popups.5.content.20")}</b>
             </p>
-            <p>
-              Checks for specific antigens on the baby's red blood cells that
-              could be important for the baby's blood compatibility and health.
-            </p>
+            <p>{t("packages.popups.5.content.21")}</p>
 
             <p className="mt-2">
-              <b>22q:</b>
+              <b>{t("packages.popups.5.content.22")}</b>
             </p>
-
-            <p>
-              Checks for 22q11.2 deletion syndrome, caused by a small missing
-              piece of chromosome 22, which can lead to various health issues.
-            </p>
+            <p>{t("packages.popups.5.content.23")}</p>
 
             <p className="mt-8">
-              <b>Sample Type</b>
+              <b>{t("packages.popups.5.content.24")}</b>
             </p>
-            <p>
-              The sample for this test is a blood sample from the mother. It
-              involves drawing a small amount of blood, usually from the arm, to
-              be analyzed in a lab.
-            </p>
+
+            <p>{t("packages.popups.5.content.25")}</p>
 
             <p className="mt-8">
-              <b>Summary</b>
+              <b>{t("packages.popups.5.content.26")}</b>
             </p>
-            <p>
-              Carrier Screen: Checks if the mother is a carrier of genetic
-              disorders.
-            </p>
-            <p>
-              sgNIPT Reflex: Further checks the baby's DNA for specific
-              conditions if the mother is found to be a carrier.
-            </p>
-            <p>
-              Aneuploidy Screen: Checks for major chromosomal abnormalities
-              (T13, T18, T21) and sex chromosome conditions.
-            </p>
-            <p>
-              Optional Checks: Fetal sex, Fetal RhD status, specific red blood
-              cell antigens, and 22q11.2 deletion syndrome.
+            <p>{t("packages.popups.5.content.27")}</p>
+
+            <p>{t("packages.popups.5.content.28")}</p>
+            <p>{t("packages.popups.5.content.29")}</p>
+            <p>{t("packages.popups.5.content.30")}</p>
+            <p>{t("packages.popups.5.content.31")}</p>
+          </div>
+        </PopupWrap>
+      )
+    case 6:
+      return (
+        <PopupWrap title={t("packages.popups.6.title")}>
+          <div className="overflow-y-auto flex flex-col gap-2 custom-scrollbar">
+            <p>{t("packages.popups.6.content.1")}</p>
+            <p>{t("packages.popups.6.content.2")}</p>
+
+            <p className="mt-8">
+              <b>{t("packages.popups.6.content.3")}</b>
             </p>
 
-            <p>Sample Type: Blood sample from the mother.</p>
+            <p>{t("packages.popups.6.content.4")}</p>
+
+            <p className="mt-8">
+              <b>{t("packages.popups.6.content.5")}</b>
+            </p>
+            <p>{t("packages.popups.6.content.6")}</p>
+
+            <p className="mt-8">
+              <b>{t("packages.popups.6.content.7")}</b>
+            </p>
+            <p>{t("packages.popups.6.content.8")}</p>
+            <p>{t("packages.popups.6.content.9")}</p>
+            <p>{t("packages.popups.6.content.10")}</p>
           </div>
         </PopupWrap>
       )

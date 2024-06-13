@@ -4,16 +4,19 @@ import sex from "@/assets/svg/icons/sex.svg"
 import sprout from "@/assets/svg/icons/sprout.svg"
 import pieChart from "@/assets/svg/icons/pie-chart.svg"
 import shield from "@/assets/svg/icons/shield-close.svg"
+import { useTranslation } from "react-i18next"
 
 export const Discover = () => {
+  const { t } = useTranslation(["main", "components"])
+
   const cards = [
     {
       id: 1,
       title: "3x",
       text: (
         <>
-          <b>Detects ~3x more affected pregnancies</b> than traditional carrier
-          screening
+          <b>{t("main:discover.cards.1.text.bold")}</b>{" "}
+          {t("main:discover.cards.1.text.next")}
         </>
       ),
       icon: baby,
@@ -23,8 +26,8 @@ export const Discover = () => {
       title: "~58%",
       text: (
         <>
-          <b>Of male partners do not get tested.</b> UNITY Fetal Risk Screen
-          does not need the male partner's sample
+          <b>{t("main:discover.cards.2.text.bold")}.</b>{" "}
+          {t("main:discover.cards.2.text.next")}
         </>
       ),
       icon: sex,
@@ -34,8 +37,8 @@ export const Discover = () => {
       title: "~99%",
       text: (
         <>
-          <b>Reassure patients early:</b> {">"}99% of pregnancies have a low
-          risk of being affected
+          <b>{t("main:discover.cards.3.text.bold")}:</b> {">"}
+          {t("main:discover.cards.3.text.next")}
         </>
       ),
       icon: sprout,
@@ -45,8 +48,8 @@ export const Discover = () => {
       title: "96.0%",
       text: (
         <>
-          <b>Assay sensitivity: </b> <br /> accurately detect affected
-          pregnancies
+          <b>{t("main:discover.cards.4.text.bold")}: </b> <br />{" "}
+          {t("main:discover.cards.4.text.next")}
         </>
       ),
       icon: pieChart,
@@ -56,8 +59,8 @@ export const Discover = () => {
       title: "99.8%",
       text: (
         <>
-          <b>Negative predictive value (NPV)</b> <br />
-          trust in a negative result
+          <b>{t("main:discover.cards.5.text.bold")}</b> <br />
+          {t("main:discover.cards.5.text.next")}
         </>
       ),
       icon: shield,
@@ -67,7 +70,7 @@ export const Discover = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="section-title">Discover The Difference</h2>
+        <h2 className="section-title">{t("main:discover.title")}</h2>
 
         <ul className="grid grid-cols-1 gap-4 mb-8 md:grid-cols-2 auto-rows-fr">
           {cards.map((card) => (
@@ -91,7 +94,7 @@ export const Discover = () => {
         </ul>
 
         <Button className="mx-auto" as="link" href="#contacts">
-          Book Now
+          {t("components:button")}
         </Button>
       </div>
     </section>

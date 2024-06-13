@@ -4,7 +4,6 @@ import { MobileMenu } from "./mobile-menu"
 import { useEffect, useState } from "react"
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa"
 import { SOCIALS } from "@/lib/constants/socials"
-import { NAVIGATION } from "@/lib/constants/routes"
 import { handlePageScroll } from "@/lib/helpers/handlePageScroll"
 
 import ar from "@/assets/svg/flags/ar.svg"
@@ -12,12 +11,18 @@ import en from "@/assets/svg/flags/en.svg"
 import ru from "@/assets/svg/flags/ru.svg"
 
 import { Logo } from "../svg"
+import { useTranslation } from "react-i18next"
+import { cn } from "@/lib/helpers"
+import { useNavigation } from "@/lib/hooks/useNavigation"
 
 export const Header = () => {
+  const { t, i18n } = useTranslation("components")
+  const navigation = useNavigation()
+
   const langs = [
-    { title: "Ar", img: ar },
-    { title: "En", img: en },
-    { title: "Ru", img: ru },
+    { title: "Ar", img: ar, lang: "ar" },
+    { title: "En", img: en, lang: "en" },
+    { title: "Ru", img: ru, lang: "ru" },
   ]
   const socials = [
     {
@@ -50,11 +55,16 @@ export const Header = () => {
     <header className="relative z-10">
       <div className="flex items-center h-10 pl-4 bg-grey-light">
         <div className="flex justify-between w-full h-full">
-          <ul className="flex gap-2">
+          <ul className="flex items-center">
             {langs.map((lang) => (
               <li
-                className="flex items-center gap-1 font-semibold uppercase"
+                className={cn(
+                  "flex items-center gap-1 font-semibold uppercase cursor-pointer hover:bg-accent p-2",
+                  i18n.language === lang.lang &&
+                    "opacity-50 hover:bg-transparent cursor-default"
+                )}
                 key={lang.title}
+                onClick={() => i18n.changeLanguage(lang.lang)}
               >
                 <Picture className="w-6" DEFAULT={lang.img} alt={lang.title} />
                 {lang.title}
@@ -103,7 +113,7 @@ export const Header = () => {
 
           <nav className="hidden ml-12 mr-auto lg:flex">
             <ul className="flex gap-8 xl:text-lg">
-              {NAVIGATION.map((item) => (
+              {navigation.map((item) => (
                 <li key={item.title}>
                   <a href={item.route}>{item.title}</a>
                 </li>
@@ -112,7 +122,7 @@ export const Header = () => {
           </nav>
 
           <Button className="hidden lg:block" as="link" href="#contacts">
-            Book Now
+            {t("button")}
           </Button>
 
           <button

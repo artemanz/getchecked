@@ -1,6 +1,7 @@
 import { Button, Input } from "@/components/ui"
 import { cn, validatePhone } from "@/lib/helpers"
 import { SubmitHandler, useForm } from "react-hook-form"
+import { useTranslation } from "react-i18next"
 
 type FormData = {
   name: string
@@ -10,6 +11,8 @@ type FormData = {
 }
 
 export const Form = () => {
+  const { t } = useTranslation("main", { keyPrefix: "contact.form" })
+
   const {
     register,
     handleSubmit,
@@ -21,7 +24,7 @@ export const Form = () => {
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="flex flex-col gap-4 mb-8">
         <label className="flex flex-col gap-1">
-          <span className={cn(errors.name && "text-red-500")}>Name</span>
+          <span className={cn(errors.name && "text-red-500")}>{t("name")}</span>
           <Input
             as="input"
             aria-invalid={errors.name ? true : false}
@@ -30,7 +33,9 @@ export const Form = () => {
           />
         </label>
         <label className="flex flex-col gap-1">
-          <span className={cn(errors.email && "text-red-500")}>Email</span>
+          <span className={cn(errors.email && "text-red-500")}>
+            {t("email")}
+          </span>
           <Input
             as="input"
             aria-invalid={errors.email ? true : false}
@@ -42,7 +47,9 @@ export const Form = () => {
           />
         </label>
         <label className="flex flex-col gap-1">
-          <span className={cn(errors.phone && "text-red-500")}>Phone</span>
+          <span className={cn(errors.phone && "text-red-500")}>
+            {t("phone")}
+          </span>
           <Input
             as="input"
             aria-invalid={errors.phone ? true : false}
@@ -64,7 +71,9 @@ export const Form = () => {
           />
         </label>
         <label className="flex flex-col gap-1">
-          <span className={cn(errors.message && "text-red-500")}>Message</span>
+          <span className={cn(errors.message && "text-red-500")}>
+            {t("message")}
+          </span>
           <Input
             as="textarea"
             aria-invalid={errors.message ? true : false}
@@ -74,7 +83,7 @@ export const Form = () => {
       </div>
 
       <Button className="mx-auto md:w-full" as="button">
-        Send
+        {t("button")}
       </Button>
     </form>
   )

@@ -1,25 +1,28 @@
 import { useState } from "react"
-import { Blood, CardBg, Time } from "./svg"
-import { Button, Popup } from "@/components/ui"
+import {  Popup } from "@/components/ui"
 import { PopupContent } from "./popup-content"
+import { useTranslation } from "react-i18next"
+import { Card } from "./card"
 
 export const Packages = () => {
+  const { t } = useTranslation(["main", "components"])
+
   const data = [
     {
       id: 1,
-      title: `NIPT UNITY
-    Aneuploidy Screen`,
+      title: `${t("main:packages.cards.1.title.1")}
+    ${t("main:packages.cards.1.title.2")}`,
       badges: {
         blood: true,
         report: true,
       },
       content: (
         <>
-          T13, T18, T21, and Sex Chromosomes <br />
+          {t("main:packages.cards.1.content.1")} <br />
           <ul>
-            <li>+ Optional Fetal Sex</li>
-            <li>+ Optional Fetal RhD NIPT</li>
-            <li>+ Optional 22q</li>
+            <li>{t("main:packages.cards.1.content.list.1")}</li>
+            <li>{t("main:packages.cards.1.content.list.2")}</li>
+            <li>{t("main:packages.cards.1.content.list.3")}</li>
           </ul>
         </>
       ),
@@ -28,16 +31,16 @@ export const Packages = () => {
     },
     {
       id: 2,
-      title: `UNITY Carrier
-      Screen`,
+      title: `${t("main:packages.cards.2.title.1")}
+      ${t("main:packages.cards.2.title.2")}`,
       badges: {
         blood: true,
         report: true,
       },
       content: (
         <>
-          w/ sgNIPT Reflex <br />
-          Сhecks the baby's DNA for specific conditions if mother is a carrier
+          {t("main:packages.cards.2.content.1")} <br />
+          {t("main:packages.cards.2.content.2")}
         </>
       ),
       oldprice: "4600",
@@ -45,21 +48,21 @@ export const Packages = () => {
     },
     {
       id: 3,
-      title: `UNITY Aneuploidy
-      with Fetal Antigen NIPT`,
+      title: `${t("main:packages.cards.3.title.1")}
+      ${t("main:packages.cards.3.title.2")}`,
       badges: {
         blood: true,
         report: true,
       },
       content: (
         <>
-          T13, T18, T21, and Sex Chromosomes
+          {t("main:packages.cards.3.content.1")}
           <br />
           <ul>
-            <li>+ Optional Fetal Sex</li>
-            <li>+ Optional Fetal RhD NIPT</li>
-            <li>+ Optional Fetal Rbc Antigen NIPT</li>
-            <li>+ Optional 22q</li>
+            <li>{t("main:packages.cards.3.content.list.1")}</li>
+            <li>{t("main:packages.cards.3.content.list.2")}</li>
+            <li>{t("main:packages.cards.3.content.list.3")}</li>
+            <li>{t("main:packages.cards.3.content.list.4")}</li>
           </ul>
         </>
       ),
@@ -68,20 +71,20 @@ export const Packages = () => {
     },
     {
       id: 4,
-      title: `UNITY Complete
-      NIPT +Carrier`,
+      title: `${t("main:packages.cards.4.title.1")}
+      ${t("main:packages.cards.4.title.2")}`,
       badges: {
         blood: true,
         report: true,
       },
       content: (
         <>
-          Carrier Screen w/ sgNIPT Reflex <br />
-          Aneuploidy Screen w/ T13, T18, T21, and Sex Chromosomes <br />
+          {t("main:packages.cards.4.content.1")} <br />
+          {t("main:packages.cards.4.content.2")} <br />
           <ul>
-            <li>+ Optional Fetal Sex</li>
-            <li>+ Optional Fetal RhD NIPT</li>
-            <li>+ Optional 22q</li>
+            <li>{t("main:packages.cards.4.content.list.1")}</li>
+            <li>{t("main:packages.cards.4.content.list.2")}</li>
+            <li>{t("main:packages.cards.4.content.list.3")}</li>
           </ul>
         </>
       ),
@@ -90,28 +93,60 @@ export const Packages = () => {
     },
     {
       id: 5,
-      title: `UNITY Complete
-      with Fetal Antigen NIPT`,
+      title: `${t("main:packages.cards.5.title.1")}
+      ${t("main:packages.cards.5.title.2")}`,
       badges: {
         blood: true,
         report: true,
       },
       content: (
         <>
-          Carrier Screen w/ sgNIPT Reflex <br />
-          Aneuploidy Screen w/ T13, T18, T21, and Sex Chromosomes <br />
+          {t("main:packages.cards.5.content.1")} <br />
+          {t("main:packages.cards.5.content.2")} <br />
           <ul>
-            <li>+ Optional Fetal Sex</li>
-            <li>+ Optional Fetal RhD NIPT</li>
-            <li>+ Optional Fetal Rbc Antigen NIPT</li>
-            <li>+ Optional 22q</li>
+            <li>{t("main:packages.cards.5.content.list.1")}</li>
+            <li>{t("main:packages.cards.5.content.list.2")}</li>
+            <li>{t("main:packages.cards.5.content.list.3")}</li>
+            <li>{t("main:packages.cards.5.content.list.4")}</li>
           </ul>
         </>
       ),
       oldprice: "11000",
       currentPrice: "5500",
     },
+    {
+      id: 6,
+      title: `${t("main:packages.cards.6.title")}`,
+      subtitle: t("main:packages.cards.6.subtitle"),
+      badges: {
+        blood: true,
+        report: true,
+      },
+      content: <>{t("main:packages.cards.6.content")}</>,
+      oldprice: null,
+      currentPrice: "FREE",
+    },
   ]
+
+  const genderDetectionItem = {
+    id: 7,
+    title: `${t("main:packages.gender-detection.title.1")}
+    ${t("main:packages.gender-detection.title.2")}
+    `,
+    badges: {
+      blood: true,
+      report: true,
+    },
+    content: (
+      <>
+        {t("main:packages.gender-detection.content.1")} <br />
+        {t("main:packages.gender-detection.content.2")} <br />
+        {t("main:packages.gender-detection.content.3")}
+      </>
+    ),
+    oldprice: "3000",
+    currentPrice: "1500",
+  }
 
   const [popup, setPopup] = useState<(typeof data)[number]["id"] | null>(null)
 
@@ -119,71 +154,28 @@ export const Packages = () => {
     <section className="section bg-grey-light">
       <div className="container md:px-[4.5rem] lg:px-[2rem]">
         <h2 className="section-title">
-          UNITY Screen<sup className="">TM</sup> Packages
+          {t("main:packages.title.1")}
+          <sup className="">TM</sup> {t("main:packages.title.2")}
         </h2>
 
         <ul className="grid grid-cols-1 justify-items-center gap-y-8 gap-x-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-4">
           {data.map((item) => (
-            <li
-              className="relative w-[19rem] h-[32.125rem] pl-4 pt-4 overflow-hidden"
-              key={item.id}
-            >
-              <CardBg className="absolute top-0 left-0 w-full h-full" />
-
-              <div className="relative flex flex-col h-full">
-                <div className="pr-4">
-                  <h3 className="mb-4 text-lg font-semibold whitespace-pre-line">
-                    {item.title}
-                  </h3>
-
-                  <ul className="flex flex-col items-start gap-2">
-                    <li className="relative border border-[#620C16] rounded-full py-1 pl-10 text-[#620C16] font-medium inline-block pr-4">
-                      <Blood className="absolute w-10 -left-2 -top-3" />
-                      Blood from the Mother
-                    </li>
-                    <li className="relative inline-block py-1 pl-10 pr-4 font-medium text-black border border-black rounded-full">
-                      <Time className="absolute w-10 -top-1 -left-1" />
-                      5-10 Days Report
-                    </li>
-                  </ul>
-
-                  <hr className="my-4 border-grey" />
-
-                  <p className="font-semibold mb-2">Includes</p>
-
-                  <div className="mb-4">{item.content}</div>
-                </div>
-
-                <div className="flex justify-between mb-4 mt-auto pr-4">
-                  <button
-                    onClick={() => setPopup(item.id)}
-                    className="underline underline-offset-4"
-                  >
-                    Find Out More
-                  </button>
-                  <a className="underline underline-offset-4" href="#documents">
-                    View Sample Report
-                  </a>
-                </div>
-
-                <div className="flex justify-between items-end">
-                  <div className="flex flex-col gap-1 pb-2">
-                    <p className="line-through font-semibold text-sm leading-none">
-                      {item.oldprice} <span>AED</span>
-                    </p>
-                    <p className="text-2xl font-semibold leading-none">
-                      {item.currentPrice}
-                      <span className="text-base">AED</span>
-                    </p>
-                  </div>
-                  <Button className="w-[9.6875rem]" as="link" href="#contacts">
-                    Book Now
-                  </Button>
-                </div>
-              </div>
-            </li>
+            <Card tag="li" item={item} setPopup={setPopup} key={item.id} />
           ))}
         </ul>
+
+        <h2 className="section-title mt-20">
+          {t("main:packages.second-title")}
+        </h2>
+
+        <div className="grid place-content-center">
+          <Card
+            tag="div"
+            item={genderDetectionItem}
+            setPopup={setPopup}
+            actions={false}
+          />
+        </div>
       </div>
 
       {popup && (

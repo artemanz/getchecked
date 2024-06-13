@@ -6,27 +6,29 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import sample1 from "@/assets/images/samples/sample-1.webp"
 import sample2 from "@/assets/images/samples/sample-2.webp"
 import sample3 from "@/assets/images/samples/sample-3.webp"
+import sample4 from "@/assets/images/samples/sample-4.webp"
 
 import file from "@/assets/svg/icons/file.svg"
+import { useTranslation } from "react-i18next"
 
 export const Documents = () => {
-  const [popup, setPopup] = useState<
-    "sample-1" | "sample-2" | "sample-3" | null
-  >(null)
+  const { t } = useTranslation("main")
+  const [popup, setPopup] = useState<`sample-${number}` | null>(null)
 
   const slides: {
     img: string
-    sample: "sample-1" | "sample-2" | "sample-3"
+    sample: `sample-${number}`
   }[] = [
     { img: sample1, sample: "sample-1" },
     { img: sample2, sample: "sample-2" },
     { img: sample3, sample: "sample-3" },
+    { img: sample4, sample: "sample-4" },
   ]
 
   return (
     <section className="section bg-grey-light" id="documents">
       <div className="container">
-        <h2 className="section-title">Sample Reports</h2>
+        <h2 className="section-title">{t("documents.title")}</h2>
 
         <Swiper
           className="mb-4 max-w-[25rem]"
