@@ -10,7 +10,7 @@ type Props = (
 
 export const Button = (props: Props) => {
   const styles =
-    "font-medium block bg-accent px-5 py-3 rounded-full w-[10rem] text-center transition-colors hover:bg-accent/75 hover:text-accent-dark"
+    "font-medium block bg-accent px-5 py-3 rounded-full w-[10rem] text-center transition-colors [&:not(:disabled)]:bg-accent/75 [&:not(:disabled)]:hover:text-accent-dark"
 
   if (props.as === "link") {
     const { as, className, ...rest } = props

@@ -31,9 +31,9 @@ export const Card = ({ tag: Tag, item, setPopup, actions }: Props) => {
 
       <div className="relative flex flex-col h-full">
         <div className="pr-4">
-          <h3 className="mb-4 text-lg font-semibold whitespace-pre-line">
+          <h3 className="h-[3.75rem] mb-4 text-lg font-semibold whitespace-pre-line">
             {item.title}
-            {item.subtitle && <span className="text-sm leading-none inline-block">{item.subtitle}</span>}
+            {item.subtitle && <span className="text-sm leading-none block">{item.subtitle}</span>}
           </h3>
 
           <ul className="flex flex-col items-start gap-2">

@@ -84,10 +84,12 @@ export const Works = () => {
                 currentTab === 1 && "opacity-100"
               )}
             >
-              <div className={cn(classNames.tabLabelHeader, "")}>
-                <Time />
-                {t("main:works.cards.1.tab.time")}
-              </div>
+              {t("main:works.cards.1.tab.time") && (
+                <div className={cn(classNames.tabLabelHeader, "")}>
+                  <Time />
+                  {t("main:works.cards.1.tab.time")}
+                </div>
+              )}
               <p className="font-semibold lg:text-lg">
                 {t("main:works.cards.1.tab.title")}
               </p>
@@ -99,15 +101,17 @@ export const Works = () => {
                 currentTab === 2 && "opacity-100"
               )}
             >
-              <div
-                className={cn(
-                  classNames.tabLabelHeader,
-                  "md:justify-center md:mr-8"
-                )}
-              >
-                <Time />
-                {t("main:works.cards.2.tab.time")}
-              </div>
+              {t("main:works.cards.2.tab.time") && (
+                <div
+                  className={cn(
+                    classNames.tabLabelHeader,
+                    "md:justify-center md:mr-8"
+                  )}
+                >
+                  <Time />
+                  {t("main:works.cards.2.tab.time")}
+                </div>
+              )}
               <p className="font-semibold lg:text-lg md:text-center">
                 {t("main:works.cards.2.tab.title")}
               </p>
@@ -119,10 +123,14 @@ export const Works = () => {
                 currentTab === 3 && "opacity-100"
               )}
             >
-              <div className={cn(classNames.tabLabelHeader, "md:justify-end")}>
-                <Time />
-                {t("main:works.cards.3.tab.time")}
-              </div>
+              {t("main:works.cards.3.tab.time") && (
+                <div
+                  className={cn(classNames.tabLabelHeader, "md:justify-end")}
+                >
+                  <Time />
+                  {t("main:works.cards.3.tab.time")}
+                </div>
+              )}
               <p className="font-semibold lg:text-lg md:text-right">
                 {t("main:works.cards.3.tab.title")}
               </p>

@@ -2,6 +2,8 @@ import { Button, Input } from "@/components/ui"
 import { cn, validatePhone } from "@/lib/helpers"
 import { SubmitHandler, useForm } from "react-hook-form"
 import { useTranslation } from "react-i18next"
+import emailjs from "@emailjs/browser"
+import { useEffect, useState } from "react"
 
 type FormData = {
   name: string
@@ -12,13 +14,38 @@ type FormData = {
 
 export const Form = () => {
   const { t } = useTranslation("main", { keyPrefix: "contact.form" })
+  const [buttonState, setButtonState] = useState<"loading" | "success" | null>(
+    null
+  )
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormData>()
-  const onSubmit: SubmitHandler<FormData> = (data) => console.log(data)
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    setButtonState("loading")
+    try {
+      await emailjs.send("service_4ttyq5a", "template_iold1ti", {
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        message: data.message,
+      })
+      reset()
+      setButtonState("success")
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  useEffect(() => {
+    if (buttonState === "success")
+      setTimeout(() => {
+        setButtonState(null)
+      }, 3000)
+  }, [buttonState])
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -82,8 +109,12 @@ export const Form = () => {
         </label>
       </div>
 
-      <Button className="mx-auto md:w-full" as="button">
-        {t("button")}
+      <Button
+        className="mx-auto md:w-full"
+        as="button"
+        disabled={buttonState === "loading"}
+      >
+        {buttonState === "success" ? "Success" : t("button")}
       </Button>
     </form>
   )

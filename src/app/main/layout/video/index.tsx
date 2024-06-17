@@ -54,7 +54,7 @@ export const Video = () => {
               {t("video.title.1")}{" "}
               <motion.div
                 {...animations.cursiveLine()}
-                className="absolute inset-x-0 max-w-full -bottom-1 "
+                className="absolute inset-x-0 max-w-full -bottom-1 [&>svg]:w-full"
               >
                 <CursiveLine />
               </motion.div>
