@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa"
 
 export const ContactMenu = () => {
   return (
-    <div className="fixed left-4 bottom-4 flex flex-col gap-4 z-10">
+    <div className="fixed right-4 bottom-4 flex flex-col gap-4 z-10">
       <a
         className="bg-amber-400 w-16 aspect-square grid place-content-center rounded-full"
         href="tel:+971527007915"

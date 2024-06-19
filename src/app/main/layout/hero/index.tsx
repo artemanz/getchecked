@@ -1,6 +1,5 @@
 import s from "./styles.module.scss"
 import heroImagePrenatal from "@/assets/images/hero/hero-prenatal.webp"
-import heroImageOnco from "@/assets/images/hero/hero-onco.webp"
 
 import { Button, Picture } from "@/components/ui"
 import { cn } from "@/lib/helpers/cn"
@@ -18,20 +17,20 @@ export const Hero = () => {
             DEFAULT={heroImagePrenatal}
             alt="Happy mother with child"
           />
-          <Picture
+          {/* <Picture
             className={cn(s["image"], s["second"])}
             DEFAULT={heroImageOnco}
             alt="Happy woman"
-          />
+          /> */}
         </div>
 
         <div className={cn("relative h-12 lg:h-16 xl:h-20 xl:mb-6", i18n.language === "ru" && "h-24 max-w-[20rem] mx-auto md:max-w-none md:h-12")}>
           <h1 className={cn(s["title"], s["first"])}>
             {t("hero.title-prenatal", { ns: "main" })}
           </h1>
-          <h1 className={cn(s["title"], s["second"])}>
+          {/* <h1 className={cn(s["title"], s["second"])}>
             {t("hero.title-onco", { ns: "main" })}
-          </h1>
+          </h1> */}
         </div>
         <p className="mb-4 text-balance text-xl leading-tight text-center lg:text-2xl-lg lg:mb-6 xl:text-3xl xl:mb-10">
           {t("hero.subtitle", { ns: "main" })}
