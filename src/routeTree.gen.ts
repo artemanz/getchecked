@@ -17,9 +17,27 @@ import { Route as IndexImport } from './routes/index'
 
 // Create Virtual Routes
 
+const Bookingpage3LazyImport = createFileRoute('/booking_page3')()
+const Bookingpage2LazyImport = createFileRoute('/booking_page2')()
+const Bookingpage1LazyImport = createFileRoute('/booking_page1')()
 const CopyIndexLazyImport = createFileRoute('/copy/')()
 
 // Create/Update Routes
+
+const Bookingpage3LazyRoute = Bookingpage3LazyImport.update({
+  path: '/booking_page3',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/booking_page3.lazy').then((d) => d.Route))
+
+const Bookingpage2LazyRoute = Bookingpage2LazyImport.update({
+  path: '/booking_page2',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/booking_page2.lazy').then((d) => d.Route))
+
+const Bookingpage1LazyRoute = Bookingpage1LazyImport.update({
+  path: '/booking_page1',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/booking_page1.lazy').then((d) => d.Route))
 
 const IndexRoute = IndexImport.update({
   path: '/',
@@ -29,7 +47,7 @@ const IndexRoute = IndexImport.update({
 const CopyIndexLazyRoute = CopyIndexLazyImport.update({
   path: '/copy/',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/copy/index.lazy').then((d) => d.Route))
+} as any).lazy(() => import('./routes/copy.lazy').then((d) => d.Route))
 
 // Populate the FileRoutesByPath interface
 
@@ -40,6 +58,27 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/booking_page1': {
+      id: '/booking_page1'
+      path: '/booking_page1'
+      fullPath: '/booking_page1'
+      preLoaderRoute: typeof Bookingpage1LazyImport
+      parentRoute: typeof rootRoute
+    }
+    '/booking_page2': {
+      id: '/booking_page2'
+      path: '/booking_page2'
+      fullPath: '/booking_page2'
+      preLoaderRoute: typeof Bookingpage2LazyImport
+      parentRoute: typeof rootRoute
+    }
+    '/booking_page3': {
+      id: '/booking_page3'
+      path: '/booking_page3'
+      fullPath: '/booking_page3'
+      preLoaderRoute: typeof Bookingpage3LazyImport
       parentRoute: typeof rootRoute
     }
     '/copy/': {
@@ -56,6 +95,9 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
+  Bookingpage1LazyRoute,
+  Bookingpage2LazyRoute,
+  Bookingpage3LazyRoute,
   CopyIndexLazyRoute,
 })
 
@@ -68,11 +110,23 @@ export const routeTree = rootRoute.addChildren({
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/booking_page1",
+        "/booking_page2",
+        "/booking_page3",
         "/copy/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
+    },
+    "/booking_page1": {
+      "filePath": "booking_page1.lazy.tsx"
+    },
+    "/booking_page2": {
+      "filePath": "booking_page2.lazy.tsx"
+    },
+    "/booking_page3": {
+      "filePath": "booking_page3.lazy.tsx"
     },
     "/copy/": {
       "filePath": "copy/index.lazy.tsx"
