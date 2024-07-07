@@ -17,12 +17,17 @@ import { Route as IndexImport } from './routes/index'
 
 // Create Virtual Routes
 
+const CopyLazyImport = createFileRoute('/copy')()
 const Bookingpage3LazyImport = createFileRoute('/booking_page3')()
 const Bookingpage2LazyImport = createFileRoute('/booking_page2')()
 const Bookingpage1LazyImport = createFileRoute('/booking_page1')()
-const CopyIndexLazyImport = createFileRoute('/copy/')()
 
 // Create/Update Routes
+
+const CopyLazyRoute = CopyLazyImport.update({
+  path: '/copy',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/copy.lazy').then((d) => d.Route))
 
 const Bookingpage3LazyRoute = Bookingpage3LazyImport.update({
   path: '/booking_page3',
@@ -43,11 +48,6 @@ const IndexRoute = IndexImport.update({
   path: '/',
   getParentRoute: () => rootRoute,
 } as any)
-
-const CopyIndexLazyRoute = CopyIndexLazyImport.update({
-  path: '/copy/',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/copy.lazy').then((d) => d.Route))
 
 // Populate the FileRoutesByPath interface
 
@@ -81,11 +81,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Bookingpage3LazyImport
       parentRoute: typeof rootRoute
     }
-    '/copy/': {
-      id: '/copy/'
+    '/copy': {
+      id: '/copy'
       path: '/copy'
       fullPath: '/copy'
-      preLoaderRoute: typeof CopyIndexLazyImport
+      preLoaderRoute: typeof CopyLazyImport
       parentRoute: typeof rootRoute
     }
   }
@@ -98,7 +98,7 @@ export const routeTree = rootRoute.addChildren({
   Bookingpage1LazyRoute,
   Bookingpage2LazyRoute,
   Bookingpage3LazyRoute,
-  CopyIndexLazyRoute,
+  CopyLazyRoute,
 })
 
 /* prettier-ignore-end */
@@ -113,7 +113,7 @@ export const routeTree = rootRoute.addChildren({
         "/booking_page1",
         "/booking_page2",
         "/booking_page3",
-        "/copy/"
+        "/copy"
       ]
     },
     "/": {
@@ -128,8 +128,8 @@ export const routeTree = rootRoute.addChildren({
     "/booking_page3": {
       "filePath": "booking_page3.lazy.tsx"
     },
-    "/copy/": {
-      "filePath": "copy/index.lazy.tsx"
+    "/copy": {
+      "filePath": "copy.lazy.tsx"
     }
   }
 }

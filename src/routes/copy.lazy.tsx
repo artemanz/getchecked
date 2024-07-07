@@ -13,6 +13,6 @@ const Index = () => {
   )
 }
 
-export const Route = createLazyFileRoute("/copy/")({
+export const Route = createLazyFileRoute("/copy")({
   component: Index,
 })
