@@ -14,59 +14,27 @@
       "advertisement": "Рекламная лицензия №: 6DDI7WHT-050923",
       "copyright": "getcheckedclinic.com © 2024",
       "adress": "Торговый центр, Умм Сукейм - напротив отеля Мадинат Джумейра"
+    },
+    "card": {
+      "includes": "Включает",
+      "find-out": "Узнать больше",
+      "sample": "Примеры Отчетов",
+      "currency": "AED",
+      "per": "По",
+      "request": "Запросу",
+      "analysis-type": {
+        "blood": "Кровь",
+        "saliva": "Слюна",
+        "blood-mother": "Кровь Матери"
+      }
     }
   },
-  "main": {
-    "hero": {
-      "title-onco": "Онкологическая диагностика",
-      "title-prenatal": "Пренатальный Скрининг",
-      "subtitle": "Новейшие разработки в диагностике заболеваний"
-    },
+  "common": {
     "about": {
-      "title": "Об услуге",
-      "card": {
-        "title": "Пренатальный Скрининг",
-        "text": {
-          "1": "UNITY Screen™",
-          "2": "включает скрининг на наличие генетических мутаций, а также одногенный (для рецессивных состояний) и анеуплоидию. Для оценки риска для плода требуется только взятие материнской крови после 10 недель беременности. Проба от отца не требуется.",
-          "bold": "Неинвазивный пренатальный тест (NIPT)"
-        }
-      }
+      "title": "Об услуге"
     },
     "needs": {
-      "title": "Кому это необходимо",
-      "cards": {
-        "1": {
-          "title": {
-            "1": "Подходит для",
-            "span": "",
-            "2": "общей акушерско-гинекологической практики"
-          }
-        },
-        "2": {
-          "title": "Будущим родителям"
-        },
-        "3": {
-          "title": "Семьям с историей генетических заболеваний"
-        },
-        "4": {
-          "title": "Беременным женщинам с риском аллоиммунизации"
-        }
-      },
-      "banner": {
-        "title": {
-          "1": "Узнайте больше.",
-          "2": "Узнайте раньше."
-        },
-        "subtitle": "Один образец крови от матери. Генетические сведения о вашем малыше."
-      }
-    },
-    "video": {
-      "title": {
-        "1": "Один тест",
-        "2": "множество инсайтов о",
-        "3": "здоровье вашего малыша"
-      }
+      "title": "Кому это необходимо"
     },
     "works": {
       "title": "Этапы Тестирования",
@@ -104,126 +72,202 @@
       }
     },
     "discover": {
-      "title": "Преимущества",
+      "title": "Преимущества"
+    },
+    "documents": {
+      "title": "Примеры Результатов Тестирования"
+    },
+    "faq": {
+      "title": "Часто задаваемые вопросы"
+    },
+    "contact": {
+      "title": "Контакты",
+      "subtitle": "Если у вас остались вопросы, мы сделаем все возможное, чтобы помочь вам.",
+      "form": {
+        "name": "Имя",
+        "email": "Email",
+        "phone": "Телефон",
+        "message": "Сообщение",
+        "button": "Отправить"
+      }
+    }
+  },
+  "prenatal": {
+    "hero": {
+      "title": "Пренатальный Скрининг",
+      "subtitle": "Новейшие разработки в диагностике заболеваний"
+    },
+    "about": {
+      "card": {
+        "1": "UNITY Screen™",
+        "2": "включает скрининг на наличие генетических мутаций, а также одногенный (для рецессивных состояний) и анеуплоидию. Для оценки риска для плода требуется только взятие материнской крови после 10 недель беременности. Проба от отца не требуется.",
+        "bold": "Неинвазивный пренатальный тест (NIPT)"
+      }
+    },
+    "needs": {
+      "cards": {
+        "1": {
+          "title": {
+            "1": "Подходит для",
+            "span": "",
+            "2": "общей акушерско-гинекологической практики"
+          }
+        },
+        "2": {
+          "title": "Будущим родителям"
+        },
+        "3": {
+          "title": "Семьям с историей генетических заболеваний"
+        },
+        "4": {
+          "title": "Беременным женщинам с риском аллоиммунизации"
+        }
+      },
+      "banner": {
+        "title": "Узнайте больше. Узнайте раньше.",
+        "subtitle": "Один образец крови от матери. Генетические сведения о вашем малыше."
+      }
+    },
+    "video": {
+      "title": {
+        "1": "Один тест",
+        "2": "множество инсайтов о",
+        "3": "здоровье вашего малыша"
+      }
+    },
+    "discover": {
       "cards": {
         "1": {
           "text": {
+            "1": "",
             "bold": "Обнаруживает ~3 раза больше изменений беременности",
-            "next": "чем традиционный скрининг"
+            "2": "чем традиционный скрининг"
           }
         },
         "2": {
           "text": {
+            "1": "",
             "bold": "Отцов не проходят тестирование",
-            "next": "UNITY Fetal Risk Screen не требует образца от партнера."
+            "2": "UNITY Fetal Risk Screen не требует образца от партнера."
           }
         },
         "3": {
           "text": {
+            "1": "",
             "bold": "Узнайте раньше",
-            "next": "99% беременностей имеют низкий риск изменений"
+            "2": ">99% беременностей имеют низкий риск изменений"
           }
         },
         "4": {
           "text": {
+            "1": "",
             "bold": "Высокая точность",
-            "next": "точное обнаружение изменений беременности."
+            "2": "точное обнаружение изменений беременности."
           }
         },
         "5": {
           "text": {
+            "1": "",
             "bold": "Отрицательное предиктивное значение (NPV)",
-            "next": "точность отрицательного результата"
+            "2": "точность отрицательного результата"
           }
         }
       }
     },
     "packages": {
-      "title": {
-        "1": "UNITY Screen",
-        "2": "виды"
+      "unity-screen": {
+        "title": "UNITY Screen™ виды",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "NIPT UNITY",
+              "2": "Скрининг на Анеуплоидию"
+            },
+            "content": {
+              "1": "T13, T18, T21 и половые хромосомы",
+              "2": "+ Опционально пол плода",
+              "3": "+ Опционально резус-фактор плода",
+              "4": "+ Опционально 22q"
+            },
+            "report": "Результат через 10-15 дней"
+          },
+          "2": {
+            "title": {
+              "1": "UNITY Скрининг на",
+              "2": "Предмет Носительства"
+            },
+            "content": {
+              "1": "Рефлексивный скрининг (sgNIPT)",
+              "2": "Проверяет ДНК младенца на наличие изменений, если мать - носительница"
+            },
+            "report": "Результат через 10-15 дней"
+          },
+          "3": {
+            "title": {
+              "1": "UNITY NIPT Анеуплоидия",
+              "2": "и Резус-Фактор Плода"
+            },
+            "content": {
+              "1": "T13, T18, T21 и половые хромосомы",
+              "2": "+ Опционально пол плода",
+              "3": "+ Опционально резус-фактор плода",
+              "4": "+ Опционально  антигены эритроцитов плода",
+              "5": "+ Опционально 22q"
+            },
+            "report": "Результат через 10-15 дней"
+          },
+          "4": {
+            "title": {
+              "1": "UNITY NIPT Complete +",
+              "2": "на Предмет Носительства"
+            },
+            "content": {
+              "1": "Носительство + Рефлексивный скрининг (sgNIPT)",
+              "2": "Анеуплодия с T13, T18, T21 и половые хромосомы",
+              "3": "+ Опционально пол плода",
+              "4": "+ Опционально резус-фактор плода",
+              "5": "+ Опционально 22q"
+            },
+            "report": "Результат через 10-15 дней"
+          },
+          "5": {
+            "title": {
+              "1": "UNITY NIPT Complete",
+              "2": "+ Резус-Фактор Плода"
+            },
+            "content": {
+              "1": "Носительство + Рефлексивный скрининг (sgNIPT)",
+              "2": "Анеуплодия с T13, T18, T21 и половые хромосомы",
+              "3": "+ Опционально пол плода",
+              "4": "+ Опционально резус-фактор плода",
+              "5": "+ Опционально  антигены эритроцитов плода",
+              "6": "+ Опционально 22q"
+            },
+            "report": "Результат через 10-15 дней"
+          },
+          "6": {
+            "title": "BabyPeek",
+            "subtitle": "Доступно в виде дополнения ко всем видам UNITY Screen™",
+            "content": "Черты: цвет глаз, рыжие волосы, вьющиеся волосы, светлые или темные волосы, толщина волос, веснушки, восприятие кинзы, восприятие горького вкуса, запах мочи после употребления спаржи, восприятие сладкого вкуса, предпочтение к сладкому или соленоному, качество зубов.",
+            "report": "Результат через 10-15 дней"
+          }
+        }
       },
-      "blood": "Кровь Матери",
-      "report": "Результат через  10-15 дней",
-      "includes": "Включает",
-      "find-out": "Узнать больше",
-      "sample": "Примеры Отчетов",
-      "currency": "AED",
-      "cards": {
-        "1": {
-          "title": {
-            "1": "NIPT UNITY",
-            "2": "Скрининг на Анеуплоидию"
-          },
-          "content": {
-            "1": "T13, T18, T21 и половые хромосомы",
-            "list": {
-              "1": "+ Опционально пол плода",
-              "2": "+ Опционально резус-фактор плода",
-              "3": "+ Опционально 22q"
-            }
+      "gender-detection": {
+        "title": "Определение пола",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Peakaboo Тест",
+              "2": "Раннее Определние Пола"
+            },
+            "content": {
+              "1": "Пол плода",
+              "2": "Peekaboo предлагает тест на определение пола, предоставляя результаты на 14 недель раньше, чем традиционные ультразвуковые исследования.",
+              "3": "Определяет пол вашего малыша с точностью более 99%."
+            },
+            "report": "Результат через 10-15 дней"
           }
-        },
-        "2": {
-          "title": {
-            "1": "UNITY Скрининг на",
-            "2": "Предмет Носительства"
-          },
-          "content": {
-            "1": "Рефлексивный скрининг (sgNIPT)",
-            "2": "Проверяет ДНК младенца на наличие изменений, если мать - носительница"
-          }
-        },
-        "3": {
-          "title": {
-            "1": "UNITY NIPT Анеуплоидия",
-            "2": "и Резус-Фактор Плода"
-          },
-          "content": {
-            "1": "T13, T18, T21 и половые хромосомы",
-            "list": {
-              "1": "+ Опционально пол плода",
-              "2": "+ Опционально резус-фактор плода",
-              "3": "+ Опционально  антигены эритроцитов плода",
-              "4": "+ Опционально 22q"
-            }
-          }
-        },
-        "4": {
-          "title": {
-            "1": "UNITY NIPT Complete +",
-            "2": "на Предмет Носительства"
-          },
-          "content": {
-            "1": "Носительство + Рефлексивный скрининг (sgNIPT)",
-            "2": "Анеуплодия с T13, T18, T21 и половые хромосомы",
-            "list": {
-              "1": "+ Опционально пол плода",
-              "2": "+ Опционально резус-фактор плода",
-              "3": "+ Опционально 22q"
-            }
-          }
-        },
-        "5": {
-          "title": {
-            "1": "UNITY NIPT Complete",
-            "2": "+ Резус-Фактор Плода"
-          },
-          "content": {
-            "1": "Носительство + Рефлексивный скрининг (sgNIPT)",
-            "2": "Анеуплодия с T13, T18, T21 и половые хромосомы",
-            "list": {
-              "1": "+ Опционально пол плода",
-              "2": "+ Опционально резус-фактор плода",
-              "3": "+ Опционально  антигены эритроцитов плода",
-              "4": "+ Опционально 22q"
-            }
-          }
-        },
-        "6": {
-          "title": "BabyPeek",
-          "subtitle": "Доступно в виде дополнения ко всем видам UNITY Screen™",
-          "content": "Черты: цвет глаз, рыжие волосы, вьющиеся волосы, светлые или темные волосы, толщина волос, веснушки, восприятие кинзы, восприятие горького вкуса, запах мочи после употребления спаржи, восприятие сладкого вкуса, предпочтение к сладкому или соленоному, качество зубов."
         }
       },
       "popups": {
@@ -380,34 +424,17 @@
             "10": "Тип образца: Кровь матери."
           }
         }
+      }
+    },
+    "cta": {
+      "title": {
+        "1": "Узнайте 12 уникальных черт вашего",
+        "2": "ребенка до его рождения."
       },
-      "second-title": "Определение пола ",
-      "gender-detection": {
-        "title": {
-          "1": "Peakaboo Тест",
-          "2": "Раннее Определние Пола"
-        },
-        "content": {
-          "1": "Пол плода",
-          "2": "Peekaboo предлагает тест на определение пола, предоставляя результаты на 14 недель раньше, чем традиционные ультразвуковые исследования.",
-          "3": "Определяет пол вашего малыша с точностью более 99%."
-        }
+      "subtitle": {
+        "text": "Узнайте с BabyPeek, будут ли у вашего ребенка карие глаза или кудри, как у вас.",
+        "bold": ""
       }
-    },
-    "screening": {
-      "banner": {
-        "title": {
-          "1": "Узнайте 12 уникальных черт вашего",
-          "2": "ребенка до его рождения."
-        },
-        "subtitle": {
-          "text": "Узнайте с BabyPeek, будут ли у вашего ребенка карие глаза или кудри, как у вас.",
-          "bold": ""
-        }
-      }
-    },
-    "documents": {
-      "title": "Примеры Результатов Тестирования"
     },
     "faq": {
       "title": "Часто задаваемые вопросы",
@@ -440,16 +467,327 @@
           }
         }
       }
+    }
+  },
+  "oncology": {
+    "hero": {
+      "title": "Oncology Testing",
+      "subtitle": "At the Forefront of Disease Detection"
     },
-    "contact": {
-      "title": "Контакты",
-      "subtitle": "Если у вас остались вопросы, мы сделаем все возможное, чтобы помочь вам.",
-      "form": {
-        "name": "Имя",
-        "email": "Email",
-        "phone": "Телефон",
-        "message": "Сообщение",
-        "button": "Отправить"
+    "about": {
+      "card": {
+        "bold-1": "Northstar Select™",
+        "bold-2": "Northstar Response™",
+        "and": "and",
+        "content": "are advanced liquid biopsy tests now available for commercial use. Northstar Select™ helps determine the most appropriate first line therapy, while Northstar Response™ monitors the effectiveness of the ongoing treatment. In addition, we offer comprehensive cancer screening and preventative screening for all types of cancer, providing a proactive approach to healthcare."
+      }
+    },
+    "needs": {
+      "cards": {
+        "1": {
+          "title": {
+            "1": "Appropriate for any",
+            "span": "late-stage solid tumor",
+            "2": "and guides first-line therapy decisions and for anyone looking for preventative measures and early detection."
+          }
+        },
+        "2": {
+          "title": "Patients Undergoing Targeted Therapy"
+        },
+        "3": {
+          "title": "Patients Undergoing Immunotherapy"
+        },
+        "4": {
+          "title": "Patients with Metastatic Cancer"
+        }
+      },
+      "banner": {
+        "title": "Treat. Monitor. Adapt.",
+        "subtitle": {
+          "bold": "Northstar™",
+          "text": "Informs and monitors response to targeted therapy & immunotherapy"
+        }
+      }
+    },
+    "video": {
+      "title": {
+        "1": "Ultra-sensitive",
+        "2": "Liquid Biopsy &",
+        "3": "Precise Monitoring"
+      }
+    },
+    "discover": {
+      "cards": {
+        "1": {
+          "text": {
+            "1": "Northstar Response™  shows",
+            "bold": ">10x Stronger Signal",
+            "2": "than SNV-Based ctDNA Monitoring Assays"
+          }
+        },
+        "2": {
+          "text": {
+            "1": "Northstar Select™ provides",
+            "bold": "therapy insights",
+            "2": "for stage III or IV solid tumor cancer patients."
+          }
+        },
+        "3": {
+          "text": {
+            "1": "Northstar Response™",
+            "bold": "distinguishes changes",
+            "2": "as small as 0.2% tumor fraction."
+          }
+        },
+        "4": {
+          "text": {
+            "1": "Northstar Select™ detects mutations in",
+            "bold": "81 genes",
+            "2": "from cell-free tumor DNA in advanced-stage solid tumors."
+          }
+        },
+        "5": {
+          "text": {
+            "1": "Northstar Response™ achieves",
+            "bold": "consistent accuracy",
+            "2": "across 10 cancer types"
+          }
+        }
+      }
+    },
+    "packages": {
+      "northstar": {
+        "title": "Northstar™ Packages",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Northstar Select™",
+              "2": "Determines therapy"
+            },
+            "content": {
+              "1": "Designed for therapy selection in patients with advanced-stage solid tumors. It detects mutations across 81 genes, providing invaluable insights into what therapies may be most effective for your patients."
+            },
+            "report": "10-15 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Northstar Response™",
+              "2": "Monitors therapy response"
+            },
+            "content": {
+              "1": "Northstar Response is a next-gen sequencing-based test that measures changes in methylated tumor molecules over time. It's a powerful tool for real-time therapy monitoring."
+            },
+            "report": "10-15 Days Report"
+          }
+        }
+      },
+      "hereditary": {
+        "title": "Hereditary Cancer",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Oncocheck™ C",
+              "2": "12 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, BRIP1, CHEK2, ERBB2, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Colorectal & Prostate Cancer",
+              "5": "Lynch Syndrome",
+              "6": "Li-Fraumeni Syndrome"
+            },
+            "report": "14 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Oncocheck™ S",
+              "2": "25 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, ATM, CHEK2, PALB2, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Cowden Syndrome",
+              "5": "Neurofibromatosis",
+              "6": "Colorectal Cancer"
+            },
+            "report": "14 Days Report"
+          },
+          "3": {
+            "title": {
+              "1": "Oncocheck™ X",
+              "2": "50 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, APC, TP53, PTEN, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Colorectal Cancer",
+              "5": "Multiple Endocrine Neoplasia",
+              "6": "Leukaemia & Glioblastoma"
+            },
+            "report": "14 Days Report"
+          }
+        }
+      },
+      "blood-cancer": {
+        "title": "Blood Cancer Markers",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Tumor markers",
+              "2": "For Male"
+            },
+            "content": {
+              "1": "Prostate-specific antigen (PSA)",
+              "2": "Carcinoembryonic antigen (CEA)",
+              "3": "Alpha-fetoprotein (AFP)",
+              "4": "Beta human chorionic gonadotropin (BhCG), CA 19-9."
+            },
+            "report": "24 Hours Report"
+          },
+          "2": {
+            "title": {
+              "1": "Tumor markers",
+              "2": "For Female"
+            },
+            "content": {
+              "1": "Cancer antigen 125 (CA-125)",
+              "2": "Carcinoembryonic antigen (CEA)",
+              "3": "Alpha-fetoprotein (AFP)",
+              "4": "CA-15-3, CA-19-9",
+              "5": "CA 15-3"
+            },
+            "report": "24 Hours Report"
+          }
+        }
+      },
+      "genetic-test": {
+        "title": "Genetics Test Packages",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "BRCA1 and BRCA2",
+              "2": "by 3X4 Genetics"
+            },
+            "content": {
+              "1": "Identifies most mutations and insertions/deletions in the BRCA genes linked to breast cancer"
+            },
+            "report": "14 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Lifestyle Genetics Health",
+              "2": "by 3X4 Genetics"
+            },
+            "content": {
+              "1": "This comprehensive analysis focuses on six essential pathways to help you understand and enhance your well-being:",
+              "2": "Weight Balance, Fitness & Tissue ",
+              "3": "Health, Hormone Health, Brain ",
+              "4": "Health, Heart Health"
+            },
+            "report": "30-45 Days Report"
+          }
+        }
+      },
+      "popups": {
+        "1": {
+          "title": "Northstar Select™",
+          "content": {
+            "1": "Discover how personalized therapy selection can significantly impact your cancer treatment outcomes. Northstar Select™ helps determine the most effective therapy based on your unique genetic profile, ensuring a tailored approach to combat cancer."
+          }
+        },
+        "2": {
+          "title": "Northstar Response™",
+          "content": {
+            "1": "Monitor the effectiveness of your cancer therapy with Northstar Response™. This test helps track your response to treatment, allowing timely adjustments and maximizing the chances of successful outcomes."
+          }
+        },
+        "3": {
+          "title": "Oncocheck™ C  12 Genes Tested",
+          "content": {
+            "1": "Early detection is key to effective cancer prevention. Oncocheck™ C tests 12 critical genes, providing valuable insights into your cancer risk, enabling you to take proactive measures for early intervention."
+          }
+        },
+        "4": {
+          "title": "Oncocheck™ S  25 Genes Tested",
+          "content": {
+            "1": "A more comprehensive analysis of your genetic predisposition to cancer. Oncocheck™ S screens 25 genes, offering a deeper understanding of your risk factors and empowering you with the knowledge to take preventive action."
+          }
+        },
+        "5": {
+          "title": "Oncocheck™ X  50 Genes Tested",
+          "content": {
+            "1": "For those seeking the most extensive genetic screening, Oncocheck™ X analyzes 50 genes linked to various cancers. This detailed insight can be a vital tool in your proactive cancer prevention strategy."
+          }
+        },
+        "6": {
+          "title": "Tumor markers For Male",
+          "content": {
+            "1": "Tumor markers are essential in detecting cancer early. This test screens for specific markers in males, helping in the early identification and monitoring of cancer, which is crucial for effective treatment."
+          }
+        },
+        "7": {
+          "title": "Tumor markers For Female",
+          "content": {
+            "1": "Early detection of cancer is critical. This test screens for tumor markers in females, providing vital information for the early identification and monitoring of cancer, improving treatment success rates."
+          }
+        },
+        "8": {
+          "title": "BRCA1 and BRCA2 Testing",
+          "content": {
+            "1": "BRCA1 and BRCA2 genes play a significant role in breast and ovarian cancer risk. Testing for these mutations can help you understand your risk and take preventive measures to protect your health."
+          }
+        },
+        "9": {
+          "title": "Lifestyle Genetics Health by 3X4 Genetics",
+          "content": {
+            "1": "Your lifestyle can influence your cancer risk. This test provides personalized insights into how your genes interact with your lifestyle, empowering you to make informed decisions to reduce your cancer risk."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": {
+        "1": "Molecular diagnostics",
+        "2": "accessible for all"
+      },
+      "subtitle": {
+        "1": "Northstar Response™",
+        "2": "is FREE for up to 3 tests when you order",
+        "3": "Northstar Select™"
+      }
+    },
+    "faq": {
+      "questions": {
+        "1": {
+          "q": "How does UNITY Complete work?",
+          "answer": {
+            "1": "UNITY Complete takes advantage of a pregnancy's DNA (circulating cell-free DNA, ccfDNA) floating in the maternal bloodstream to assess for genetic changes. Some of these genetic changes are extremely small - like changes to single genes that can cause recessive conditions. Some of these genetic changes involve the presence of an entire extra chromosome (aneuploidies).",
+            "2": "Our specialized QCT technology enables us to be able to count the genetic information we see from both mom and baby in a blood sample, and determine if there are differences that could indicate a baby has a higher chance of being affected with one of these conditions."
+          }
+        },
+        "2": {
+          "q": "What genetic conditions does UNITY Complete screen for?",
+          "answer": {
+            "1": "UNITY Complete offers multiple genetic insights from a single maternal blood sample. The results you receive will depend on which tests your healthcare provider orders.",
+            "2": "UNITY Aneuploidy NIPT screens pregnancies for chromosome conditions caused by extra or missing chromosomes including trisomy 21, trisomy 18, trisomy 13, monosomy X, XXX, XXY, and XYY. UNITY Aneuploidy NIPT can also tell you the baby's gender. For twin pregnancies, you will also learn if your twins are identical or fraternal.",
+            "3": "Depending on your clinical picture, your doctor may also order UNITY Fetal RhD NIPT for moms who have a RhD- blood type, UNITY Fetal Antigen NIPT for moms who are alloimmunized to certain antigens, and 22q11.2 microdeletion analysis.",
+            "4": "UNITY Fetal Risk Screen determines if a pregnant person is a carrier for cystic fibrosis, spinal muscular atrophy, sickle cell disease, alpha-thalassemia, or beta-thalassemia. If you're found to be a carrier for one of these conditions, the fetal DNA will be screened to determine if there is a high-chance or a low-chance for a pregnancy to be affected with a condition. In some cases, like twin pregnancies or those achieved with an egg donor, we are not able to perform a fetal risk assessment.",
+            "5": "Your provider may also order carrier screening for fragile X syndrome. If the mom is determined to be a carrier for this, our assay can perform cell-free DNA analysis to determine if the fetus is a male- this would put the fetus at higher risk to develop Fragile X Syndrome."
+          }
+        },
+        "3": {
+          "q": "What are the possible results I can get with UNITY Complete?",
+          "answer": {
+            "1": "Possible results with UNITY Aneuploidy NIPT typically fall into low-risk fetus or high-risk fetus results.",
+            "2": "A Low Risk Fetus result means that the chance your pregnancy is affected with the screened conditions is significantly reduced, but not eliminated.",
+            "3": "A High-Risk Fetus result means there is an increased chance for your pregnancy to be affected with a specific condition. Confirmatory testing via chorionic villus sampling, amniocentesis, or postnatal evaluation is recommended.",
+            "4": "Note: this result does not guarantee a healthy child and does not eliminate the possibility of other chromosome abnormalities, birth defects, or other genetic conditions.",
+            "5": "UNITY Fetal Risk Screen provides maternal carrier screening results (reported as a positive carrier or negative carrier). If a pregnant person is found to be a carrier, fetal testing will automatically be performed via cell-free DNA analysis. Possible results from the fetal testing can fall into decreased/low-risk categories or increased/high-risk categories."
+          }
+        }
       }
     }
   }

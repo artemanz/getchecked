@@ -1,18 +1,6 @@
-import { Main } from "@/app/main"
-import { ContactMenu, Footer, Header } from "@/components"
+import { Prenatal } from "@/app/prenatal"
 import { createLazyFileRoute } from "@tanstack/react-router"
 
-const Index = () => {
-  return (
-    <div className="font-default">
-      <Header />
-      <Main />
-      <Footer />
-      <ContactMenu />
-    </div>
-  )
-}
-
 export const Route = createLazyFileRoute("/booking_page1")({
-  component: Index,
+  component: Prenatal,
 })

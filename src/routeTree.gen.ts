@@ -17,12 +17,24 @@ import { Route as IndexImport } from './routes/index'
 
 // Create Virtual Routes
 
+const PrenatalLazyImport = createFileRoute('/prenatal')()
+const OncologyLazyImport = createFileRoute('/oncology')()
 const CopyLazyImport = createFileRoute('/copy')()
 const Bookingpage3LazyImport = createFileRoute('/booking_page3')()
 const Bookingpage2LazyImport = createFileRoute('/booking_page2')()
 const Bookingpage1LazyImport = createFileRoute('/booking_page1')()
 
 // Create/Update Routes
+
+const PrenatalLazyRoute = PrenatalLazyImport.update({
+  path: '/prenatal',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/prenatal.lazy').then((d) => d.Route))
+
+const OncologyLazyRoute = OncologyLazyImport.update({
+  path: '/oncology',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/oncology.lazy').then((d) => d.Route))
 
 const CopyLazyRoute = CopyLazyImport.update({
   path: '/copy',
@@ -88,6 +100,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CopyLazyImport
       parentRoute: typeof rootRoute
     }
+    '/oncology': {
+      id: '/oncology'
+      path: '/oncology'
+      fullPath: '/oncology'
+      preLoaderRoute: typeof OncologyLazyImport
+      parentRoute: typeof rootRoute
+    }
+    '/prenatal': {
+      id: '/prenatal'
+      path: '/prenatal'
+      fullPath: '/prenatal'
+      preLoaderRoute: typeof PrenatalLazyImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -99,6 +125,8 @@ export const routeTree = rootRoute.addChildren({
   Bookingpage2LazyRoute,
   Bookingpage3LazyRoute,
   CopyLazyRoute,
+  OncologyLazyRoute,
+  PrenatalLazyRoute,
 })
 
 /* prettier-ignore-end */
@@ -113,7 +141,9 @@ export const routeTree = rootRoute.addChildren({
         "/booking_page1",
         "/booking_page2",
         "/booking_page3",
-        "/copy"
+        "/copy",
+        "/oncology",
+        "/prenatal"
       ]
     },
     "/": {
@@ -130,6 +160,12 @@ export const routeTree = rootRoute.addChildren({
     },
     "/copy": {
       "filePath": "copy.lazy.tsx"
+    },
+    "/oncology": {
+      "filePath": "oncology.lazy.tsx"
+    },
+    "/prenatal": {
+      "filePath": "prenatal.lazy.tsx"
     }
   }
 }

@@ -6,10 +6,6 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa"
 import { SOCIALS } from "@/lib/constants/socials"
 import { handlePageScroll } from "@/lib/helpers/handlePageScroll"
 
-import ar from "@/assets/svg/flags/ar.svg"
-import en from "@/assets/svg/flags/en.svg"
-import ru from "@/assets/svg/flags/ru.svg"
-
 import { Logo } from "../svg"
 import { useTranslation } from "react-i18next"
 import { cn } from "@/lib/helpers"
@@ -20,9 +16,9 @@ export const Header = () => {
   const navigation = useNavigation()
 
   const langs = [
-    { title: "Ar", img: ar, lang: "ar" },
-    { title: "En", img: en, lang: "en" },
-    { title: "Ru", img: ru, lang: "ru" },
+    { title: "Ar", img: "/icons/flags/ar.svg", lang: "ar" },
+    { title: "En", img: "/icons/flags/en.svg", lang: "en" },
+    { title: "Ru", img: "/icons/flags/ru.svg", lang: "ru" },
   ]
   const socials = [
     {
@@ -53,15 +49,15 @@ export const Header = () => {
 
   return (
     <header className="relative z-10">
-      <div className="flex items-center h-10 pl-4 bg-grey-light">
-        <div className="flex justify-between w-full h-full">
+      <div className="flex h-10 items-center bg-grey-light pl-4">
+        <div className="flex h-full w-full justify-between">
           <ul className="flex items-center">
             {langs.map((lang) => (
               <li
                 className={cn(
-                  "flex items-center gap-1 font-semibold uppercase cursor-pointer hover:bg-accent p-2",
+                  "flex cursor-pointer items-center gap-1 p-2 font-semibold uppercase hover:bg-accent",
                   i18n.language === lang.lang &&
-                    "opacity-50 hover:bg-transparent cursor-default"
+                    "cursor-default opacity-50 hover:bg-transparent",
                 )}
                 key={lang.title}
                 onClick={() => i18n.changeLanguage(lang.lang)}
@@ -72,7 +68,7 @@ export const Header = () => {
             ))}
           </ul>
 
-          <div className="hidden lg:flex justify-end items-center gap-4 bg-[linear-gradient(230deg,#FFE629_70%,#F4F4F3_70%)] w-[45rem] h-full pr-4">
+          <div className="hidden h-full w-[45rem] items-center justify-end gap-4 bg-[linear-gradient(230deg,#FFE629_70%,#F4F4F3_70%)] pr-4 lg:flex">
             <a
               className="flex items-center gap-2 text-grey-darker hover:text-accent-dark"
               type="tel"
@@ -82,7 +78,7 @@ export const Header = () => {
               +971 52 700 7915
             </a>
 
-            <hr className="w-px h-5 bg-grey-darker" />
+            <hr className="h-5 w-px bg-grey-darker" />
 
             <ul className="flex items-center gap-2">
               {socials.map((s) => (
@@ -90,7 +86,7 @@ export const Header = () => {
                   <a
                     aria-label={s.label}
                     target="_blank"
-                    className="grid w-6 h-6 rounded-full bg-grey-darker place-content-center"
+                    className="grid h-6 w-6 place-content-center rounded-full bg-grey-darker"
                     href={s.href}
                   >
                     <s.icon color="white" size={14} />
@@ -111,7 +107,7 @@ export const Header = () => {
             <Logo className="w-32 md:w-48" />
           </a>
 
-          <nav className="hidden ml-12 mr-auto lg:flex">
+          <nav className="ml-12 mr-auto hidden lg:flex">
             <ul className="flex gap-8 xl:text-lg">
               {navigation.map((item) => (
                 <li key={item.title}>

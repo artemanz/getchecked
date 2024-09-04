@@ -14,59 +14,27 @@
       "advertisement": "Advertisement License No: 6DDI7WHT-050923",
       "copyright": "getcheckedclinic.com © 2024",
       "adress": "The Mall, Umm Suqeim - Opposite Jumeirah Beach Hotel"
+    },
+    "card": {
+      "includes": "Includes",
+      "find-out": "Find Out More",
+      "sample": "View Sample Report",
+      "currency": "AED",
+      "per": "per",
+      "request": "Request",
+      "analysis-type": {
+        "blood": "Blood",
+        "saliva": "Saliva",
+        "blood-mother": "Blood from the Mother"
+      }
     }
   },
-  "main": {
-    "hero": {
-      "title-onco": "Oncology Testing",
-      "title-prenatal": "Prenatal Screening",
-      "subtitle": "At the Forefront of Disease Detection"
-    },
+  "common": {
     "about": {
-      "title": "About",
-      "card": {
-        "title": "Prenatal Screening",
-        "text": {
-          "1": "UNITY Screen™ includes a carrier screen as well as a single-gene(for recessive conditions) and aneuploidy",
-          "2": "and only requires a maternal blood draw at 10+ weeks to assess fetal risk. No paternal sample needed.",
-          "bold": "Non-Invasive Prenatal Test (NIPT)"
-        }
-      }
+      "title": "About"
     },
     "needs": {
-      "title": "Who Needs This",
-      "cards": {
-        "1": {
-          "title": {
-            "1": "Designed for a",
-            "span": "general obstetric",
-            "2": "population"
-          }
-        },
-        "2": {
-          "title": "Expecting parents"
-        },
-        "3": {
-          "title": "Families with a history of genetic disorders"
-        },
-        "4": {
-          "title": "Pregnant woman at risk for alloimmunization"
-        }
-      },
-      "banner": {
-        "title": {
-          "1": "Know More.",
-          "2": "Know Early."
-        },
-        "subtitle": "One blood sample from mom. Direct genetic insights about your baby"
-      }
-    },
-    "video": {
-      "title": {
-        "1": "One Test",
-        "2": "Multiple Insights",
-        "3": "To Your Baby's Health"
-      }
+      "title": "Who Needs This"
     },
     "works": {
       "title": "How It Works",
@@ -104,126 +72,202 @@
       }
     },
     "discover": {
-      "title": "Discover The Difference",
+      "title": "Discover The Difference"
+    },
+    "documents": {
+      "title": "Sample Reports"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "If you have a query - we'll do our best to assist you.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "button": "Send"
+      }
+    }
+  },
+  "prenatal": {
+    "hero": {
+      "title": "Prenatal Screening",
+      "subtitle": "At the Forefront of Disease Detection"
+    },
+    "about": {
+      "card": {
+        "1": "UNITY Screen™ includes a carrier screen as well as a single-gene(for recessive conditions) and aneuploidy",
+        "2": "and only requires a maternal blood draw at 10+ weeks to assess fetal risk. No paternal sample needed.",
+        "bold": "Non-Invasive Prenatal Test (NIPT)"
+      }
+    },
+    "needs": {
+      "cards": {
+        "1": {
+          "title": {
+            "1": "Designed for a",
+            "span": "general obstetric",
+            "2": "population"
+          }
+        },
+        "2": {
+          "title": "Expecting parents"
+        },
+        "3": {
+          "title": "Families with a history of genetic disorders"
+        },
+        "4": {
+          "title": "Pregnant woman at risk for alloimmunization"
+        }
+      },
+      "banner": {
+        "title": "Know More. Know Early.",
+        "subtitle": "One blood sample from mom. Direct genetic insights about your baby"
+      }
+    },
+    "video": {
+      "title": {
+        "1": "One Test",
+        "2": "Multiple Insights",
+        "3": "To Your Baby's Health"
+      }
+    },
+    "discover": {
       "cards": {
         "1": {
           "text": {
+            "1": "",
             "bold": "Detects ~3x more affected pregnancies",
-            "next": "than traditional carrier screening"
+            "2": "than traditional carrier screening"
           }
         },
         "2": {
           "text": {
-            "bold": "Of male partners do not get tested",
-            "next": "UNITY Fetal Risk Screen does not need the male partner's sample"
+            "1": "",
+            "bold": "Of male partners do not get tested.",
+            "2": "UNITY Fetal Risk Screen does not need the male partner's sample"
           }
         },
         "3": {
           "text": {
-            "bold": "Reassure patients early",
-            "next": "99% of pregnancies have a low risk of being affected"
+            "1": "",
+            "bold": "Reassure patients early:",
+            "2": ">99% of pregnancies have a low risk of being affected"
           }
         },
         "4": {
           "text": {
-            "bold": "Assay sensitivity",
-            "next": "accurately detect affected pregnancies"
+            "1": "",
+            "bold": "Assay sensitivity:",
+            "2": "accurately detect affected pregnancies"
           }
         },
         "5": {
           "text": {
+            "1": "",
             "bold": "Negative predictive value (NPV)",
-            "next": "trust in a negative result"
+            "2": "trust in a negative result"
           }
         }
       }
     },
     "packages": {
-      "title": {
-        "1": "UNITY Screen",
-        "2": "Packages"
+      "unity-screen": {
+        "title": "UNITY Screen™ Packages",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "NIPT UNITY",
+              "2": "Aneuploidy Screen"
+            },
+            "content": {
+              "1": "T13, T18, T21, and Sex Chromosomes",
+              "2": "+ Optional Fetal Sex",
+              "3": "+ Optional Fetal RhD NIPT",
+              "4": "+ Optional 22q"
+            },
+            "report": "10-15 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "UNITY Carrier",
+              "2": "Screen"
+            },
+            "content": {
+              "1": "w/ sgNIPT Reflex",
+              "2": "Сhecks the baby's DNA for specific conditions if mother is a carrier"
+            },
+            "report": "10-15 Days Report"
+          },
+          "3": {
+            "title": {
+              "1": "UNITY Aneuploidy",
+              "2": "with Fetal Antigen NIPT"
+            },
+            "content": {
+              "1": "T13, T18, T21, and Sex Chromosomes",
+              "2": "+ Optional Fetal Sex",
+              "3": "+ Optional Fetal RhD NIPT",
+              "4": "+ Optional Fetal Rbc Antigen NIPT",
+              "5": "+ Optional 22q"
+            },
+            "report": "10-15 Days Report"
+          },
+          "4": {
+            "title": {
+              "1": "UNITY Complete",
+              "2": "NIPT +Carrier"
+            },
+            "content": {
+              "1": "Carrier Screen w/ sgNIPT Reflex",
+              "2": "Aneuploidy Screen w/ T13, T18, T21, and Sex Chromosomes",
+              "3": "+ Optional Fetal Sex",
+              "4": "+ Optional Fetal RhD NIPT",
+              "5": "+ Optional 22q"
+            },
+            "report": "10-15 Days Report"
+          },
+          "5": {
+            "title": {
+              "1": "UNITY Complete",
+              "2": "with Fetal Antigen NIPT"
+            },
+            "content": {
+              "1": "Carrier Screen w/ sgNIPT Reflex",
+              "2": "Aneuploidy Screen w/ T13, T18, T21, and Sex Chromosomes",
+              "3": "+ Optional Fetal Sex",
+              "4": "+ Optional Fetal RhD NIPT",
+              "5": "+ Optional Fetal Rbc Antigen NIPT",
+              "6": "+ Optional 22q"
+            },
+            "report": "10-15 Days Report"
+          },
+          "6": {
+            "title": "BabyPeek",
+            "subtitle": "Available for free as an add-on to all UNITY packages",
+            "content": "Includes: Traits: Eye color, Red hair, Curly hair, Light or dark hair, Hair thickness, Freckles, Cilantro, Bitter taste, Asparagus odor, Sweet taste, Sweet vs. salty, Teeth",
+            "report": "10-15 Days Report"
+          }
+        }
       },
-      "blood": "Blood from the Mother",
-      "report": "10-15 Days Report",
-      "includes": "Includes",
-      "find-out": "Find Out More",
-      "sample": "View Sample Report",
-      "currency": "AED",
-      "cards": {
-        "1": {
-          "title": {
-            "1": "NIPT UNITY",
-            "2": "Aneuploidy Screen"
-          },
-          "content": {
-            "1": "T13, T18, T21, and Sex Chromosomes",
-            "list": {
-              "1": "+ Optional Fetal Sex",
-              "2": "+ Optional Fetal RhD NIPT",
-              "3": "+ Optional 22q"
-            }
+      "gender-detection": {
+        "title": "Gender Detection",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Peakaboo Early Fetal Sex",
+              "2": "Detection (7 weeks)"
+            },
+            "content": {
+              "1": "Fetal Sex",
+              "2": "Peekaboo offers an early gender test, providing results up to 14 weeks earlier than traditional ultrasounds.",
+              "3": "Determines your baby's gender with over 99% accuracy."
+            },
+            "report": "10-15 Days Report"
           }
-        },
-        "2": {
-          "title": {
-            "1": "UNITY Carrier",
-            "2": "Screen"
-          },
-          "content": {
-            "1": "w/ sgNIPT Reflex",
-            "2": "Сhecks the baby's DNA for specific conditions if mother is a carrier"
-          }
-        },
-        "3": {
-          "title": {
-            "1": "UNITY Aneuploidy",
-            "2": "with Fetal Antigen NIPT"
-          },
-          "content": {
-            "1": "T13, T18, T21, and Sex Chromosomes",
-            "list": {
-              "1": "+ Optional Fetal Sex",
-              "2": "+ Optional Fetal RhD NIPT",
-              "3": "+ Optional Fetal Rbc Antigen NIPT",
-              "4": "+ Optional 22q"
-            }
-          }
-        },
-        "4": {
-          "title": {
-            "1": "UNITY Complete",
-            "2": "NIPT +Carrier"
-          },
-          "content": {
-            "1": "Carrier Screen w/ sgNIPT Reflex",
-            "2": "Aneuploidy Screen w/ T13, T18, T21, and Sex Chromosomes",
-            "list": {
-              "1": "+ Optional Fetal Sex",
-              "2": "+ Optional Fetal RhD NIPT",
-              "3": "+ Optional 22q"
-            }
-          }
-        },
-        "5": {
-          "title": {
-            "1": "UNITY Complete",
-            "2": "with Fetal Antigen NIPT"
-          },
-          "content": {
-            "1": "Carrier Screen w/ sgNIPT Reflex",
-            "2": "Aneuploidy Screen w/ T13, T18, T21, and Sex Chromosomes",
-            "list": {
-              "1": "+ Optional Fetal Sex",
-              "2": "+ Optional Fetal RhD NIPT",
-              "3": "+ Optional Fetal Rbc Antigen NIPT",
-              "4": "+ Optional 22q"
-            }
-          }
-        },
-        "6": {
-          "title": "BabyPeek",
-          "subtitle": "Available for free as an add-on to all UNITY packages",
-          "content": "Includes: Traits: Eye color, Red hair, Curly hair, Light or dark hair, Hair thickness, Freckles, Cilantro, Bitter taste, Asparagus odor, Sweet taste, Sweet vs. salty, Teeth"
         }
       },
       "popups": {
@@ -380,34 +424,17 @@
             "10": "Sample Type: Blood sample from the mother."
           }
         }
+      }
+    },
+    "cta": {
+      "title": {
+        "1": "Unlock Your Baby's 12 Unique",
+        "2": "Traits Before Birth"
       },
-      "second-title": "Gender Detection",
-      "gender-detection": {
-        "title": {
-          "1": "Peakaboo Early Fetal Sex",
-          "2": "Detection (7 weeks)"
-        },
-        "content": {
-          "1": "Fetal Sex",
-          "2": "Peekaboo offers an early gender test, providing results up to 14 weeks earlier than traditional ultrasounds.",
-          "3": "Determines your baby's gender with over 99% accuracy."
-        }
+      "subtitle": {
+        "text": "Will your baby have brown eyes, blond curls just like you? Find out with",
+        "bold": "BabyPeek"
       }
-    },
-    "screening": {
-      "banner": {
-        "title": {
-          "1": "Unlock Your Baby's 12 Unique",
-          "2": "Traits Before Birth"
-        },
-        "subtitle": {
-          "text": "Will your baby have brown eyes, blond curls just like you? Find out with",
-          "bold": "BabyPeek"
-        }
-      }
-    },
-    "documents": {
-      "title": "Sample Reports"
     },
     "faq": {
       "title": "Frequently Asked Questions",
@@ -440,16 +467,327 @@
           }
         }
       }
+    }
+  },
+  "oncology": {
+    "hero": {
+      "title": "Oncology Testing",
+      "subtitle": "At the Forefront of Disease Detection"
     },
-    "contact": {
-      "title": "Contact",
-      "subtitle": "If you have a query - we'll do our best to assist you.",
-      "form": {
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone",
-        "message": "Message",
-        "button": "Send"
+    "about": {
+      "card": {
+        "bold-1": "Northstar Select™",
+        "bold-2": "Northstar Response™",
+        "and": "and",
+        "content": "are advanced liquid biopsy tests now available for commercial use. Northstar Select™ helps determine the most appropriate first line therapy, while Northstar Response™ monitors the effectiveness of the ongoing treatment. In addition, we offer comprehensive cancer screening and preventative screening for all types of cancer, providing a proactive approach to healthcare."
+      }
+    },
+    "needs": {
+      "cards": {
+        "1": {
+          "title": {
+            "1": "Appropriate for any",
+            "span": "late-stage solid tumor",
+            "2": "and guides first-line therapy decisions and for anyone looking for preventative measures and early detection."
+          }
+        },
+        "2": {
+          "title": "Patients Undergoing Targeted Therapy"
+        },
+        "3": {
+          "title": "Patients Undergoing Immunotherapy"
+        },
+        "4": {
+          "title": "Patients with Metastatic Cancer"
+        }
+      },
+      "banner": {
+        "title": "Treat. Monitor. Adapt.",
+        "subtitle": {
+          "bold": "Northstar™",
+          "text": "Informs and monitors response to targeted therapy & immunotherapy"
+        }
+      }
+    },
+    "video": {
+      "title": {
+        "1": "Ultra-sensitive",
+        "2": "Liquid Biopsy &",
+        "3": "Precise Monitoring"
+      }
+    },
+    "discover": {
+      "cards": {
+        "1": {
+          "text": {
+            "1": "Northstar Response™  shows",
+            "bold": ">10x Stronger Signal",
+            "2": "than SNV-Based ctDNA Monitoring Assays"
+          }
+        },
+        "2": {
+          "text": {
+            "1": "Northstar Select™ provides",
+            "bold": "therapy insights",
+            "2": "for stage III or IV solid tumor cancer patients."
+          }
+        },
+        "3": {
+          "text": {
+            "1": "Northstar Response™",
+            "bold": "distinguishes changes",
+            "2": "as small as 0.2% tumor fraction."
+          }
+        },
+        "4": {
+          "text": {
+            "1": "Northstar Select™ detects mutations in",
+            "bold": "81 genes",
+            "2": "from cell-free tumor DNA in advanced-stage solid tumors."
+          }
+        },
+        "5": {
+          "text": {
+            "1": "Northstar Response™ achieves",
+            "bold": "consistent accuracy",
+            "2": "across 10 cancer types"
+          }
+        }
+      }
+    },
+    "packages": {
+      "northstar": {
+        "title": "Northstar™ Packages",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Northstar Select™",
+              "2": "Determines therapy"
+            },
+            "content": {
+              "1": "Designed for therapy selection in patients with advanced-stage solid tumors. It detects mutations across 81 genes, providing invaluable insights into what therapies may be most effective for your patients."
+            },
+            "report": "10-15 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Northstar Response™",
+              "2": "Monitors therapy response"
+            },
+            "content": {
+              "1": "Northstar Response is a next-gen sequencing-based test that measures changes in methylated tumor molecules over time. It's a powerful tool for real-time therapy monitoring."
+            },
+            "report": "10-15 Days Report"
+          }
+        }
+      },
+      "hereditary": {
+        "title": "Hereditary Cancer",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Oncocheck™ C",
+              "2": "12 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, BRIP1, CHEK2, ERBB2, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Colorectal & Prostate Cancer",
+              "5": "Lynch Syndrome",
+              "6": "Li-Fraumeni Syndrome"
+            },
+            "report": "14 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Oncocheck™ S",
+              "2": "25 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, ATM, CHEK2, PALB2, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Cowden Syndrome",
+              "5": "Neurofibromatosis",
+              "6": "Colorectal Cancer"
+            },
+            "report": "14 Days Report"
+          },
+          "3": {
+            "title": {
+              "1": "Oncocheck™ X",
+              "2": "50 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, APC, TP53, PTEN, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Colorectal Cancer",
+              "5": "Multiple Endocrine Neoplasia",
+              "6": "Leukaemia & Glioblastoma"
+            },
+            "report": "14 Days Report"
+          }
+        }
+      },
+      "blood-cancer": {
+        "title": "Blood Cancer Markers",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Tumor markers",
+              "2": "For Male"
+            },
+            "content": {
+              "1": "Prostate-specific antigen (PSA)",
+              "2": "Carcinoembryonic antigen (CEA)",
+              "3": "Alpha-fetoprotein (AFP)",
+              "4": "Beta human chorionic gonadotropin (BhCG), CA 19-9."
+            },
+            "report": "24 Hours Report"
+          },
+          "2": {
+            "title": {
+              "1": "Tumor markers",
+              "2": "For Female"
+            },
+            "content": {
+              "1": "Cancer antigen 125 (CA-125)",
+              "2": "Carcinoembryonic antigen (CEA)",
+              "3": "Alpha-fetoprotein (AFP)",
+              "4": "CA-15-3, CA-19-9",
+              "5": "CA 15-3"
+            },
+            "report": "24 Hours Report"
+          }
+        }
+      },
+      "genetic-test": {
+        "title": "Genetics Test Packages",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "BRCA1 and BRCA2",
+              "2": "by 3X4 Genetics"
+            },
+            "content": {
+              "1": "Identifies most mutations and insertions/deletions in the BRCA genes linked to breast cancer"
+            },
+            "report": "14 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Lifestyle Genetics Health",
+              "2": "by 3X4 Genetics"
+            },
+            "content": {
+              "1": "This comprehensive analysis focuses on six essential pathways to help you understand and enhance your well-being:",
+              "2": "Weight Balance, Fitness & Tissue ",
+              "3": "Health, Hormone Health, Brain ",
+              "4": "Health, Heart Health"
+            },
+            "report": "30-45 Days Report"
+          }
+        }
+      },
+      "popups": {
+        "1": {
+          "title": "Northstar Select™",
+          "content": {
+            "1": "Discover how personalized therapy selection can significantly impact your cancer treatment outcomes. Northstar Select™ helps determine the most effective therapy based on your unique genetic profile, ensuring a tailored approach to combat cancer."
+          }
+        },
+        "2": {
+          "title": "Northstar Response™",
+          "content": {
+            "1": "Monitor the effectiveness of your cancer therapy with Northstar Response™. This test helps track your response to treatment, allowing timely adjustments and maximizing the chances of successful outcomes."
+          }
+        },
+        "3": {
+          "title": "Oncocheck™ C  12 Genes Tested",
+          "content": {
+            "1": "Early detection is key to effective cancer prevention. Oncocheck™ C tests 12 critical genes, providing valuable insights into your cancer risk, enabling you to take proactive measures for early intervention."
+          }
+        },
+        "4": {
+          "title": "Oncocheck™ S  25 Genes Tested",
+          "content": {
+            "1": "A more comprehensive analysis of your genetic predisposition to cancer. Oncocheck™ S screens 25 genes, offering a deeper understanding of your risk factors and empowering you with the knowledge to take preventive action."
+          }
+        },
+        "5": {
+          "title": "Oncocheck™ X  50 Genes Tested",
+          "content": {
+            "1": "For those seeking the most extensive genetic screening, Oncocheck™ X analyzes 50 genes linked to various cancers. This detailed insight can be a vital tool in your proactive cancer prevention strategy."
+          }
+        },
+        "6": {
+          "title": "Tumor markers For Male",
+          "content": {
+            "1": "Tumor markers are essential in detecting cancer early. This test screens for specific markers in males, helping in the early identification and monitoring of cancer, which is crucial for effective treatment."
+          }
+        },
+        "7": {
+          "title": "Tumor markers For Female",
+          "content": {
+            "1": "Early detection of cancer is critical. This test screens for tumor markers in females, providing vital information for the early identification and monitoring of cancer, improving treatment success rates."
+          }
+        },
+        "8": {
+          "title": "BRCA1 and BRCA2 Testing",
+          "content": {
+            "1": "BRCA1 and BRCA2 genes play a significant role in breast and ovarian cancer risk. Testing for these mutations can help you understand your risk and take preventive measures to protect your health."
+          }
+        },
+        "9": {
+          "title": "Lifestyle Genetics Health by 3X4 Genetics",
+          "content": {
+            "1": "Your lifestyle can influence your cancer risk. This test provides personalized insights into how your genes interact with your lifestyle, empowering you to make informed decisions to reduce your cancer risk."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": {
+        "1": "Molecular diagnostics",
+        "2": "accessible for all"
+      },
+      "subtitle": {
+        "1": "Northstar Response™",
+        "2": "is FREE for up to 3 tests when you order",
+        "3": "Northstar Select™"
+      }
+    },
+    "faq": {
+      "questions": {
+        "1": {
+          "q": "How does UNITY Complete work?",
+          "answer": {
+            "1": "UNITY Complete takes advantage of a pregnancy's DNA (circulating cell-free DNA, ccfDNA) floating in the maternal bloodstream to assess for genetic changes. Some of these genetic changes are extremely small - like changes to single genes that can cause recessive conditions. Some of these genetic changes involve the presence of an entire extra chromosome (aneuploidies).",
+            "2": "Our specialized QCT technology enables us to be able to count the genetic information we see from both mom and baby in a blood sample, and determine if there are differences that could indicate a baby has a higher chance of being affected with one of these conditions."
+          }
+        },
+        "2": {
+          "q": "What genetic conditions does UNITY Complete screen for?",
+          "answer": {
+            "1": "UNITY Complete offers multiple genetic insights from a single maternal blood sample. The results you receive will depend on which tests your healthcare provider orders.",
+            "2": "UNITY Aneuploidy NIPT screens pregnancies for chromosome conditions caused by extra or missing chromosomes including trisomy 21, trisomy 18, trisomy 13, monosomy X, XXX, XXY, and XYY. UNITY Aneuploidy NIPT can also tell you the baby's gender. For twin pregnancies, you will also learn if your twins are identical or fraternal.",
+            "3": "Depending on your clinical picture, your doctor may also order UNITY Fetal RhD NIPT for moms who have a RhD- blood type, UNITY Fetal Antigen NIPT for moms who are alloimmunized to certain antigens, and 22q11.2 microdeletion analysis.",
+            "4": "UNITY Fetal Risk Screen determines if a pregnant person is a carrier for cystic fibrosis, spinal muscular atrophy, sickle cell disease, alpha-thalassemia, or beta-thalassemia. If you're found to be a carrier for one of these conditions, the fetal DNA will be screened to determine if there is a high-chance or a low-chance for a pregnancy to be affected with a condition. In some cases, like twin pregnancies or those achieved with an egg donor, we are not able to perform a fetal risk assessment.",
+            "5": "Your provider may also order carrier screening for fragile X syndrome. If the mom is determined to be a carrier for this, our assay can perform cell-free DNA analysis to determine if the fetus is a male- this would put the fetus at higher risk to develop Fragile X Syndrome."
+          }
+        },
+        "3": {
+          "q": "What are the possible results I can get with UNITY Complete?",
+          "answer": {
+            "1": "Possible results with UNITY Aneuploidy NIPT typically fall into low-risk fetus or high-risk fetus results.",
+            "2": "A Low Risk Fetus result means that the chance your pregnancy is affected with the screened conditions is significantly reduced, but not eliminated.",
+            "3": "A High-Risk Fetus result means there is an increased chance for your pregnancy to be affected with a specific condition. Confirmatory testing via chorionic villus sampling, amniocentesis, or postnatal evaluation is recommended.",
+            "4": "Note: this result does not guarantee a healthy child and does not eliminate the possibility of other chromosome abnormalities, birth defects, or other genetic conditions.",
+            "5": "UNITY Fetal Risk Screen provides maternal carrier screening results (reported as a positive carrier or negative carrier). If a pregnant person is found to be a carrier, fetal testing will automatically be performed via cell-free DNA analysis. Possible results from the fetal testing can fall into decreased/low-risk categories or increased/high-risk categories."
+          }
+        }
       }
     }
   }

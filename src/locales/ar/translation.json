@@ -14,27 +14,99 @@
       "advertisement": "رقم ترخيص الإعلان: 6DDI7WHT-050923",
       "copyright": "getcheckedclinic.com © 2024",
       "adress": "المول، أم سقيم - مقابل فندق مدينة جميرا"
+    },
+    "card": {
+      "blood": "دم الأم",
+      "report": "النتائج جاهزة خلال 15 إلى 10 أيام",
+      "includes": "يشمل",
+      "find-out": "معرفة المزيد",
+      "sample": "عرض نموذج التقرير",
+      "currency": "درهم",
+      "per": "حسب",
+      "request": "الطلب",
+      "analysis-type": {
+        "blood": "Кровь",
+        "saliva": "Слюна",
+        "blood-mother": "دم الأم"
+      }
     }
   },
-  "main": {
-    "hero": {
-      "title-onco": "اختبار الأورام",
-      "title-prenatal": "الفحص السابق للولادة",
-      "subtitle": "أحدث التطورات في تشخيص الأمراض"
-    },
+  "common": {
     "about": {
-      "title": "حول",
-      "card": {
-        "title": "الفحص السابق للولادة",
-        "text": {
-          "1": "UNITY Screen™",
-          "2": " يتضمن شاشة الحامل بالإضافة إلى اختبار الجين الفردي (للحالات الاحتكارية) واختبار NIPT للاختلالات الكروموسومية ويحتاج فقط إلى سحب دم الأم في الأسبوع 10+ لتقييم المخاطر الجنينية. لا حاجة لعينة من الأب.",
-          "bold": ""
+      "title": "حول"
+    },
+    "needs": {
+      "title": "من يحتاج هذا"
+    },
+    "works": {
+      "title": "كيف يعمل",
+      "cards": {
+        "1": {
+          "tab": {
+            "time": "نفس اليوم",
+            "title": "خطة صحية شخصية"
+          },
+          "content": {
+            "title": "احجز في العيادة أو المنزل",
+            "text": "قم بزيارتنا أو سنقوم بزيارتك: سحب عينة الدم بسهولة وسرعة بدءًا من الأسبوع العاشر من الحمل."
+          }
+        },
+        "2": {
+          "tab": {
+            "time": " 2-3 أيام",
+            "title": "مختبر في الولايات المتحدة الأمريكية"
+          },
+          "content": {
+            "title": "مختبر في الولايات المتحدة الأمريكية",
+            "text": "مختبر في الولايات المتحدة الأمريكيةيتم إرسال عينتك إلى أحد شركائنا الحصريين في الولايات المتحدة الأمريكية، مما يضمن دقة وموثوقية عالية"
+          }
+        },
+        "3": {
+          "tab": {
+            "time": "5-12 أيام",
+            "title": "خطة صحية شخصية"
+          },
+          "content": {
+            "title": "خطة صحية شخصية",
+            "text": "خطة صحية شخصيةررؤى شاملة: في غضون 15-10 أيام، احصل على تقريرك الجيني المفصل واستشارة مجانية. طريقك إلى الرؤى الصحية المخصصة يبدأ هنا"
+          }
         }
       }
     },
+    "discover": {
+      "title": "المزايا"
+    },
+    "documents": {
+      "title": "تقارير العينات"
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة"
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "subtitle": "إذا كانت لديك أية أسئلة، فسنبذل كل جهدنا لمساعدتك",
+      "form": {
+        "name": "اسم",
+        "email": "بريد إلكتروني",
+        "phone": "هاتف",
+        "message": "رسالة",
+        "button": "يرسل"
+      }
+    }
+  },
+  "prenatal": {
+    "hero": {
+      "title": "الفحص السابق للولادة",
+      "subtitle": "أحدث التطورات في تشخيص الأمراض"
+    },
+    "about": {
+      "card": {
+        "1": "UNITY Screen™",
+        "2": " يتضمن شاشة الحامل بالإضافة إلى اختبار الجين الفردي (للحالات الاحتكارية) واختبار NIPT للاختلالات الكروموسومية ويحتاج فقط إلى سحب دم الأم في الأسبوع 10+ لتقييم المخاطر الجنينية. لا حاجة لعينة من الأب.",
+        "bold": ""
+      }
+    },
     "needs": {
-      "title": "من يحتاج هذا",
       "cards": {
         "1": {
           "title": {
@@ -54,11 +126,8 @@
         }
       },
       "banner": {
-        "title": {
-          "1": "تعرف في وقتٍ مبكر.",
-          "2": "تعرف على المزيد."
-        },
-        "subtitle": "عينة دم واحدة من الأم. معلومات جينية عن طفلك."
+        "title": "تعرف على المزيد. تعرف في وقتٍ مبكر.",
+        "subtitle": "عينة دم واحدة من الأم. معلومات جينية عن طفلك"
       }
     },
     "video": {
@@ -68,162 +137,139 @@
         "3": "الرؤى حول صحة طفلك"
       }
     },
-    "works": {
-      "title": "كيف يعمل",
-      "cards": {
-        "1": {
-          "tab": {
-            "time": "نفس اليوم",
-            "title": "احجز في العيادة أو المنزل"
-          },
-          "content": {
-            "title": "احجز في العيادة أو المنزل",
-            "text": "قم بزيارتنا أو سنقوم بزيارتك: سحب عينة الدم بسهولة وسرعة بدءًا من الأسبوع العاشر من الحمل."
-          }
-        },
-        "2": {
-          "tab": {
-            "time": " 2-3 أيام",
-            "title": " مختبر في الولايات المتحدة الأمريكية"
-          },
-          "content": {
-            "title": "مختبر في الولايات المتحدة الأمريكية",
-            "text": "مختبر في الولايات المتحدة الأمريكيةيتم إرسال عينتك إلى أحد شركائنا الحصريين في الولايات المتحدة الأمريكية، مما يضمن دقة وموثوقية عالية."
-          }
-        },
-        "3": {
-          "tab": {
-            "time": "10-15 أيام",
-            "title": "خطة صحية شخصية"
-          },
-          "content": {
-            "title": "خطة صحية شخصية",
-            "text": "خطة صحية شخصيةررؤى شاملة: في غضون 15-10 أيام، احصل على تقريرك الجيني المفصل واستشارة مجانية. طريقك إلى الرؤى الصحية المخصصة يبدأ هنا."
-          }
-        }
-      }
-    },
     "discover": {
-      "title": "المزايا",
       "cards": {
         "1": {
           "text": {
-            "bold": "الحمل المتأثرة يكتشف حوالي 3 مرات المزيد من",
-            "next": "مقارنة بالفحص التقليدي."
+            "1": "مقارنة بالفحص التقليدي.",
+            "bold": "الحمل المتأثرة يكتشف حوالي 3 مرات المزيد من"
           }
         },
         "2": {
           "text": {
-            "bold": "من الشركاء الذكور لا يتم اختبارهم. لا يحتاج",
-            "next": "UNITY Fetal Risk Screen إلى عينة من الشريك الذكر."
+            "1": "UNITY Fetal Risk Screen إلى عينة من الشريك الذكر.",
+            "bold": "من الشركاء الذكور لا يتم اختبارهم. لا يحتاج"
           }
         },
         "3": {
           "text": {
-            "bold": "تطمئن المرضى في وقت مبكر:",
-            "next": " أكثر من 99% من الحمل لديها خطر منخفض من التأثير."
+            "1": " أكثر من 99% من الحمل لديها خطر منخفض من التأثير.",
+            "bold": "تطمئن المرضى في وقت مبكر:"
           }
         },
         "4": {
           "text": {
-            "bold": "حساسية الاختبار",
-            "next": "الكشف الدقيق عن الحمل المتأثر"
+            "1": "الكشف الدقيق عن الحمل المتأثر",
+            "bold": "حساسية الاختبار"
           }
         },
         "5": {
           "text": {
-            "bold": "قيمة التنبؤ السلبي (NPV):",
-            "next": "دقة النتيجة السلبية"
+            "1": "دقة النتيجة السلبية",
+            "bold": "قيمة التنبؤ السلبي (NPV):"
           }
         }
       }
     },
     "packages": {
-      "title": {
-        "1": "UNITY Screen",
-        "2": "أنواع"
+      "unity-screen": {
+        "title": {
+          "1": "UNITY Screen",
+          "2": "أنواع"
+        },
+        "cards": {
+          "1": {
+            "title": {
+              "1": "NIPT UNITY",
+              "2": "فحص الكروموسومات"
+            },
+            "content": {
+              "1": "T13، T18، T21 والكروموسومات الجنسية",
+              "2": "ختياري:  تحديد جنس الجنين",
+              "3": "ختياري: تحديد عامل ريزوس للجنين",
+              "4": "اختياري: 22q"
+            },
+            "report": "النتائج جاهزة خلال 15 إلى 10 أيام"
+          },
+          "2": {
+            "title": {
+              "1": "UNITY",
+              "2": "إختبار فحص الناقل"
+            },
+            "content": {
+              "1": "الفحص الناقل العكسي (sgNIPT)",
+              "2": "يفحص الحمض النووي للرضيع للتحقق من وجود تغييرات، في حالة كانت الأم حاملًا"
+            },
+            "report": "النتائج جاهزة خلال 15 إلى 10 أيام"
+          },
+          "3": {
+            "title": {
+              "1": "UNITY فحص الكروموسومات",
+              "2": "+ الفحص المناعي الجنيني"
+            },
+            "content": {
+              "1": "T13، T18، T21 والكروموسومات الجنسية",
+
+              "2": "ختياري:  تحديد جنس الجنين",
+              "3": "ختياري: تحديد عامل ريزوس للجنين",
+              "4": "اختياري: مستضدات كريات الدم للجنين",
+              "5": "اختياري: 22q "
+            },
+            "report": "النتائج جاهزة خلال 15 إلى 10 أيام"
+          },
+          "4": {
+            "title": {
+              "1": "UNITY NIPT Complete",
+              "2": "+ إختبار فحص الناقل"
+            },
+            "content": {
+              "1": "إختبار فحص الناقل+ الفحص الناقل العكسي (sgNIPT)",
+              "2": "T13، T18، T21 والكروموسومات الجنسية",
+
+              "3": "ختياري:  تحديد جنس الجنين +",
+              "4": "ختياري: تحديد عامل ريزوس للجنين +",
+              "5": "+22q: اختياري"
+            },
+            "report": "النتائج جاهزة خلال 15 إلى 10 أيام"
+          },
+          "5": {
+            "title": {
+              "1": "UNITY NPT Complete",
+              "2": "+ الفحص المناعي الجنيني"
+            },
+            "content": {
+              "1": "إختبار فحص الناقل +الفحص الناقل العكسي (sgNIPT)",
+              "2": "T13، T18، T21 والكروموسومات الجنسية",
+
+              "3": "ختياري:  تحديد جنس الجنين +",
+              "4": "ختياري: تحديد عامل ريزوس للجنين +",
+              "5": "اختياري: مستضدات كريات الدم للجنين +",
+              "6": " 22q +: اختياري"
+            },
+            "report": "النتائج جاهزة خلال 15 إلى 10 أيام"
+          },
+          "6": {
+            "title": "BabyPeek",
+            "subtitle": "",
+            "content": "السمات: لون العينين، الشعر الأحمر، الشعر المجعد، الشعر الفاتح أو الداكن، كثافة الشعر، النمش، الكزبرة، الطعم المر، رائحة البول بعد تناول الهليون، الطعم الحلو، الحب للحلويات أو المالحات، جودة الأسنان.",
+            "report": "النتائج جاهزة خلال 15 إلى 10 أيام"
+          }
+        }
       },
-      "blood": "دم الأم",
-      "report": "النتائج جاهزة خلال 15 إلى 10 أيام",
-      "includes": "يشمل",
-      "find-out": "معرفة المزيد",
-      "sample": "عرض نموذج التقرير",
-      "currency": "درهم",
-      "cards": {
-        "1": {
-          "title": {
-            "1": "NIPT UNITY",
-            "2": "فحص الكروموسومات"
-          },
-          "content": {
-            "1": "T13، T18، T21 والكروموسومات الجنسية",
-            "list": {
-              "1": "ختياري:  تحديد جنس الجنين",
-              "2": "ختياري: تحديد عامل ريزوس للجنين",
-              "3": "اختياري: 22q"
+      "gender-detection": {
+        "title": "الكشف عن الجنس",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Peakaboo",
+              "2": "الاكتشاف المبكر للجنسين"
+            },
+            "content": {
+              "1": "تحديد جنس الجنين",
+              "2": "يقدم بيكابو اختبار تحديد جنس الجنين في وقت مبكر، حيث يوفر نتائج تصل إلى 14 أسبوعًا قبل 14 أسبوعًا من التصوير بالموجات فوق الصوتية التقليدية.",
+              "3": "يحدد جنس الجنين بدقة تزيد عن 99%."
             }
           }
-        },
-        "2": {
-          "title": {
-            "1": "UNITY",
-            "2": "إختبار فحص الناقل"
-          },
-          "content": {
-            "1": "الفحص الناقل العكسي (sgNIPT)",
-            "2": "يفحص الحمض النووي للرضيع للتحقق من وجود تغييرات، في حالة كانت الأم حاملًا"
-          }
-        },
-        "3": {
-          "title": {
-            "1": "UNITY فحص الكروموسومات",
-            "2": "+ الفحص المناعي الجنيني"
-          },
-          "content": {
-            "1": "T13، T18، T21 والكروموسومات الجنسية",
-            "list": {
-              "1": "ختياري:  تحديد جنس الجنين",
-              "2": "ختياري: تحديد عامل ريزوس للجنين",
-              "3": "اختياري: مستضدات كريات الدم للجنين",
-              "4": "اختياري: 22q "
-            }
-          }
-        },
-        "4": {
-          "title": {
-            "1": "UNITY NIPT Complete",
-            "2": "+ إختبار فحص الناقل"
-          },
-          "content": {
-            "1": "إختبار فحص الناقل+ الفحص الناقل العكسي (sgNIPT)",
-            "2": "T13، T18، T21 والكروموسومات الجنسية",
-            "list": {
-              "1": "ختياري:  تحديد جنس الجنين +",
-              "2": "ختياري: تحديد عامل ريزوس للجنين +",
-              "3": "+22q: اختياري"
-            }
-          }
-        },
-        "5": {
-          "title": {
-            "1": "UNITY NPT Complete",
-            "2": "+ الفحص المناعي الجنيني"
-          },
-          "content": {
-            "1": "إختبار فحص الناقل +الفحص الناقل العكسي (sgNIPT)",
-            "2": "T13، T18، T21 والكروموسومات الجنسية",
-            "list": {
-              "1": "ختياري:  تحديد جنس الجنين +",
-              "2": "ختياري: تحديد عامل ريزوس للجنين +",
-              "3": "اختياري: مستضدات كريات الدم للجنين +",
-              "4": " 22q +: اختياري"
-            }
-          }
-        },
-        "6": {
-          "title": "BabyPeek",
-          "subtitle": "",
-          "content": "السمات: لون العينين، الشعر الأحمر، الشعر المجعد، الشعر الفاتح أو الداكن، كثافة الشعر، النمش، الكزبرة، الطعم المر، رائحة البول بعد تناول الهليون، الطعم الحلو، الحب للحلويات أو المالحات، جودة الأسنان."
         }
       },
       "popups": {
@@ -380,34 +426,17 @@
             "10": "نوع العينة: دم الأم."
           }
         }
+      }
+    },
+    "cta": {
+      "title": {
+        "1": "اعرف ميزات طفلك الفريدة الـ 12",
+        "2": "قبل الولادة"
       },
-      "second-title": "الكشف عن الجنس",
-      "gender-detection": {
-        "title": {
-          "1": "Peakaboo",
-          "2": "الاكتشاف المبكر للجنسين"
-        },
-        "content": {
-          "1": "تحديد جنس الجنين",
-          "2": "يقدم بيكابو اختبار تحديد جنس الجنين في وقت مبكر، حيث يوفر نتائج تصل إلى 14 أسبوعًا قبل 14 أسبوعًا من التصوير بالموجات فوق الصوتية التقليدية.",
-          "3": "يحدد جنس الجنين بدقة تزيد عن 99%."
-        }
+      "subtitle": {
+        "text": "هل سيكون لطفلك عيون بنية وشعر أشقر مثلك؟ اكتشف ذلك مع BabyPeek",
+        "bold": ""
       }
-    },
-    "screening": {
-      "banner": {
-        "title": {
-          "1": "اعرف ميزات طفلك الفريدة الـ 12",
-          "2": "قبل الولادة"
-        },
-        "subtitle": {
-          "text": "هل سيكون لطفلك عيون بنية وشعر أشقر مثلك؟ اكتشف ذلك مع BabyPeek",
-          "bold": ""
-        }
-      }
-    },
-    "documents": {
-      "title": "تقارير العينات"
     },
     "faq": {
       "title": "الأسئلة الشائعة",
@@ -440,16 +469,327 @@
           }
         }
       }
+    }
+  },
+  "oncology": {
+    "hero": {
+      "title": "Oncology Testing",
+      "subtitle": "At the Forefront of Disease Detection"
     },
-    "contact": {
-      "title": "اتصل بنا",
-      "subtitle": "إذا كانت لديك أية أسئلة، فسنبذل كل جهدنا لمساعدتك",
-      "form": {
-        "name": "اسم",
-        "email": "بريد إلكتروني",
-        "phone": "هاتف",
-        "message": "رسالة",
-        "button": "يرسل"
+    "about": {
+      "card": {
+        "bold-1": "Northstar Select™",
+        "bold-2": "Northstar Response™",
+        "and": "and",
+        "content": "are advanced liquid biopsy tests now available for commercial use. Northstar Select™ helps determine the most appropriate first line therapy, while Northstar Response™ monitors the effectiveness of the ongoing treatment. In addition, we offer comprehensive cancer screening and preventative screening for all types of cancer, providing a proactive approach to healthcare."
+      }
+    },
+    "needs": {
+      "cards": {
+        "1": {
+          "title": {
+            "1": "Appropriate for any",
+            "span": "late-stage solid tumor",
+            "2": "and guides first-line therapy decisions and for anyone looking for preventative measures and early detection."
+          }
+        },
+        "2": {
+          "title": "Patients Undergoing Targeted Therapy"
+        },
+        "3": {
+          "title": "Patients Undergoing Immunotherapy"
+        },
+        "4": {
+          "title": "Patients with Metastatic Cancer"
+        }
+      },
+      "banner": {
+        "title": "Treat. Monitor. Adapt.",
+        "subtitle": {
+          "bold": "Northstar™",
+          "text": "Informs and monitors response to targeted therapy & immunotherapy"
+        }
+      }
+    },
+    "video": {
+      "title": {
+        "1": "Ultra-sensitive",
+        "2": "Liquid Biopsy &",
+        "3": "Precise Monitoring"
+      }
+    },
+    "discover": {
+      "cards": {
+        "1": {
+          "text": {
+            "1": "Northstar Response™  shows",
+            "bold": ">10x Stronger Signal",
+            "2": "than SNV-Based ctDNA Monitoring Assays"
+          }
+        },
+        "2": {
+          "text": {
+            "1": "Northstar Select™ provides",
+            "bold": "therapy insights",
+            "2": "for stage III or IV solid tumor cancer patients."
+          }
+        },
+        "3": {
+          "text": {
+            "1": "Northstar Response™",
+            "bold": "distinguishes changes",
+            "2": "as small as 0.2% tumor fraction."
+          }
+        },
+        "4": {
+          "text": {
+            "1": "Northstar Select™ detects mutations in",
+            "bold": "81 genes",
+            "2": "from cell-free tumor DNA in advanced-stage solid tumors."
+          }
+        },
+        "5": {
+          "text": {
+            "1": "Northstar Response™ achieves",
+            "bold": "consistent accuracy",
+            "2": "across 10 cancer types"
+          }
+        }
+      }
+    },
+    "packages": {
+      "northstar": {
+        "title": "Northstar™ Packages",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Northstar Select™",
+              "2": "Determines therapy"
+            },
+            "content": {
+              "1": "Designed for therapy selection in patients with advanced-stage solid tumors. It detects mutations across 81 genes, providing invaluable insights into what therapies may be most effective for your patients."
+            },
+            "report": "10-15 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Northstar Response™",
+              "2": "Monitors therapy response"
+            },
+            "content": {
+              "1": "Northstar Response is a next-gen sequencing-based test that measures changes in methylated tumor molecules over time. It's a powerful tool for real-time therapy monitoring."
+            },
+            "report": "10-15 Days Report"
+          }
+        }
+      },
+      "hereditary": {
+        "title": "Hereditary Cancer",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Oncocheck™ C",
+              "2": "12 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, BRIP1, CHEK2, ERBB2, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Colorectal & Prostate Cancer",
+              "5": "Lynch Syndrome",
+              "6": "Li-Fraumeni Syndrome"
+            },
+            "report": "14 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Oncocheck™ S",
+              "2": "25 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, ATM, CHEK2, PALB2, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Cowden Syndrome",
+              "5": "Neurofibromatosis",
+              "6": "Colorectal Cancer"
+            },
+            "report": "14 Days Report"
+          },
+          "3": {
+            "title": {
+              "1": "Oncocheck™ X",
+              "2": "50 Genes Tested"
+            },
+            "content": {
+              "1": "BRCA1, BRCA2, APC, TP53, PTEN, and more",
+              "2": "Cancers Covered:",
+              "3": "Breast & Ovarian Cancer",
+              "4": "Colorectal Cancer",
+              "5": "Multiple Endocrine Neoplasia",
+              "6": "Leukaemia & Glioblastoma"
+            },
+            "report": "14 Days Report"
+          }
+        }
+      },
+      "blood-cancer": {
+        "title": "Blood Cancer Markers",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "Tumor markers",
+              "2": "For Male"
+            },
+            "content": {
+              "1": "Prostate-specific antigen (PSA)",
+              "2": "Carcinoembryonic antigen (CEA)",
+              "3": "Alpha-fetoprotein (AFP)",
+              "4": "Beta human chorionic gonadotropin (BhCG), CA 19-9."
+            },
+            "report": "24 Hours Report"
+          },
+          "2": {
+            "title": {
+              "1": "Tumor markers",
+              "2": "For Female"
+            },
+            "content": {
+              "1": "Cancer antigen 125 (CA-125)",
+              "2": "Carcinoembryonic antigen (CEA)",
+              "3": "Alpha-fetoprotein (AFP)",
+              "4": "CA-15-3, CA-19-9",
+              "5": "CA 15-3"
+            },
+            "report": "24 Hours Report"
+          }
+        }
+      },
+      "genetic-test": {
+        "title": "Genetics Test Packages",
+        "cards": {
+          "1": {
+            "title": {
+              "1": "BRCA1 and BRCA2",
+              "2": "by 3X4 Genetics"
+            },
+            "content": {
+              "1": "Identifies most mutations and insertions/deletions in the BRCA genes linked to breast cancer"
+            },
+            "report": "14 Days Report"
+          },
+          "2": {
+            "title": {
+              "1": "Lifestyle Genetics Health",
+              "2": "by 3X4 Genetics"
+            },
+            "content": {
+              "1": "This comprehensive analysis focuses on six essential pathways to help you understand and enhance your well-being:",
+              "2": "Weight Balance, Fitness & Tissue ",
+              "3": "Health, Hormone Health, Brain ",
+              "4": "Health, Heart Health"
+            },
+            "report": "30-45 Days Report"
+          }
+        }
+      },
+      "popups": {
+        "1": {
+          "title": "Northstar Select™",
+          "content": {
+            "1": "Discover how personalized therapy selection can significantly impact your cancer treatment outcomes. Northstar Select™ helps determine the most effective therapy based on your unique genetic profile, ensuring a tailored approach to combat cancer."
+          }
+        },
+        "2": {
+          "title": "Northstar Response™",
+          "content": {
+            "1": "Monitor the effectiveness of your cancer therapy with Northstar Response™. This test helps track your response to treatment, allowing timely adjustments and maximizing the chances of successful outcomes."
+          }
+        },
+        "3": {
+          "title": "Oncocheck™ C  12 Genes Tested",
+          "content": {
+            "1": "Early detection is key to effective cancer prevention. Oncocheck™ C tests 12 critical genes, providing valuable insights into your cancer risk, enabling you to take proactive measures for early intervention."
+          }
+        },
+        "4": {
+          "title": "Oncocheck™ S  25 Genes Tested",
+          "content": {
+            "1": "A more comprehensive analysis of your genetic predisposition to cancer. Oncocheck™ S screens 25 genes, offering a deeper understanding of your risk factors and empowering you with the knowledge to take preventive action."
+          }
+        },
+        "5": {
+          "title": "Oncocheck™ X  50 Genes Tested",
+          "content": {
+            "1": "For those seeking the most extensive genetic screening, Oncocheck™ X analyzes 50 genes linked to various cancers. This detailed insight can be a vital tool in your proactive cancer prevention strategy."
+          }
+        },
+        "6": {
+          "title": "Tumor markers For Male",
+          "content": {
+            "1": "Tumor markers are essential in detecting cancer early. This test screens for specific markers in males, helping in the early identification and monitoring of cancer, which is crucial for effective treatment."
+          }
+        },
+        "7": {
+          "title": "Tumor markers For Female",
+          "content": {
+            "1": "Early detection of cancer is critical. This test screens for tumor markers in females, providing vital information for the early identification and monitoring of cancer, improving treatment success rates."
+          }
+        },
+        "8": {
+          "title": "BRCA1 and BRCA2 Testing",
+          "content": {
+            "1": "BRCA1 and BRCA2 genes play a significant role in breast and ovarian cancer risk. Testing for these mutations can help you understand your risk and take preventive measures to protect your health."
+          }
+        },
+        "9": {
+          "title": "Lifestyle Genetics Health by 3X4 Genetics",
+          "content": {
+            "1": "Your lifestyle can influence your cancer risk. This test provides personalized insights into how your genes interact with your lifestyle, empowering you to make informed decisions to reduce your cancer risk."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": {
+        "1": "Molecular diagnostics",
+        "2": "accessible for all"
+      },
+      "subtitle": {
+        "1": "Northstar Response™",
+        "2": "is FREE for up to 3 tests when you order",
+        "3": "Northstar Select™"
+      }
+    },
+    "faq": {
+      "questions": {
+        "1": {
+          "q": "How does UNITY Complete work?",
+          "answer": {
+            "1": "UNITY Complete takes advantage of a pregnancy's DNA (circulating cell-free DNA, ccfDNA) floating in the maternal bloodstream to assess for genetic changes. Some of these genetic changes are extremely small - like changes to single genes that can cause recessive conditions. Some of these genetic changes involve the presence of an entire extra chromosome (aneuploidies).",
+            "2": "Our specialized QCT technology enables us to be able to count the genetic information we see from both mom and baby in a blood sample, and determine if there are differences that could indicate a baby has a higher chance of being affected with one of these conditions."
+          }
+        },
+        "2": {
+          "q": "What genetic conditions does UNITY Complete screen for?",
+          "answer": {
+            "1": "UNITY Complete offers multiple genetic insights from a single maternal blood sample. The results you receive will depend on which tests your healthcare provider orders.",
+            "2": "UNITY Aneuploidy NIPT screens pregnancies for chromosome conditions caused by extra or missing chromosomes including trisomy 21, trisomy 18, trisomy 13, monosomy X, XXX, XXY, and XYY. UNITY Aneuploidy NIPT can also tell you the baby's gender. For twin pregnancies, you will also learn if your twins are identical or fraternal.",
+            "3": "Depending on your clinical picture, your doctor may also order UNITY Fetal RhD NIPT for moms who have a RhD- blood type, UNITY Fetal Antigen NIPT for moms who are alloimmunized to certain antigens, and 22q11.2 microdeletion analysis.",
+            "4": "UNITY Fetal Risk Screen determines if a pregnant person is a carrier for cystic fibrosis, spinal muscular atrophy, sickle cell disease, alpha-thalassemia, or beta-thalassemia. If you're found to be a carrier for one of these conditions, the fetal DNA will be screened to determine if there is a high-chance or a low-chance for a pregnancy to be affected with a condition. In some cases, like twin pregnancies or those achieved with an egg donor, we are not able to perform a fetal risk assessment.",
+            "5": "Your provider may also order carrier screening for fragile X syndrome. If the mom is determined to be a carrier for this, our assay can perform cell-free DNA analysis to determine if the fetus is a male- this would put the fetus at higher risk to develop Fragile X Syndrome."
+          }
+        },
+        "3": {
+          "q": "What are the possible results I can get with UNITY Complete?",
+          "answer": {
+            "1": "Possible results with UNITY Aneuploidy NIPT typically fall into low-risk fetus or high-risk fetus results.",
+            "2": "A Low Risk Fetus result means that the chance your pregnancy is affected with the screened conditions is significantly reduced, but not eliminated.",
+            "3": "A High-Risk Fetus result means there is an increased chance for your pregnancy to be affected with a specific condition. Confirmatory testing via chorionic villus sampling, amniocentesis, or postnatal evaluation is recommended.",
+            "4": "Note: this result does not guarantee a healthy child and does not eliminate the possibility of other chromosome abnormalities, birth defects, or other genetic conditions.",
+            "5": "UNITY Fetal Risk Screen provides maternal carrier screening results (reported as a positive carrier or negative carrier). If a pregnant person is found to be a carrier, fetal testing will automatically be performed via cell-free DNA analysis. Possible results from the fetal testing can fall into decreased/low-risk categories or increased/high-risk categories."
+          }
+        }
       }
     }
   }

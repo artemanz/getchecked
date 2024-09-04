@@ -11,19 +11,17 @@ type Props = {
 export const Banner = ({ picture, title, subtitle, buttonHref }: Props) => {
   const { t } = useTranslation("components")
   return (
-    <div className="relative px-4 py-6 overflow-hidden rounded-3xl bg-accent-light h-[18.75rem] md:pb-6 lg:p-8">
+    <div className="relative h-[18.5rem] overflow-hidden rounded-3xl bg-accent-light px-4 py-6 md:pb-6 lg:p-8">
       {picture}
 
-      <div className="relative flex flex-col h-full">
-        <p className="mb-2 text-lg font-bold md:text-xl lg:text-2xl lg:mb-4">
+      <div className="relative flex h-full flex-col">
+        <p className="text-lg font-bold md:text-xl lg:text-2xl lg:leading-tight">
           {title}
         </p>
 
-        <p className="mb-auto max-w-[12rem] md:max-w-[17.5rem] lg:max-w-[28rem] lg:text-lg">
-          {subtitle}
-        </p>
+        <div className="mt-2 lg:text-lg">{subtitle}</div>
 
-        <Button as="link" href={buttonHref}>
+        <Button className="mt-auto" as="link" href={buttonHref}>
           {t("button")}
         </Button>
       </div>

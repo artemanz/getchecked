@@ -11,7 +11,7 @@ const imagesInput = "assets/**/*.{jpg,jpeg,png}"
 const svgInput = "assets/**/*.svg"
 const fontsInput = "assets/**/*.ttf"
 
-const output = "src/assets"
+const output = "public"
 
 function compressImages() {
   return src(imagesInput)
