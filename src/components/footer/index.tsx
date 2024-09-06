@@ -17,15 +17,15 @@ export const Footer = () => {
   const contacts = [
     {
       id: "whatsapp",
-      href: "https://wa.me/97143331473",
+      href: "https://wa.me/971527007915",
       icon: WhatsApp,
-      text: "+971 4 333 1473",
+      text: "+971 52 700 79 15",
     },
     {
       id: "phone",
-      href: "tel:+97143331473",
+      href: "tel:+971527007915",
       icon: Phone,
-      text: "+971 4 333 1473",
+      text: "+971 52 700 79 15",
     },
     {
       id: "mail",

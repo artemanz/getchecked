@@ -22,7 +22,7 @@ export const ContactMenu = () => {
       <a
         onClick={handleWhatsAppClick}
         className="bg-green-400 w-16 aspect-square grid place-content-center rounded-full"
-        href="https://wa.me/97143331473"
+        href="https://wa.me/971527007915"
         target="_blank"
       >
         <FaWhatsapp size={32} color="#fff" />
