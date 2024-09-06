@@ -4,33 +4,29 @@ import { cn } from "@/lib/helpers"
 import { Button } from "@/components/ui"
 import { useTranslation } from "react-i18next"
 
-type Props = {
-  page: "oncology" | "prenatal" | "common"
-}
-
-export const Works = ({ page }: Props) => {
+export const Works = () => {
   const { t } = useTranslation()
 
   const tabs = [
     {
       id: 1,
       content: {
-        title: t(`${page}:works.cards.1.content.title`),
-        text: t(`${page}:works.cards.1.content.text`),
+        title: t(`common:works.cards.1.content.title`),
+        text: t(`common:works.cards.1.content.text`),
       },
     },
     {
       id: 2,
       content: {
-        title: t(`${page}:works.cards.2.content.title`),
-        text: t(`${page}:works.cards.2.content.text`),
+        title: t(`common:works.cards.2.content.title`),
+        text: t(`common:works.cards.2.content.text`),
       },
     },
     {
       id: 3,
       content: {
-        title: t(`${page}:works.cards.3.content.title`),
-        text: t(`${page}:works.cards.3.content.text`),
+        title: t(`common:works.cards.3.content.title`),
+        text: t(`common:works.cards.3.content.text`),
       },
     },
   ]
@@ -48,7 +44,7 @@ export const Works = ({ page }: Props) => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="section-title">{t(`${page}:works.title`)}</h2>
+        <h2 className="section-title">{t(`common:works.title`)}</h2>
         <div className="mb-8 flex gap-4 md:flex-col">
           <ul className="flex h-[15rem] w-12 flex-shrink-0 flex-col justify-between rounded-full border border-accent/50 p-0.5 md:h-12 md:w-full md:flex-row">
             <li
@@ -88,14 +84,14 @@ export const Works = ({ page }: Props) => {
                 currentTab === 1 && "opacity-100",
               )}
             >
-              {t(`${page}:works.cards.1.tab.time`) && (
+              {t(`common:works.cards.1.tab.time`) && (
                 <div className={cn(classNames.tabLabelHeader, "")}>
                   <Time />
-                  {t(`${page}:works.cards.1.tab.time`)}
+                  {t(`common:works.cards.1.tab.time`)}
                 </div>
               )}
               <p className="font-semibold lg:text-lg">
-                {t(`${page}:works.cards.1.tab.title`)}
+                {t(`common:works.cards.1.tab.title`)}
               </p>
             </li>
             <li
@@ -105,7 +101,7 @@ export const Works = ({ page }: Props) => {
                 currentTab === 2 && "opacity-100",
               )}
             >
-              {t(`${page}:works.cards.2.tab.time`) && (
+              {t(`common:works.cards.2.tab.time`) && (
                 <div
                   className={cn(
                     classNames.tabLabelHeader,
@@ -113,11 +109,11 @@ export const Works = ({ page }: Props) => {
                   )}
                 >
                   <Time />
-                  {t(`${page}:works.cards.2.tab.time`)}
+                  {t(`common:works.cards.2.tab.time`)}
                 </div>
               )}
               <p className="font-semibold md:text-center lg:text-lg">
-                {t(`${page}:works.cards.2.tab.title`)}
+                {t(`common:works.cards.2.tab.title`)}
               </p>
             </li>
             <li
@@ -127,16 +123,16 @@ export const Works = ({ page }: Props) => {
                 currentTab === 3 && "opacity-100",
               )}
             >
-              {t(`${page}:works.cards.3.tab.time`) && (
+              {t(`common:works.cards.3.tab.time`) && (
                 <div
                   className={cn(classNames.tabLabelHeader, "md:justify-end")}
                 >
                   <Time />
-                  {t(`${page}:works.cards.3.tab.time`)}
+                  {t(`common:works.cards.3.tab.time`)}
                 </div>
               )}
               <p className="font-semibold md:text-right lg:text-lg">
-                {t(`${page}:works.cards.3.tab.title`)}
+                {t(`common:works.cards.3.tab.title`)}
               </p>
             </li>
           </ul>

@@ -2,11 +2,6 @@ import { Animations } from "@/lib/types"
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
 
-type Props = {
-  page: string
-  videoSrc: string
-}
-
 const CursiveLine = () => (
   <svg
     width="226"
@@ -24,7 +19,7 @@ const CursiveLine = () => (
   </svg>
 )
 
-export const Video = ({ page, videoSrc }: Props) => {
+export const Video = () => {
   const { t } = useTranslation()
 
   const animations: Animations = {
@@ -72,7 +67,7 @@ export const Video = ({ page, videoSrc }: Props) => {
         <div>
           <h2 className="section-title">
             <span className="relative">
-              {t(`${page}:video.title.1`)}{" "}
+              {t(`prenatal:video.title.1`)}{" "}
               <motion.div
                 {...animations.cursiveLine()}
                 className="absolute inset-x-0 -bottom-1 right-1 max-w-full"
@@ -80,9 +75,9 @@ export const Video = ({ page, videoSrc }: Props) => {
                 <CursiveLine />
               </motion.div>
             </span>{" "}
-            {t(`${page}:video.title.2`)} <br />
+            {t(`prenatal:video.title.2`)} <br />
             <span className="relative">
-              {t(`${page}:video.title.3`)}
+              {t(`prenatal:video.title.3`)}
               <motion.div
                 {...animations.backgroundRect()}
                 className="absolute -inset-x-1 inset-y-0 z-[-1] bg-accent"
@@ -94,7 +89,7 @@ export const Video = ({ page, videoSrc }: Props) => {
         <div className="relative aspect-[3/2]">
           <iframe
             className="h-full w-full"
-            src={videoSrc}
+            src="https://player.vimeo.com/video/385153257?h=060a084a73&color=36958e&title=0&byline=0&portrait=0"
             allow="autoplay; fullscreen; picture-in-picture"
             title="video Ultra-sensitive Liquid Biopsy & Precise Monitoring"
           ></iframe>

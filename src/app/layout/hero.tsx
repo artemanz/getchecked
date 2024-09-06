@@ -1,16 +1,8 @@
 import { Button, Picture } from "@/components/ui"
 import { useTranslation } from "react-i18next"
 
-type Props = {
-  page: "oncology" | "prenatal"
-  image: {
-    src: string
-    alt: string
-  }
-}
-
-export const Hero = ({ page, image }: Props) => {
-  const { t } = useTranslation()
+export const Hero = ( ) => {
+  const { t } = useTranslation("prenatal")
 
   return (
     <section className="bg-[linear-gradient(180deg,#FEFCE9_0%,#FFFFFF_92.01%)] pb-10 pt-3 xl:pt-5">
@@ -18,8 +10,8 @@ export const Hero = ({ page, image }: Props) => {
         <div className="relative mb-4 aspect-[3/2] max-h-[25rem] w-full">
           <Picture
             className="absolute inset-0 overflow-hidden rounded-2xl"
-            DEFAULT={image.src}
-            alt={image.alt}
+            DEFAULT="/images/prenatal/hero.jpg"
+            alt="short hair woman smiling on sunset"
           />
         </div>
 
@@ -28,11 +20,11 @@ export const Hero = ({ page, image }: Props) => {
             "text-center text-xl-xl font-semibold lg:text-2xl-xl xl:mb-6 xl:text-4xl"
           }
         >
-          {t(`${page}:hero.title`)}
+          {t(`hero.title`)}
         </h1>
 
         <p className="mb-4 text-balance text-center text-xl leading-tight lg:mb-6 lg:text-2xl-lg xl:mb-10 xl:text-3xl">
-          {t(`${page}:hero.subtitle`)}
+          {t(`hero.subtitle`)}
         </p>
         <Button className="mx-auto" as="link" href="#contacts">
           {t("components:button")}

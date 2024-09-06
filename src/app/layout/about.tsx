@@ -1,16 +1,7 @@
 import { Button, Picture } from "@/components/ui"
 import { useTranslation } from "react-i18next"
 
-type Props = {
-  page: "oncology" | "prenatal"
-  image: {
-    src: string
-    alt: string
-  }
-  content: React.ReactNode
-}
-
-export const About = ({ image, content }: Props) => {
+export const About = () => {
   const { t } = useTranslation()
 
   return (
@@ -18,19 +9,19 @@ export const About = ({ image, content }: Props) => {
       <div className="container">
         <h2 className="section-title">{t("common:about.title")}</h2>
 
-        <div className="px-2 pt-3 pb-8 bg-grey-light rounded-[2.5rem] md:px-6 lg:pt-8 lg:px-8">
+        <div className="rounded-[2.5rem] bg-grey-light px-2 pb-8 pt-3 md:px-6 lg:px-8 lg:pt-8">
           <div className="relative mb-5">
             <Picture
-              className="rounded-3xl overflow-hidden h-[12rem] lg:h-[15.625rem]"
-              DEFAULT={image.src}
-              alt={image.alt}
+              className="h-[12rem] overflow-hidden rounded-3xl lg:h-[15.625rem]"
+              DEFAULT="/images/prenatal/about.jpg"
+              alt="newborn holding mothers hand"
             />
             <a
               href="#documents"
-              className="absolute bottom-2 right-2 grid w-12 rounded-full aspect-square bg-accent place-content-center xs:w-14 lg:w-20"
+              className="absolute bottom-2 right-2 grid aspect-square w-12 place-content-center rounded-full bg-accent xs:w-14 lg:w-20"
             >
               <Picture
-                className="w-8 aspect-square md:w-8 lg:w-12"
+                className="aspect-square w-8 md:w-8 lg:w-12"
                 DEFAULT={"/icons/file.svg"}
                 alt="File icon"
               />
@@ -38,10 +29,14 @@ export const About = ({ image, content }: Props) => {
           </div>
 
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:gap-8">
-            <p className="px-2 lg:px-0 lg:text-lg">{content}</p>
+            <p className="px-2 lg:px-0 lg:text-lg">
+              {t("prenatal:about.card.1")}{" "}
+              <b>{t("prenatal:about.card.bold")}</b>{" "}
+              {t("prenatal:about.card.2")}
+            </p>
 
             <Button
-              className="flex-shrink-0 mx-auto"
+              className="mx-auto flex-shrink-0"
               as="link"
               href="#contacts"
             >

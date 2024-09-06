@@ -4,29 +4,19 @@ import { Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { useTranslation } from "react-i18next"
 
-type Props = {
-  page: "oncology" | "prenatal"
-}
-
-export const Documents = ({ page }: Props) => {
+export const Documents = () => {
   const { t } = useTranslation("common")
   const [popup, setPopup] = useState<`sample-${number}` | null>(null)
 
   const slides: {
     img: string
     sample: `sample-${number}`
-  }[] = []
-
-  if (page === "oncology") {
-    //
-  } else {
-    slides.push(
-      { img: "/samples/prenatal/sample-1.png", sample: "sample-1" },
-      { img: "/samples/prenatal/sample-2.png", sample: "sample-2" },
-      { img: "/samples/prenatal/sample-3.png", sample: "sample-3" },
-      { img: "/samples/prenatal/sample-4.png", sample: "sample-4" },
-    )
-  }
+  }[] = [
+    { img: "/samples/prenatal/sample-1.png", sample: "sample-1" },
+    { img: "/samples/prenatal/sample-2.png", sample: "sample-2" },
+    { img: "/samples/prenatal/sample-3.png", sample: "sample-3" },
+    { img: "/samples/prenatal/sample-4.png", sample: "sample-4" },
+  ]
 
   if (!slides.length) return null
 
@@ -77,7 +67,7 @@ export const Documents = ({ page }: Props) => {
             <object
               className="h-full w-full"
               // type="application/pdf"
-              data={`/samples/${page}/${popup}.pdf`}
+              data={`/samples/prenatal/${popup}.pdf`}
             >
               <div className="grid h-full w-full place-content-center rounded-xl bg-white p-6">
                 <p className="mb-4 text-center">
@@ -86,7 +76,7 @@ export const Documents = ({ page }: Props) => {
                 <Button
                   className="mx-auto"
                   as="link"
-                  href={`/samples/${page}/${popup}.pdf`}
+                  href={`/samples/prenatal/${popup}.pdf`}
                 >
                   Download
                 </Button>

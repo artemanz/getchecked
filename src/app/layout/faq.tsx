@@ -1,42 +1,38 @@
 import { useTranslation } from "react-i18next"
 
-type Props = {
-  page: "oncology" | "prenatal"
-}
-
-export const Faq = ({ page }: Props) => {
-  const { t } = useTranslation(page)
+export const Faq = () => {
+  const { t } = useTranslation()
 
   const faq = [
     {
-      question: t("faq.questions.1.q"),
-      answer: `${t("faq.questions.1.answer.1")}
+      question: t("prenatal:faq.questions.1.q"),
+      answer: `${t("prenatal:faq.questions.1.answer.1")}
 
-        ${t("faq.questions.1.answer.2")}`,
+        ${t("prenatal:faq.questions.1.answer.2")}`,
     },
     {
-      question: t("faq.questions.2.q"),
-      answer: `${t("faq.questions.2.answer.1")}
+      question: t("prenatal:faq.questions.2.q"),
+      answer: `${t("prenatal:faq.questions.2.answer.1")}
 
-      ${t("faq.questions.2.answer.2")}
+      ${t("prenatal:faq.questions.2.answer.2")}
 
-      ${t("faq.questions.2.answer.3")}
+      ${t("prenatal:faq.questions.2.answer.3")}
 
-      ${t("faq.questions.2.answer.4")}
+      ${t("prenatal:faq.questions.2.answer.4")}
 
-      ${t("faq.questions.2.answer.5")}`,
+      ${t("prenatal:faq.questions.2.answer.5")}`,
     },
     {
-      question: t("faq.questions.3.q"),
-      answer: `${t("faq.questions.3.answer.1")}
+      question: t("prenatal:faq.questions.3.q"),
+      answer: `${t("prenatal:faq.questions.3.answer.1")}
 
-      ${t("faq.questions.3.answer.2")}
+      ${t("prenatal:faq.questions.3.answer.2")}
 
-      ${t("faq.questions.3.answer.3")}
+      ${t("prenatal:faq.questions.3.answer.3")}
 
-      ${t("faq.questions.3.answer.4")}
+      ${t("prenatal:faq.questions.3.answer.4")}
 
-      ${t("faq.questions.3.answer.5")}`,
+      ${t("prenatal:faq.questions.3.answer.5")}`,
     },
   ]
 

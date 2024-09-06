@@ -1,73 +1,69 @@
 import { Button, Picture } from "@/components/ui"
 import { useTranslation } from "react-i18next"
 
-type Props = {
-  page: "oncology" | "prenatal"
-}
-
-export const Discover = ({ page }: Props) => {
+export const Discover = () => {
   const { t } = useTranslation()
 
   const cards = [
     {
       id: 1,
-      title: page === "oncology" ? ">10x" : "3x",
+      title: "3x",
       text: (
         <>
-          {t(`${page}:discover.cards.1.text.1`)}{" "}
-          <b>{t(`${page}:discover.cards.1.text.bold`)}</b>{" "}
-          {t(`${page}:discover.cards.1.text.2`)}
+          {t(`prenatal:discover.cards.1.text.1`)}{" "}
+          <b>{t(`prenatal:discover.cards.1.text.bold`)}</b>{" "}
+          {t(`prenatal:discover.cards.1.text.2`)}
         </>
       ),
-      icon: page === "oncology" ? "" : "/icons/baby.svg",
+      icon: "/icons/baby.svg",
     },
     {
       id: 2,
-      title: page === "oncology" ? "III or IV" : "~58%",
+      title: "~58%",
       text: (
         <>
-          {t(`${page}:discover.cards.2.text.1`)}{" "}
-          <b>{t(`${page}:discover.cards.2.text.bold`)}</b>{" "}
-          {t(`${page}:discover.cards.2.text.2`)}
+          {t(`prenatal:discover.cards.2.text.1`)}{" "}
+          <b>{t(`prenatal:discover.cards.2.text.bold`)}</b>{" "}
+          {t(`prenatal:discover.cards.2.text.2`)}
         </>
       ),
-      icon: page === "oncology" ? "" : "/icons/sex.svg",
+      icon: "/icons/sex.svg",
     },
     {
       id: 3,
-      title: page === "oncology" ? "0.2%" : "~99%",
+      title: "~99%",
       text: (
         <>
-          {t(`${page}:discover.cards.3.text.1`)}{" "}
-          <b>{t(`${page}:discover.cards.3.text.bold`)}</b>{" "}
-          {t(`${page}:discover.cards.3.text.2`)}
+          {t(`prenatal:discover.cards.3.text.1`)}{" "}
+          <b>{t(`prenatal:discover.cards.3.text.bold`)}</b>{" "}
+          {t(`prenatal:discover.cards.3.text.2`)}
         </>
       ),
-      icon: page === "oncology" ? "" : "/icons/sprout.svg",
+      icon: "/icons/sprout.svg",
     },
     {
       id: 4,
-      title: page === "oncology" ? "81" : "96.0%",
+      title: "96.0%",
       text: (
         <>
-          {t(`${page}:discover.cards.4.text.1`)}{" "}
-          <b>{t(`${page}:discover.cards.4.text.bold`)}</b>{" "}
-          {t(`${page}:discover.cards.4.text.2`)}
+          {t(`prenatal:discover.cards.4.text.1`)}{" "}
+          <b>{t(`prenatal:discover.cards.4.text.bold`)}</b>{" "}
+          {t(`prenatal:discover.cards.4.text.2`)}
         </>
       ),
-      icon: page === "oncology" ? "" : "/icons/pie-chart.svg",
+      icon: "/icons/pie-chart.svg",
     },
     {
       id: 5,
-      title: page === "oncology" ? "10" : "99.8%",
+      title: "99.8%",
       text: (
         <>
-          {t(`${page}:discover.cards.5.text.1`)}{" "}
-          <b>{t(`${page}:discover.cards.5.text.bold`)}</b>{" "}
-          {t(`${page}:discover.cards.5.text.2`)}
+          {t(`prenatal:discover.cards.5.text.1`)}{" "}
+          <b>{t(`prenatal:discover.cards.5.text.bold`)}</b>{" "}
+          {t(`prenatal:discover.cards.5.text.2`)}
         </>
       ),
-      icon: page === "oncology" ? "" : "/icons/shield-close.svg",
+      icon: "/icons/shield-close.svg",
     },
   ]
 

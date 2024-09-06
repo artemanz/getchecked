@@ -173,10 +173,7 @@
     },
     "packages": {
       "unity-screen": {
-        "title": {
-          "1": "UNITY Screen",
-          "2": "أنواع"
-        },
+        "title": "UNITY Screen أنواع",
         "cards": {
           "1": {
             "title": {
