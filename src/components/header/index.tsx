@@ -1,7 +1,7 @@
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx"
 import { Button, Picture } from "../ui"
 import { MobileMenu } from "./mobile-menu"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa"
 import { SOCIALS } from "@/lib/constants/socials"
 import { handlePageScroll } from "@/lib/helpers/handlePageScroll"
@@ -10,10 +10,12 @@ import { Logo } from "../svg"
 import { useTranslation } from "react-i18next"
 import { cn } from "@/lib/helpers"
 import { useNavigation } from "@/lib/hooks/useNavigation"
+import { popupContext } from "@/context/popup.context"
 
 export const Header = () => {
   const { t, i18n } = useTranslation("components")
   const navigation = useNavigation()
+  const { setPopupState } = useContext(popupContext)
 
   const langs = [
     { title: "Ar", img: "/icons/flags/ar.svg", lang: "ar" },
@@ -117,7 +119,11 @@ export const Header = () => {
             </ul>
           </nav>
 
-          <Button className="hidden lg:block" as="link" href="#contacts">
+          <Button
+            className="hidden lg:block"
+            as="button"
+            onClick={() => setPopupState(true)}
+          >
             {t("button")}
           </Button>
 

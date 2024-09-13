@@ -1,19 +1,7 @@
 import { useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import emailjs from "@emailjs/browser"
-
-import { routeTree } from "@/routeTree.gen"
-import { RouterProvider, createRouter } from "@tanstack/react-router"
-
-// Create a new router instance
-const router = createRouter({ routeTree })
-
-// Register the router instance for type safety
-declare module "@tanstack/react-router" {
-  interface Register {
-    router: typeof router
-  }
-}
+import { Providers } from "./providers"
 
 const App = () => {
   const { i18n } = useTranslation()
@@ -31,7 +19,7 @@ const App = () => {
     })
   }, [])
 
-  return <RouterProvider router={router} />
+  return <Providers />
 }
 
 export default App

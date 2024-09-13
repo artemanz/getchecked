@@ -47,7 +47,6 @@ export const Cta = () => {
               <b>{t("prenatal:cta.subtitle.bold")}</b>
             </p>
           }
-          buttonHref="#contacts"
         />
       </div>
     </section>

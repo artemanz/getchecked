@@ -50,6 +50,15 @@ export default {
         "2xl": "1.25rem",
         "3xl": "2.5rem",
       },
+      animation: {
+        "fade-in": "fade-in 0.5s ease-in-out",
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
     },
   },
   plugins: [],

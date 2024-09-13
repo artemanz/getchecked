@@ -1,8 +1,12 @@
 import { Button, Picture } from "@/components/ui"
+import { popupContext } from "@/context/popup.context"
+import { useContext } from "react"
 import { useTranslation } from "react-i18next"
 
 export const Hero = ( ) => {
   const { t } = useTranslation("prenatal")
+  const { setPopupState } = useContext(popupContext)
+
 
   return (
     <section className="bg-[linear-gradient(180deg,#FEFCE9_0%,#FFFFFF_92.01%)] pb-10 pt-3 xl:pt-5">
@@ -26,7 +30,13 @@ export const Hero = ( ) => {
         <p className="mb-4 text-balance text-center text-xl leading-tight lg:mb-6 lg:text-2xl-lg xl:mb-10 xl:text-3xl">
           {t(`hero.subtitle`)}
         </p>
-        <Button className="mx-auto" as="link" href="#contacts">
+        <Button
+          className="mx-auto"
+          as="button"
+          onClick={() => {
+            setPopupState(true)
+          }}
+        >
           {t("components:button")}
         </Button>
       </div>

@@ -1,11 +1,14 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Location, Report, Sample, Time } from "./svg"
 import { cn } from "@/lib/helpers"
 import { Button } from "@/components/ui"
 import { useTranslation } from "react-i18next"
+import { popupContext } from "@/context/popup.context"
 
 export const Works = () => {
   const { t } = useTranslation()
+  const { setPopupState } = useContext(popupContext)
+
 
   const tabs = [
     {
@@ -149,7 +152,11 @@ export const Works = () => {
                 <p className="mb-3 whitespace-pre-line md:mx-auto md:mb-6 md:max-w-[25rem] lg:mb-8 lg:max-w-[32rem]">
                   {tab.content.text}
                 </p>
-                <Button className="mx-auto mt-auto" as="link" href="#contacts">
+                <Button
+                  className="mx-auto mt-auto"
+                  as="button"
+                  onClick={() => setPopupState(true)}
+                >
                   {t("components:button")}
                 </Button>
               </li>

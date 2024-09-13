@@ -14,10 +14,12 @@ export const Popup = ({ hide, children }: Props) => {
   }, [])
 
   return (
-    <div className="fixed inset-0 z-10 grid auto-rows-fr py-10 md:py-20">
+    <div className="fixed inset-0 z-10 grid grid-cols-1 place-items-center auto-rows-fr">
       <div onClick={hide} className="absolute inset-0 bg-black/75" />
 
-      <div className="relative container grid auto-rows-fr">{children}</div>
+      <div className="relative">
+        {children}
+      </div>
     </div>
   )
 }

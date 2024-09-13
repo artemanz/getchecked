@@ -1,9 +1,10 @@
-import { Button, Input } from "@/components/ui"
 import { cn, validatePhone } from "@/lib/helpers"
-import { SubmitHandler, useForm } from "react-hook-form"
+import { HTMLAttributes, useEffect, useState } from "react"
+import { useForm, SubmitHandler } from "react-hook-form"
 import { useTranslation } from "react-i18next"
+import { Input, Button } from "../ui"
+
 import emailjs from "@emailjs/browser"
-import { useEffect, useState } from "react"
 
 type FormData = {
   name: string
@@ -12,7 +13,9 @@ type FormData = {
   message: string
 }
 
-export const Form = () => {
+type Props = HTMLAttributes<HTMLElement>
+
+export const Form = ({ className }: Props) => {
   const { t } = useTranslation("common", { keyPrefix: "contact.form" })
   const [buttonState, setButtonState] = useState<"loading" | "success" | null>(
     null,
@@ -48,7 +51,7 @@ export const Form = () => {
   }, [buttonState])
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className={cn("", className)} onSubmit={handleSubmit(onSubmit)}>
       <div className="mb-8 flex flex-col gap-4">
         <label className="flex flex-col gap-1">
           <span className={cn(errors.name && "text-red-500")}>{t("name")}</span>
@@ -110,9 +113,12 @@ export const Form = () => {
       </div>
 
       <Button
-        className="mx-auto md:w-full"
+        className={cn(
+          "mx-auto md:w-full",
+          buttonState === "success" && "!bg-[#4ADE80] !text-white",
+        )}
         as="button"
-        disabled={buttonState === "loading"}
+        disabled={buttonState !== null}
       >
         {buttonState === "success" ? "Success" : t("button")}
       </Button>

@@ -1,8 +1,11 @@
 import { Button, Picture } from "@/components/ui"
+import { popupContext } from "@/context/popup.context"
+import { useContext } from "react"
 import { useTranslation } from "react-i18next"
 
 export const About = () => {
   const { t } = useTranslation()
+  const { setPopupState } = useContext(popupContext)
 
   return (
     <section className="section">
@@ -37,8 +40,8 @@ export const About = () => {
 
             <Button
               className="mx-auto flex-shrink-0"
-              as="link"
-              href="#contacts"
+              as="button"
+              onClick={() => setPopupState(true)}
             >
               {t("components:button")}
             </Button>

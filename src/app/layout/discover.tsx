@@ -1,8 +1,11 @@
 import { Button, Picture } from "@/components/ui"
+import { popupContext } from "@/context/popup.context"
+import { useContext } from "react"
 import { useTranslation } from "react-i18next"
 
 export const Discover = () => {
   const { t } = useTranslation()
+  const { setPopupState } = useContext(popupContext)
 
   const cards = [
     {
@@ -95,7 +98,11 @@ export const Discover = () => {
           ))}
         </ul>
 
-        <Button className="mx-auto" as="link" href="#contacts">
+        <Button
+          className="mx-auto"
+          as="button"
+          onClick={() => setPopupState(true)}
+        >
           {t("components:button")}
         </Button>
       </div>

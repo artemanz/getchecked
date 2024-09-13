@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { Form } from "./form"
+import { Form } from "@/components"
 
 export const Contact = () => {
   const { t } = useTranslation("common")

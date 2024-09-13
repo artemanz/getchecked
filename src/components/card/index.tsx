@@ -3,9 +3,12 @@ import { Blood, CardBg, Time } from "./svg"
 import { Button } from "@/components/ui"
 import { cn } from "@/lib/helpers"
 import { CardProps } from "./types"
+import { popupContext } from "@/context/popup.context"
+import { useContext } from "react"
 
 export const Card = ({ tag: Tag, item, setPopup }: CardProps) => {
   const { t } = useTranslation()
+  const { setPopupState } = useContext(popupContext)
 
   return (
     <Tag className="relative h-[32.2rem] pl-2.5 pt-2.5 overflow-hidden">
@@ -82,7 +85,11 @@ export const Card = ({ tag: Tag, item, setPopup }: CardProps) => {
               {item.currentPrice}
             </div>
           </div>
-          <Button className="w-[9.6875rem] mb-1" as="link" href="#contacts">
+          <Button
+            className="mb-1 w-[9.6875rem]"
+            as="button"
+            onClick={() => setPopupState(true)}
+          >
             {t("components:button")}
           </Button>
         </div>

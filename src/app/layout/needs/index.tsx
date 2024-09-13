@@ -59,7 +59,6 @@ export const Needs = () => {
               {t(`prenatal:needs.banner.subtitle`)}
             </p>
           }
-          buttonHref="#contacts"
         />
       </div>
     </section>
